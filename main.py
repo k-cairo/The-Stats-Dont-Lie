@@ -1,71 +1,62 @@
-import manager as manager
+import json
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
+from openpyxl import Workbook, load_workbook
+import os
+from constant import CARDS, CORNERS, LEAGUES_URLS, TEAMS_IN_CHAMPIONSHIP
 
-CARDS = "/cards"
-CORNERS = "/corners"
-LEAGUES_URLS = {
-    "Australia - A-League": "https://www.thestatsdontlie.com/football/rest-of-the-world/australia/a-league",
-    "Austria - Bundesliga": "https://www.thestatsdontlie.com/football/europe/austria/bundesliga",
-    "Belgium - Pro League": "https://www.thestatsdontlie.com/football/europe/belgium/pro-league",
-    "Brazil - Serie A": "https://www.thestatsdontlie.com/football/n-s-america/brazil/serie-a",
-    "China - Super League": "https://www.thestatsdontlie.com/football/rest-of-the-world/china/super-league",
-    "Croatia - 1. HNL": "https://www.thestatsdontlie.com/football/europe/croatia/1-hnl",
-    "Czech Republic - 1. Liga": "https://www.thestatsdontlie.com/football/europe/czech-republic/1-liga",
-    "Denmark - Superliga": "https://www.thestatsdontlie.com/football/europe/denmark/superliga",
-    "England - Premier League": "https://www.thestatsdontlie.com/football/uk-ireland/england/premier-league",
-    "England - Championship": "https://www.thestatsdontlie.com/football/uk-ireland/england/championship",
-    "Finland - Veikkausliiga": "https://www.thestatsdontlie.com/football/europe/finland/veikkausliiga",
-    "France - Ligue 1": "https://www.thestatsdontlie.com/football/europe/france/ligue-1",
-    "France - Ligue 2": "https://www.thestatsdontlie.com/football/europe/france/ligue-2",
-    "Germany - Bundesliga": "https://www.thestatsdontlie.com/football/europe/germany/bundesliga",
-    "Germany - 2. Bundesliga": "https://www.thestatsdontlie.com/football/europe/germany/2-bundesliga",
-    "Holland - Eredivisie": "https://www.thestatsdontlie.com/football/europe/holland/eredivisie",
-    "Holland - Eerste Divisie": "https://www.thestatsdontlie.com/football/europe/holland/eerste-divisie",
-    "Italy - Serie A": "https://www.thestatsdontlie.com/football/europe/italy/serie-a",
-    "Poland - Ekstraklasa": "https://www.thestatsdontlie.com/football/europe/poland/ekstraklasa",
-    "Portugal - Primeira Liga": "https://www.thestatsdontlie.com/football/europe/portugal/primeira-liga",
-    "Scotland - Premiership": "https://www.thestatsdontlie.com/football/uk-ireland/scotland/premiership",
-    "Spain - La Liga": "https://www.thestatsdontlie.com/football/europe/spain/la-liga",
-    "Spain - Segunda Division": "https://www.thestatsdontlie.com/football/europe/spain/segunda-division",
-    "Sweden - Allsvenskan": "https://www.thestatsdontlie.com/football/europe/sweden/allsvenskan",
-    "Turkey - Super Lig": "https://www.thestatsdontlie.com/football/europe/turkey/super-lig",
-    "USA - MLS": "https://www.thestatsdontlie.com/football/n-s-america/usa/mls"
-}
-TEAMS_IN_CHAMPIONSHIP = {
-    "Australia - A-League": 12, "Austria - Bundesliga": 12, "Belgium - Pro League": 18, "Brazil - Serie A": 20,
-    "China - Super League": 16, "Croatia - 1. HNL": 10, "Czech Republic - 1. Liga": 16, "Denmark - Superliga": 12,
-    "England - Premier League": 20, "England - Championship": 24, "Finland - Veikkausliiga": 12, "France - Ligue 1": 20,
-    "France - Ligue 2": 20, "Germany - Bundesliga": 18, "Germany - 2. Bundesliga": 18, "Holland - Eredivisie": 18,
-    "Holland - Eerste Divisie": 20, "Italy - Serie A": 20, "Poland - Ekstraklasa": 18, "Portugal - Primeira Liga": 18,
-    "Scotland - Premiership": 12, "Spain - La Liga": 20, "Spain - Segunda Division": 22, "Sweden - Allsvenskan": 16,
-    "Turkey - Super Lig": 20, "USA - MLS": 27}
-
-all_iframes = {}
+iframes_yc_for = {}
+iframes_yc_against = {}
 
 service = Service(executable_path=ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service)
 
 
+####################################### GET IFRAMES ###################################################################
 def get_iframe(link, championship):
     driver.get(link)
     nb_team = TEAMS_IN_CHAMPIONSHIP[championship]
     try:
-        iframe = driver.find_element(By.CSS_SELECTOR, f"div.embed-container{nb_team} iframe").get_attribute('src')
-    except:
+        iframes = driver.find_elements(By.CSS_SELECTOR, f"div.embed-container{nb_team} iframe")
+        iframe_yc_for = iframes[0].get_attribute('src')
+        iframe_yc_against = iframes[1].get_attribute('src')
+    except IndexError:
         print(f"Erreur avec le championnat : {championship}")
     else:
-        content = f"{championship} - {iframe}"
-        with open("./iframes.txt", 'a') as iframe_file:
-            iframe_file.write(f"{content}\n")
+        iframes_yc_for[championship] = iframe_yc_for
+        iframes_yc_against[championship] = iframe_yc_against
 
 
-def get_data():
+def write_in_json_file():
+    json_object_1 = json.dumps(iframes_yc_for, indent=4)
+    with open("./iframes_YC_for.json", "w") as f:
+        f.write(json_object_1)
+
+    json_object_2 = json.dumps(iframes_yc_against, indent=4)
+    with open("./iframes_YC_against.json", "w") as f:
+        f.write(json_object_2)
+
+
+def get_all_cards_iframes():
+    for key, value in LEAGUES_URLS.items():
+        card_link = value + CARDS
+        get_iframe(link=card_link, championship=key)
+    write_in_json_file()
+
+
+
+
+
+
+
+
+# GET DATA
+def get_data(url, championship):
     other_teams = []
     home_teams = []
-    driver.get("https://docs.google.com/spreadsheets/d/1kYzcpxZo90jHOhKz3rCKZtLUtmMcDnv_qKmtRoK_d9I/pubhtml?gid=1157183632&single=true&widget=false&headers=false&chrome=false")
+    driver.get(url)
 
     # Get Home team and Away team
     teams = driver.find_elements(By.CSS_SELECTOR, "tbody tr td a")
@@ -87,26 +78,55 @@ def get_data():
         home_stats.append(home_stat)
         away_stats.append(away_stat)
 
-    print(f"Home Teams : {home_teams}")
-    print(f"Home Stats : {home_stats}")
-    print(f"Away Teams : {away_teams}")
-    print(f"Away Stats : {away_stats}")
-
-    return home_stats, home_teams, away_stats, away_teams
+    write_in_xlsx_file(championship=championship, home_teams=home_teams, home_stats=home_stats, away_teams=away_teams,
+                       away_stats=away_stats)
 
 
+def write_in_xlsx_file(championship, home_teams, home_stats, away_teams, away_stats):
+    # Check if file exist
+    if not os.path.exists("./cards_data.xlsx"):
+        workbook = Workbook()
+        ws = workbook.active
+        ws.title = "Inutile"
+        workbook.save("./cards_data.xlsx")
 
+    workbook = load_workbook("./cards_data.xlsx")
 
+    # Check if sheet exist
+    if championship not in workbook.sheetnames:
+        worksheet = workbook.create_sheet(f"{championship}")
+        worksheet["A1"] = "Equipes Domicile"
+        worksheet["B1"] = "Cartons Domicile"
+        worksheet["C1"] = "Equipes Exterieur"
+        worksheet["D1"] = "Cartons Exterieur"
+        workbook.save("./cards_data.xlsx")
 
+    worksheet = workbook[championship]
 
+    # Write Home Teams
+    for i, home_team in enumerate(home_teams):
+        worksheet[f"A{i + 2}"] = home_team
 
+    # Write Home Cards
+    for i, home_stat in enumerate(home_stats):
+        worksheet[f"B{i + 2}"] = home_stat
 
+    # Write Away Teams
+    for i, away_team in enumerate(away_teams):
+        worksheet[f"C{i + 2}"] = away_team
+
+    # Write Away Cards
+    for i, away_stat in enumerate(away_stats):
+        worksheet[f"D{i + 2}"] = away_stat
+
+    workbook.save("./cards_data.xlsx")
 
 
 if __name__ == "__main__":
-    # for key, value in LEAGUES_URLS.items():
-    #     card_link = value + CARDS
-    #     get_iframe(link=card_link, championship=key)
-    get_data()
+    get_all_cards_iframes()
 
-
+    # with open("./iframes.json", "r") as f:
+    #     content = json.load(f)
+    #
+    #     for championship, iframe in content.items():
+    #         get_data(url=iframe, championship=championship)
