@@ -36,14 +36,26 @@ def get_data(url, championship):
         home_stats.append(home_stat)
         away_stats.append(away_stat)
 
-    write_in_xlsx_file(championship=championship, home_teams=home_teams, home_stats=home_stats, away_teams=away_teams,
-                       away_stats=away_stats)
+    write_data_in_json_file(championship=championship, home_teams=home_teams, home_stats=home_stats,
+                            away_teams=away_teams, away_stats=away_stats)
 
 
-def write_data_in_json_file():
-    json_object_1 = json.dumps(iframes_yc_for, indent=4)
-    with open("./iframes_YC_for.json", "w") as f:
-        f.write(json_object_1)
+def write_data_in_json_file(championship, home_teams, home_stats, away_teams, away_stats, outfile):
+    result = {f"{championship}":
+                  {"key": "value"},
+              {"ke": "val"},
+
+              }
+
+    if not os.path.exists("./data"):
+        os.mkdir("./data")
+
+    if not os.path.exists(f"./data/{championship}"):
+        os.mkdir(f"./data/{championship}")
+
+    json_object = json.dumps(data, indent=4)
+    with open(f"./data/{championship}/{outfile}", "w") as f:
+        f.write(json_object)
 
 
 def write_in_xlsx_file(championship, home_teams, home_stats, away_teams, away_stats):
@@ -84,4 +96,3 @@ def write_in_xlsx_file(championship, home_teams, home_stats, away_teams, away_st
         worksheet[f"D{i + 2}"] = away_stat
 
     workbook.save("./cards_data.xlsx")
-

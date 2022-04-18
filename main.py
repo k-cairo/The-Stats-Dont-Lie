@@ -11,12 +11,12 @@ ALL_PATHS = [YELLOW_CARD_AGAINST_PATH, YELLOW_CARD_FOR_PATH, FULL_TIME_CORNER_AG
 
 ##### GET ALL IFRAMES (Cards & Corners) #####
 # get_iframe.get_all_cards_iframes()  OK
-get_iframe.get_all_corners_iframes()
+# get_iframe.get_all_corners_iframes() OK
 
-##### GET ALL DATAS #####
-# for path in ALL_PATHS:
-#     if os.path.exists(path):
-#         with open(path) as f:
-#             data = json.load(f)
-#             for championship, iframe in data.items():
-#                 get_data.get_data(url=iframe, championship=championship)
+##### GET ALL DATAS ##### TODO
+for path in ALL_PATHS:
+    if os.path.exists(path):
+        with open(path) as f:
+            data = json.load(f)
+            for championship, iframe in data.items():
+                get_data.get_data(url=iframe, championship=championship)
