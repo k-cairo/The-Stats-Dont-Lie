@@ -28,8 +28,20 @@ LEAGUES_URLS = {
     "Turkey": "https://www.thestatsdontlie.com/football/europe/turkey/super-lig",
     "USA": "https://www.thestatsdontlie.com/football/n-s-america/usa/mls"
 }
+
 TEAMS_IN_CHAMPIONSHIP = {
     "Australia": 12, "Austria": 12, "Belgium": 18, "Brazil": 20, "China": 16, "Croatia": 10, "Czech_Republic": 16,
     "Denmark": 12, "England1": 20, "England2": 24, "Finland": 12, "France1": 20, "France2": 20, "Germany1": 18,
     "Germany2": 18, "Holland1": 18, "Holland2": 20, "Italy": 20, "Poland": 18, "Portugal": 18, "Scotland": 12,
-    "Spain1": 20, "Spain2": 22, "Sweden": 16, "Turkey": 20, "USA": 27}
+    "Spain1": 20, "Spain2": 22, "Sweden": 16, "Turkey": 20, "USA": 27
+}
+
+##### FOR GET ALL MATCHS #####
+LIST_CHAMPIONSHIP = [
+    "Australie : A-League", "Autriche : Bundesliga", "Belgique : Pro League", "Brésil : Série A",
+    "Chine : Super League", "Croatie : 1. HNL", "République Tchèque : Ligue Tchèque", "Danemark : Superligaen",
+    "Angleterre : Premier League", "Angleterre : League Championship", "Finlande : Veikkausliiga", "France : Ligue 1",
+    "France : Ligue 2", "Allemagne : Bundesliga", "Allemagne : 2. Bundesliga", "Pays-Bas : Eredivisie",
+    "Pays-Bas : Eerste Divisie", "Italie : Serie A", "Pologne : Ekstraklasa", "Portugal : Liga Sagres",
+    "Écosse : Premier League", "Espagne : Liga BBVA", "Espagne : Liga Adelante", "Suède : Allsvenskan",
+    "Turquie : Süper Lig", "Etats-Unis : Major League Soccer "]

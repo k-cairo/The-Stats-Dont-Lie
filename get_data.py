@@ -3,7 +3,6 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
-from openpyxl import Workbook, load_workbook
 import os
 
 service = Service(executable_path=ChromeDriverManager().install())
@@ -11,7 +10,7 @@ driver = webdriver.Chrome(service=service)
 
 
 # GET DATA
-def get_data(url, championship):
+def get_data(url, championship, path_iframe):
     other_teams = []
     home_teams = []
     driver.get(url)
@@ -37,15 +36,16 @@ def get_data(url, championship):
         away_stats.append(away_stat)
 
     write_data_in_json_file(championship=championship, home_teams=home_teams, home_stats=home_stats,
-                            away_teams=away_teams, away_stats=away_stats)
+                            away_teams=away_teams, away_stats=away_stats, path_iframe=path_iframe)
 
 
-def write_data_in_json_file(championship, home_teams, home_stats, away_teams, away_stats, outfile):
-    result = {f"{championship}":
-                  {"key": "value"},
-              {"ke": "val"},
+def write_data_in_json_file(championship, home_teams, home_stats, away_teams, away_stats, path_iframe):
+    outfile_list = ["cards_for", "cards_against", "corners_for", "corner_against"]
+    outfile = ""
 
-              }
+    for file in outfile_list:
+        if file in path_iframe:
+            outfile = file
 
     if not os.path.exists("./data"):
         os.mkdir("./data")
@@ -53,46 +53,17 @@ def write_data_in_json_file(championship, home_teams, home_stats, away_teams, aw
     if not os.path.exists(f"./data/{championship}"):
         os.mkdir(f"./data/{championship}")
 
-    json_object = json.dumps(data, indent=4)
-    with open(f"./data/{championship}/{outfile}", "w") as f:
+    result = {
+        "Home Teams": [],
+        "Away Teams": []
+    }
+
+    for i, team in enumerate(home_teams):
+        result["Home Teams"].append({team: home_stats[i]})
+
+    for i, team in enumerate(away_teams):
+        result["Away Teams"].append({team: away_stats[i]})
+
+    json_object = json.dumps(result, indent=4)
+    with open(f"./data/{championship}/{championship}_{outfile}.json", "w") as f:
         f.write(json_object)
-
-
-def write_in_xlsx_file(championship, home_teams, home_stats, away_teams, away_stats):
-    # Check if file exist
-    if not os.path.exists("./cards_data.xlsx"):
-        workbook = Workbook()
-        ws = workbook.active
-        ws.title = "Inutile"
-        workbook.save("./cards_data.xlsx")
-
-    workbook = load_workbook("./cards_data.xlsx")
-
-    # Check if sheet exist
-    if championship not in workbook.sheetnames:
-        worksheet = workbook.create_sheet(f"{championship}")
-        worksheet["A1"] = "Equipes Domicile"
-        worksheet["B1"] = "Cartons Domicile"
-        worksheet["C1"] = "Equipes Exterieur"
-        worksheet["D1"] = "Cartons Exterieur"
-        workbook.save("./cards_data.xlsx")
-
-    worksheet = workbook[championship]
-
-    # Write Home Teams
-    for i, home_team in enumerate(home_teams):
-        worksheet[f"A{i + 2}"] = home_team
-
-    # Write Home Cards
-    for i, home_stat in enumerate(home_stats):
-        worksheet[f"B{i + 2}"] = home_stat
-
-    # Write Away Teams
-    for i, away_team in enumerate(away_teams):
-        worksheet[f"C{i + 2}"] = away_team
-
-    # Write Away Cards
-    for i, away_stat in enumerate(away_stats):
-        worksheet[f"D{i + 2}"] = away_stat
-
-    workbook.save("./cards_data.xlsx")
