@@ -46,5 +46,5 @@ def write_to_json_file(content):
         os.mkdir("./Liste de Matchs")
 
     json_object = json.dumps(content, indent=4)
-    with open(f"./Liste de Matchs/{today}.json", "w") as f:
+    with open(f"./liste de Matchs/{today}.json", "w") as f:
         f.write(json_object)

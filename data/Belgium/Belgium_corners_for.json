@@ -1,0 +1,114 @@
+{
+    "Home Teams": [
+        {
+            "Waregem": "6.18"
+        },
+        {
+            "KV Mechelen": "5.59"
+        },
+        {
+            "Antwerp": "5.35"
+        },
+        {
+            "Leuven": "5.12"
+        },
+        {
+            "Charleroi": "4.94"
+        },
+        {
+            "Beerschot VA": "4.88"
+        },
+        {
+            "Kortrijk": "4.88"
+        },
+        {
+            "Eupen": "4.71"
+        },
+        {
+            "Gent": "4.65"
+        },
+        {
+            "St. Truiden": "4.47"
+        },
+        {
+            "Seraing": "4.35"
+        },
+        {
+            "Oostende": "4.00"
+        },
+        {
+            "St. Liege": "3.94"
+        },
+        {
+            "Genk": "3.82"
+        },
+        {
+            "Cercle Brugge": "3.76"
+        },
+        {
+            "Royal Union SG": "3.69"
+        },
+        {
+            "Club Brugge": "3.47"
+        },
+        {
+            "Anderlecht": "3.00"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Antwerp": "6.88"
+        },
+        {
+            "KV Mechelen": "6.88"
+        },
+        {
+            "Waregem": "6.88"
+        },
+        {
+            "Kortrijk": "6.76"
+        },
+        {
+            "Beerschot VA": "6.38"
+        },
+        {
+            "Charleroi": "6.12"
+        },
+        {
+            "Oostende": "6.06"
+        },
+        {
+            "Leuven": "5.82"
+        },
+        {
+            "Eupen": "5.76"
+        },
+        {
+            "Seraing": "5.71"
+        },
+        {
+            "Club Brugge": "5.59"
+        },
+        {
+            "Cercle Brugge": "5.47"
+        },
+        {
+            "Genk": "5.29"
+        },
+        {
+            "St. Liege": "5.24"
+        },
+        {
+            "Royal Union SG": "5.12"
+        },
+        {
+            "Gent": "5.00"
+        },
+        {
+            "Anderlecht": "4.71"
+        },
+        {
+            "St. Truiden": "4.71"
+        }
+    ]
+}

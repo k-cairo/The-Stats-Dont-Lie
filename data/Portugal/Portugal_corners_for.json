@@ -1,0 +1,114 @@
+{
+    "Home Teams": [
+        {
+            "Vizela": "5.53"
+        },
+        {
+            "Estoril": "5.27"
+        },
+        {
+            "Moreirense": "5.27"
+        },
+        {
+            "FC Porto": "5.13"
+        },
+        {
+            "Benfica": "5.07"
+        },
+        {
+            "Belenenses": "5.00"
+        },
+        {
+            "Guimaraes": "5.00"
+        },
+        {
+            "Arouca": "4.73"
+        },
+        {
+            "Boavista": "4.67"
+        },
+        {
+            "Ferreira": "4.53"
+        },
+        {
+            "Portimonense": "4.53"
+        },
+        {
+            "Gil Vicente": "4.47"
+        },
+        {
+            "Braga": "4.33"
+        },
+        {
+            "Tondela": "4.27"
+        },
+        {
+            "Maritimo": "4.13"
+        },
+        {
+            "Famalicao": "4.07"
+        },
+        {
+            "Santa Clara": "4.07"
+        },
+        {
+            "Sporting": "3.87"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Moreirense": "5.60"
+        },
+        {
+            "Vizela": "5.33"
+        },
+        {
+            "Gil Vicente": "5.20"
+        },
+        {
+            "Guimaraes": "5.13"
+        },
+        {
+            "Sporting": "5.00"
+        },
+        {
+            "Benfica": "4.87"
+        },
+        {
+            "Boavista": "4.80"
+        },
+        {
+            "Estoril": "4.80"
+        },
+        {
+            "Portimonense": "4.80"
+        },
+        {
+            "Santa Clara": "4.80"
+        },
+        {
+            "Braga": "4.73"
+        },
+        {
+            "Tondela": "4.73"
+        },
+        {
+            "Ferreira": "4.53"
+        },
+        {
+            "Maritimo": "4.13"
+        },
+        {
+            "Arouca": "4.00"
+        },
+        {
+            "Belenenses": "4.00"
+        },
+        {
+            "Famalicao": "3.87"
+        },
+        {
+            "FC Porto": "3.60"
+        }
+    ]
+}

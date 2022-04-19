@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Atletico GO": "10.00"
+        },
+        {
+            "Palmeiras": "8.00"
+        },
+        {
+            "Santos": "7.00"
+        },
+        {
+            "Goias": "6.00"
+        },
+        {
+            "America MG": "5.00"
+        },
+        {
+            "Athletico-PR": "5.00"
+        },
+        {
+            "Cuiaba": "5.00"
+        },
+        {
+            "Internacional": "5.00"
+        },
+        {
+            "Sao Paulo": "5.00"
+        },
+        {
+            "Botafogo RJ": "4.00"
+        },
+        {
+            "Juventude": "4.00"
+        },
+        {
+            "Atletico-MG": "3.00"
+        },
+        {
+            "Coritiba": "3.00"
+        },
+        {
+            "Flamengo": "3.00"
+        },
+        {
+            "Bragantino": "2.00"
+        },
+        {
+            "Ceara": "2.00"
+        },
+        {
+            "Corinthians": "2.00"
+        },
+        {
+            "Avai": "1.00"
+        },
+        {
+            "Fluminense": "1.00"
+        },
+        {
+            "Fortaleza": "1.00"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Atletico GO": "13.00"
+        },
+        {
+            "Ceara": "11.00"
+        },
+        {
+            "Fortaleza": "8.00"
+        },
+        {
+            "Santos": "8.00"
+        },
+        {
+            "Avai": "7.00"
+        },
+        {
+            "Cuiaba": "7.00"
+        },
+        {
+            "Goias": "7.00"
+        },
+        {
+            "America MG": "6.00"
+        },
+        {
+            "Athletico-PR": "5.00"
+        },
+        {
+            "Bragantino": "5.00"
+        },
+        {
+            "Juventude": "5.00"
+        },
+        {
+            "Botafogo RJ": "4.00"
+        },
+        {
+            "Coritiba": "4.00"
+        },
+        {
+            "Flamengo": "4.00"
+        },
+        {
+            "Internacional": "3.00"
+        },
+        {
+            "Atletico-MG": "2.00"
+        },
+        {
+            "Corinthians": "2.00"
+        },
+        {
+            "Fluminense": "2.00"
+        },
+        {
+            "Palmeiras": "2.00"
+        },
+        {
+            "Sao Paulo": "2.00"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "AC Ajaccio": "2.94"
+        },
+        {
+            "Dijon": "2.29"
+        },
+        {
+            "Grenoble": "2.25"
+        },
+        {
+            "Le Havre": "2.24"
+        },
+        {
+            "Guingamp": "2.19"
+        },
+        {
+            "Nancy": "2.19"
+        },
+        {
+            "Sochaux": "2.13"
+        },
+        {
+            "Caen": "2.12"
+        },
+        {
+            "Pau FC": "2.12"
+        },
+        {
+            "Quevilly Rouen": "2.06"
+        },
+        {
+            "Valenciennes": "2.06"
+        },
+        {
+            "Toulouse": "1.94"
+        },
+        {
+            "Niort": "1.94"
+        },
+        {
+            "Amiens": "1.88"
+        },
+        {
+            "Rodez": "1.88"
+        },
+        {
+            "Nimes": "1.82"
+        },
+        {
+            "Bastia": "1.76"
+        },
+        {
+            "Auxerre": "1.56"
+        },
+        {
+            "Dunkerque": "1.53"
+        },
+        {
+            "Paris FC": "1.19"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Caen": "2.38"
+        },
+        {
+            "Sochaux": "2.12"
+        },
+        {
+            "Dijon": "2.06"
+        },
+        {
+            "Dunkerque": "2.06"
+        },
+        {
+            "Rodez": "2.00"
+        },
+        {
+            "Valenciennes": "2.00"
+        },
+        {
+            "Niort": "1.94"
+        },
+        {
+            "Toulouse": "1.81"
+        },
+        {
+            "Grenoble": "1.71"
+        },
+        {
+            "Nancy": "1.71"
+        },
+        {
+            "Le Havre": "1.69"
+        },
+        {
+            "Quevilly Rouen": "1.65"
+        },
+        {
+            "Amiens": "1.56"
+        },
+        {
+            "Bastia": "1.50"
+        },
+        {
+            "Nimes": "1.50"
+        },
+        {
+            "Guingamp": "1.41"
+        },
+        {
+            "AC Ajaccio": "1.35"
+        },
+        {
+            "Auxerre": "1.35"
+        },
+        {
+            "Pau FC": "1.31"
+        },
+        {
+            "Paris FC": "1.24"
+        }
+    ]
+}

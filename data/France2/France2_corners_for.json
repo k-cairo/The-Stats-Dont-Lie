@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Niort": "4.88"
+        },
+        {
+            "Quevilly Rouen": "4.75"
+        },
+        {
+            "Nancy": "4.63"
+        },
+        {
+            "Amiens": "4.53"
+        },
+        {
+            "Paris FC": "4.19"
+        },
+        {
+            "Nimes": "4.12"
+        },
+        {
+            "Le Havre": "4.06"
+        },
+        {
+            "Valenciennes": "3.94"
+        },
+        {
+            "Grenoble": "3.88"
+        },
+        {
+            "Bastia": "3.65"
+        },
+        {
+            "Pau FC": "3.65"
+        },
+        {
+            "Sochaux": "3.56"
+        },
+        {
+            "Rodez": "3.50"
+        },
+        {
+            "Auxerre": "3.44"
+        },
+        {
+            "Caen": "3.41"
+        },
+        {
+            "Dijon": "3.35"
+        },
+        {
+            "Dunkerque": "3.35"
+        },
+        {
+            "Guingamp": "3.19"
+        },
+        {
+            "Toulouse": "3.06"
+        },
+        {
+            "AC Ajaccio": "2.75"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Valenciennes": "6.06"
+        },
+        {
+            "Nimes": "6.00"
+        },
+        {
+            "Pau FC": "5.69"
+        },
+        {
+            "Niort": "5.65"
+        },
+        {
+            "Amiens": "5.38"
+        },
+        {
+            "Dunkerque": "5.31"
+        },
+        {
+            "Guingamp": "5.29"
+        },
+        {
+            "Nancy": "5.24"
+        },
+        {
+            "Quevilly Rouen": "5.06"
+        },
+        {
+            "Dijon": "4.94"
+        },
+        {
+            "Sochaux": "4.88"
+        },
+        {
+            "Auxerre": "4.71"
+        },
+        {
+            "Grenoble": "4.71"
+        },
+        {
+            "Bastia": "4.69"
+        },
+        {
+            "Le Havre": "4.69"
+        },
+        {
+            "Caen": "4.63"
+        },
+        {
+            "Toulouse": "4.44"
+        },
+        {
+            "AC Ajaccio": "4.41"
+        },
+        {
+            "Paris FC": "4.41"
+        },
+        {
+            "Rodez": "4.00"
+        }
+    ]
+}

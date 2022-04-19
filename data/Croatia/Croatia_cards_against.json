@@ -1,0 +1,66 @@
+{
+    "Home Teams": [
+        {
+            "Hajduk Split": "3.07"
+        },
+        {
+            "Istra 1961": "3.00"
+        },
+        {
+            "Osijek": "2.94"
+        },
+        {
+            "Rijeka": "2.80"
+        },
+        {
+            "Slaven Belupo": "2.47"
+        },
+        {
+            "Din. Zagreb": "2.38"
+        },
+        {
+            "Lok. Zagreb": "2.38"
+        },
+        {
+            "Gorica": "2.33"
+        },
+        {
+            "Sibenik": "2.31"
+        },
+        {
+            "Dragovoljac": "1.20"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Din. Zagreb": "2.57"
+        },
+        {
+            "Hajduk Split": "2.40"
+        },
+        {
+            "Lok. Zagreb": "2.40"
+        },
+        {
+            "Sibenik": "2.27"
+        },
+        {
+            "Rijeka": "2.19"
+        },
+        {
+            "Osijek": "2.07"
+        },
+        {
+            "Gorica": "2.06"
+        },
+        {
+            "Istra 1961": "2.00"
+        },
+        {
+            "Slaven Belupo": "1.75"
+        },
+        {
+            "Dragovoljac": "1.63"
+        }
+    ]
+}

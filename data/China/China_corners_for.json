@@ -1,0 +1,102 @@
+{
+    "Home Teams": [
+        {
+            "Hebei": "6.73"
+        },
+        {
+            "Qingdao FC": "6.09"
+        },
+        {
+            "Changchun Yatai": "5.91"
+        },
+        {
+            "Beijing Guoan": "5.27"
+        },
+        {
+            "Chongqing Liangjiang Athletic": "5.18"
+        },
+        {
+            "Guangzhou City": "4.64"
+        },
+        {
+            "Cangzhou": "4.36"
+        },
+        {
+            "Tianjin Jinmen Tiger": "4.09"
+        },
+        {
+            "Wuhan FC": "4.00"
+        },
+        {
+            "Henan Songshan Longmen": "3.91"
+        },
+        {
+            "Dalian Pro": "3.64"
+        },
+        {
+            "Shandong Taishan": "3.64"
+        },
+        {
+            "Guangzhou FC": "3.45"
+        },
+        {
+            "Shanghai Port": "3.36"
+        },
+        {
+            "Shanghai Shenhua": "3.27"
+        },
+        {
+            "Shenzhen": "3.18"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Qingdao FC": "7.36"
+        },
+        {
+            "Guangzhou City": "7.00"
+        },
+        {
+            "Wuhan FC": "5.91"
+        },
+        {
+            "Chongqing Liangjiang Athletic": "5.73"
+        },
+        {
+            "Henan Songshan Longmen": "5.36"
+        },
+        {
+            "Changchun Yatai": "4.73"
+        },
+        {
+            "Tianjin Jinmen Tiger": "4.73"
+        },
+        {
+            "Hebei": "4.64"
+        },
+        {
+            "Beijing Guoan": "4.55"
+        },
+        {
+            "Shenzhen": "4.00"
+        },
+        {
+            "Cangzhou": "3.82"
+        },
+        {
+            "Dalian Pro": "3.64"
+        },
+        {
+            "Shandong Taishan": "3.55"
+        },
+        {
+            "Shanghai Port": "3.55"
+        },
+        {
+            "Guangzhou FC": "3.45"
+        },
+        {
+            "Shanghai Shenhua": "2.64"
+        }
+    ]
+}

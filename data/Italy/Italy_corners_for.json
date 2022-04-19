@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Venezia": "6.63"
+        },
+        {
+            "Spezia": "5.69"
+        },
+        {
+            "Genoa": "5.25"
+        },
+        {
+            "Sassuolo": "5.19"
+        },
+        {
+            "Salernitana": "5.13"
+        },
+        {
+            "Cagliari": "5.12"
+        },
+        {
+            "Empoli": "4.88"
+        },
+        {
+            "Sampdoria": "4.71"
+        },
+        {
+            "Verona": "4.50"
+        },
+        {
+            "Udinese": "4.44"
+        },
+        {
+            "Torino": "4.38"
+        },
+        {
+            "Juventus": "4.35"
+        },
+        {
+            "AC Milan": "3.71"
+        },
+        {
+            "AS Roma": "3.65"
+        },
+        {
+            "Lazio": "3.44"
+        },
+        {
+            "Atalanta": "3.13"
+        },
+        {
+            "Napoli": "3.12"
+        },
+        {
+            "Inter": "2.75"
+        },
+        {
+            "Fiorentina": "2.69"
+        },
+        {
+            "Bologna": "2.63"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Salernitana": "7.31"
+        },
+        {
+            "Sampdoria": "6.88"
+        },
+        {
+            "Venezia": "6.38"
+        },
+        {
+            "Spezia": "6.12"
+        },
+        {
+            "Udinese": "5.80"
+        },
+        {
+            "Cagliari": "5.63"
+        },
+        {
+            "Juventus": "5.56"
+        },
+        {
+            "Verona": "5.29"
+        },
+        {
+            "Empoli": "5.18"
+        },
+        {
+            "Bologna": "5.13"
+        },
+        {
+            "Genoa": "5.00"
+        },
+        {
+            "Sassuolo": "5.00"
+        },
+        {
+            "AC Milan": "4.88"
+        },
+        {
+            "Torino": "4.81"
+        },
+        {
+            "Atalanta": "4.63"
+        },
+        {
+            "Inter": "4.56"
+        },
+        {
+            "Lazio": "4.41"
+        },
+        {
+            "Napoli": "4.19"
+        },
+        {
+            "Fiorentina": "4.06"
+        },
+        {
+            "AS Roma": "3.19"
+        }
+    ]
+}

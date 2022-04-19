@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Goztepe": "2.82"
+        },
+        {
+            "Galatasaray": "2.76"
+        },
+        {
+            "Trabzonspor": "2.59"
+        },
+        {
+            "Sivasspor": "2.44"
+        },
+        {
+            "Fenerbahce": "2.41"
+        },
+        {
+            "Karagumruk": "2.38"
+        },
+        {
+            "Kayserispor": "2.29"
+        },
+        {
+            "Besiktas": "2.25"
+        },
+        {
+            "Alanyaspor": "2.24"
+        },
+        {
+            "Adana Demirspor": "2.13"
+        },
+        {
+            "Rizespor": "2.12"
+        },
+        {
+            "Antalyaspor": "2.06"
+        },
+        {
+            "Altay": "2.00"
+        },
+        {
+            "Konyaspor": "1.94"
+        },
+        {
+            "Gaziantep": "1.94"
+        },
+        {
+            "Giresunspor": "1.88"
+        },
+        {
+            "Hatayspor": "1.88"
+        },
+        {
+            "Kasimpasa": "1.82"
+        },
+        {
+            "Yeni Malatyaspor": "1.81"
+        },
+        {
+            "Basaksehir": "1.31"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Antalyaspor": "3.06"
+        },
+        {
+            "Galatasaray": "2.75"
+        },
+        {
+            "Sivasspor": "2.71"
+        },
+        {
+            "Giresunspor": "2.31"
+        },
+        {
+            "Trabzonspor": "2.31"
+        },
+        {
+            "Besiktas": "2.18"
+        },
+        {
+            "Alanyaspor": "2.13"
+        },
+        {
+            "Konyaspor": "2.13"
+        },
+        {
+            "Rizespor": "2.13"
+        },
+        {
+            "Kasimpasa": "2.06"
+        },
+        {
+            "Basaksehir": "2.06"
+        },
+        {
+            "Adana Demirspor": "2.00"
+        },
+        {
+            "Goztepe": "1.94"
+        },
+        {
+            "Fenerbahce": "1.88"
+        },
+        {
+            "Altay": "1.82"
+        },
+        {
+            "Gaziantep": "1.71"
+        },
+        {
+            "Karagumruk": "1.71"
+        },
+        {
+            "Kayserispor": "1.63"
+        },
+        {
+            "Hatayspor": "1.47"
+        },
+        {
+            "Yeni Malatyaspor": "1.35"
+        }
+    ]
+}

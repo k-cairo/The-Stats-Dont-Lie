@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Wolves": "3.00"
+        },
+        {
+            "Chelsea": "2.64"
+        },
+        {
+            "Crystal Palace": "2.38"
+        },
+        {
+            "Brighton": "2.13"
+        },
+        {
+            "Leeds": "2.13"
+        },
+        {
+            "Aston Villa": "2.07"
+        },
+        {
+            "Norwich": "2.06"
+        },
+        {
+            "Tottenham": "2.06"
+        },
+        {
+            "Everton": "2.00"
+        },
+        {
+            "Arsenal": "1.94"
+        },
+        {
+            "Newcastle": "1.81"
+        },
+        {
+            "Southampton": "1.76"
+        },
+        {
+            "Leicester": "1.73"
+        },
+        {
+            "Man City": "1.67"
+        },
+        {
+            "Watford": "1.50"
+        },
+        {
+            "West Ham": "1.41"
+        },
+        {
+            "Liverpool": "1.40"
+        },
+        {
+            "Burnley": "1.27"
+        },
+        {
+            "Brentford": "1.19"
+        },
+        {
+            "Man Utd": "0.88"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Aston Villa": "2.69"
+        },
+        {
+            "Brighton": "2.38"
+        },
+        {
+            "Newcastle": "2.31"
+        },
+        {
+            "Watford": "2.00"
+        },
+        {
+            "Wolves": "2.00"
+        },
+        {
+            "Man City": "1.94"
+        },
+        {
+            "Tottenham": "1.94"
+        },
+        {
+            "Liverpool": "1.88"
+        },
+        {
+            "Southampton": "1.80"
+        },
+        {
+            "Man Utd": "1.73"
+        },
+        {
+            "Leeds": "1.69"
+        },
+        {
+            "Arsenal": "1.60"
+        },
+        {
+            "Brentford": "1.59"
+        },
+        {
+            "Everton": "1.53"
+        },
+        {
+            "Crystal Palace": "1.47"
+        },
+        {
+            "Chelsea": "1.44"
+        },
+        {
+            "Leicester": "1.40"
+        },
+        {
+            "Norwich": "1.31"
+        },
+        {
+            "West Ham": "1.13"
+        },
+        {
+            "Burnley": "1.00"
+        }
+    ]
+}

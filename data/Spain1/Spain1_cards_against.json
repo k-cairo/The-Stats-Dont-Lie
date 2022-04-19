@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Valencia": "3.38"
+        },
+        {
+            "Rayo Vallecano": "3.38"
+        },
+        {
+            "Mallorca": "3.19"
+        },
+        {
+            "Granada": "3.06"
+        },
+        {
+            "Getafe": "3.00"
+        },
+        {
+            "Espanyol": "2.81"
+        },
+        {
+            "Real Sociedad": "2.81"
+        },
+        {
+            "Celta Vigo": "2.69"
+        },
+        {
+            "Levante": "2.69"
+        },
+        {
+            "Sevilla": "2.56"
+        },
+        {
+            "Atl. Madrid": "2.50"
+        },
+        {
+            "Betis": "2.50"
+        },
+        {
+            "Villarreal": "2.50"
+        },
+        {
+            "Barcelona": "2.47"
+        },
+        {
+            "Ath. Bilbao": "2.44"
+        },
+        {
+            "Elche": "2.44"
+        },
+        {
+            "Alaves": "2.38"
+        },
+        {
+            "Cadiz": "2.31"
+        },
+        {
+            "Real Madrid": "2.06"
+        },
+        {
+            "Osasuna": "1.94"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Espanyol": "3.81"
+        },
+        {
+            "Valencia": "3.63"
+        },
+        {
+            "Getafe": "3.00"
+        },
+        {
+            "Cadiz": "2.88"
+        },
+        {
+            "Mallorca": "2.88"
+        },
+        {
+            "Ath. Bilbao": "2.81"
+        },
+        {
+            "Barcelona": "2.63"
+        },
+        {
+            "Rayo Vallecano": "2.60"
+        },
+        {
+            "Celta Vigo": "2.56"
+        },
+        {
+            "Granada": "2.50"
+        },
+        {
+            "Real Madrid": "2.44"
+        },
+        {
+            "Atl. Madrid": "2.38"
+        },
+        {
+            "Levante": "2.38"
+        },
+        {
+            "Sevilla": "2.38"
+        },
+        {
+            "Villarreal": "2.31"
+        },
+        {
+            "Real Sociedad": "2.13"
+        },
+        {
+            "Elche": "1.88"
+        },
+        {
+            "Osasuna": "1.69"
+        },
+        {
+            "Betis": "1.63"
+        },
+        {
+            "Alaves": "1.50"
+        }
+    ]
+}

@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Dordrecht": "2.50"
+        },
+        {
+            "Telstar": "1.76"
+        },
+        {
+            "Venlo": "1.72"
+        },
+        {
+            "Jong Ajax": "1.71"
+        },
+        {
+            "Den Haag": "1.56"
+        },
+        {
+            "Eindhoven": "1.56"
+        },
+        {
+            "Jong AZ": "1.50"
+        },
+        {
+            "Maastricht": "1.44"
+        },
+        {
+            "Den Bosch": "1.24"
+        },
+        {
+            "Jong PSV": "1.18"
+        },
+        {
+            "Jong Utrecht": "1.17"
+        },
+        {
+            "Oss": "1.12"
+        },
+        {
+            "Graafschap": "1.06"
+        },
+        {
+            "Breda": "1.00"
+        },
+        {
+            "Excelsior": "1.00"
+        },
+        {
+            "Almere": "0.94"
+        },
+        {
+            "Roda": "0.89"
+        },
+        {
+            "FC Volendam": "0.72"
+        },
+        {
+            "Helmond": "0.71"
+        },
+        {
+            "FC Emmen": "0.53"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Dordrecht": "2.12"
+        },
+        {
+            "Maastricht": "1.94"
+        },
+        {
+            "Den Bosch": "1.89"
+        },
+        {
+            "Den Haag": "1.83"
+        },
+        {
+            "Jong Utrecht": "1.65"
+        },
+        {
+            "Helmond": "1.56"
+        },
+        {
+            "Jong Ajax": "1.56"
+        },
+        {
+            "Eindhoven": "1.53"
+        },
+        {
+            "Oss": "1.44"
+        },
+        {
+            "Almere": "1.35"
+        },
+        {
+            "FC Volendam": "1.29"
+        },
+        {
+            "Roda": "1.29"
+        },
+        {
+            "FC Emmen": "1.28"
+        },
+        {
+            "Graafschap": "1.24"
+        },
+        {
+            "Venlo": "1.18"
+        },
+        {
+            "Breda": "1.17"
+        },
+        {
+            "Excelsior": "1.17"
+        },
+        {
+            "Telstar": "1.17"
+        },
+        {
+            "Jong PSV": "1.12"
+        },
+        {
+            "Jong AZ": "0.94"
+        }
+    ]
+}

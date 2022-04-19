@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Palmeiras": "8.00"
+        },
+        {
+            "Flamengo": "6.00"
+        },
+        {
+            "Internacional": "5.00"
+        },
+        {
+            "Juventude": "5.00"
+        },
+        {
+            "Atletico-MG": "4.00"
+        },
+        {
+            "Botafogo RJ": "4.00"
+        },
+        {
+            "Ceara": "4.00"
+        },
+        {
+            "Coritiba": "4.00"
+        },
+        {
+            "Santos": "4.00"
+        },
+        {
+            "Athletico-PR": "3.00"
+        },
+        {
+            "Bragantino": "3.00"
+        },
+        {
+            "Fortaleza": "3.00"
+        },
+        {
+            "Sao Paulo": "3.00"
+        },
+        {
+            "Atletico GO": "2.00"
+        },
+        {
+            "Avai": "2.00"
+        },
+        {
+            "Corinthians": "1.00"
+        },
+        {
+            "Cuiaba": "1.00"
+        },
+        {
+            "America MG": "0.00"
+        },
+        {
+            "Fluminense": "0.00"
+        },
+        {
+            "Goias": "0.00"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Fortaleza": "5.00"
+        },
+        {
+            "Bragantino": "4.00"
+        },
+        {
+            "Ceara": "4.00"
+        },
+        {
+            "Palmeiras": "4.00"
+        },
+        {
+            "America MG": "3.00"
+        },
+        {
+            "Flamengo": "3.00"
+        },
+        {
+            "Juventude": "3.00"
+        },
+        {
+            "Atletico-MG": "2.00"
+        },
+        {
+            "Coritiba": "2.00"
+        },
+        {
+            "Cuiaba": "2.00"
+        },
+        {
+            "Fluminense": "2.00"
+        },
+        {
+            "Goias": "2.00"
+        },
+        {
+            "Internacional": "2.00"
+        },
+        {
+            "Sao Paulo": "2.00"
+        },
+        {
+            "Athletico-PR": "1.00"
+        },
+        {
+            "Atletico GO": "1.00"
+        },
+        {
+            "Avai": "1.00"
+        },
+        {
+            "Botafogo RJ": "1.00"
+        },
+        {
+            "Corinthians": "1.00"
+        },
+        {
+            "Santos": "1.00"
+        }
+    ]
+}

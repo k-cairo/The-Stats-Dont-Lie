@@ -1,0 +1,114 @@
+{
+    "Home Teams": [
+        {
+            "Stal Mielec": "3.13"
+        },
+        {
+            "Cracovia": "2.87"
+        },
+        {
+            "Wisla Plock": "2.73"
+        },
+        {
+            "Radomiak Radom": "2.50"
+        },
+        {
+            "Rakow": "2.43"
+        },
+        {
+            "Termalica B-B.": "2.40"
+        },
+        {
+            "Slask": "2.36"
+        },
+        {
+            "Lech": "2.21"
+        },
+        {
+            "Piast": "2.21"
+        },
+        {
+            "Zaglebie": "2.14"
+        },
+        {
+            "Gornik Z.": "2.13"
+        },
+        {
+            "Wisla": "2.00"
+        },
+        {
+            "Jagiellonia": "1.93"
+        },
+        {
+            "Leczna": "1.87"
+        },
+        {
+            "Legia": "1.80"
+        },
+        {
+            "Pogon Szczecin": "1.79"
+        },
+        {
+            "Lechia": "1.71"
+        },
+        {
+            "Warta": "1.67"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Cracovia": "2.93"
+        },
+        {
+            "Pogon Szczecin": "2.87"
+        },
+        {
+            "Lech": "2.47"
+        },
+        {
+            "Slask": "2.47"
+        },
+        {
+            "Legia": "2.36"
+        },
+        {
+            "Rakow": "2.33"
+        },
+        {
+            "Lechia": "2.20"
+        },
+        {
+            "Termalica B-B.": "2.07"
+        },
+        {
+            "Wisla Plock": "2.00"
+        },
+        {
+            "Zaglebie": "2.00"
+        },
+        {
+            "Wisla": "1.93"
+        },
+        {
+            "Stal Mielec": "1.86"
+        },
+        {
+            "Gornik Z.": "1.79"
+        },
+        {
+            "Radomiak Radom": "1.73"
+        },
+        {
+            "Warta": "1.71"
+        },
+        {
+            "Piast": "1.53"
+        },
+        {
+            "Jagiellonia": "1.29"
+        },
+        {
+            "Leczna": "1.29"
+        }
+    ]
+}

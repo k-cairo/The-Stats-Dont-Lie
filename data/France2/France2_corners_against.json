@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Toulouse": "5.24"
+        },
+        {
+            "Dijon": "5.18"
+        },
+        {
+            "Grenoble": "5.06"
+        },
+        {
+            "Nimes": "4.82"
+        },
+        {
+            "Nancy": "4.69"
+        },
+        {
+            "Le Havre": "4.59"
+        },
+        {
+            "Sochaux": "4.56"
+        },
+        {
+            "Paris FC": "4.31"
+        },
+        {
+            "Amiens": "4.29"
+        },
+        {
+            "Caen": "4.29"
+        },
+        {
+            "Guingamp": "4.19"
+        },
+        {
+            "Valenciennes": "4.12"
+        },
+        {
+            "Bastia": "4.00"
+        },
+        {
+            "Pau FC": "3.88"
+        },
+        {
+            "Auxerre": "3.69"
+        },
+        {
+            "Quevilly Rouen": "3.69"
+        },
+        {
+            "Dunkerque": "3.65"
+        },
+        {
+            "Niort": "3.56"
+        },
+        {
+            "AC Ajaccio": "3.38"
+        },
+        {
+            "Rodez": "3.25"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Nimes": "5.25"
+        },
+        {
+            "Dunkerque": "5.13"
+        },
+        {
+            "Toulouse": "5.06"
+        },
+        {
+            "Valenciennes": "5.06"
+        },
+        {
+            "Nancy": "4.88"
+        },
+        {
+            "Sochaux": "4.53"
+        },
+        {
+            "Auxerre": "4.47"
+        },
+        {
+            "Pau FC": "4.38"
+        },
+        {
+            "Guingamp": "4.35"
+        },
+        {
+            "Paris FC": "4.35"
+        },
+        {
+            "Niort": "4.06"
+        },
+        {
+            "AC Ajaccio": "4.00"
+        },
+        {
+            "Quevilly Rouen": "3.94"
+        },
+        {
+            "Dijon": "3.88"
+        },
+        {
+            "Rodez": "3.82"
+        },
+        {
+            "Bastia": "3.63"
+        },
+        {
+            "Caen": "3.63"
+        },
+        {
+            "Le Havre": "3.63"
+        },
+        {
+            "Amiens": "3.44"
+        },
+        {
+            "Grenoble": "3.12"
+        }
+    ]
+}

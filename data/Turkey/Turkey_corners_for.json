@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Adana Demirspor": "5.75"
+        },
+        {
+            "Gaziantep": "5.25"
+        },
+        {
+            "Konyaspor": "4.94"
+        },
+        {
+            "Alanyaspor": "4.76"
+        },
+        {
+            "Hatayspor": "4.75"
+        },
+        {
+            "Rizespor": "4.65"
+        },
+        {
+            "Yeni Malatyaspor": "4.50"
+        },
+        {
+            "Kayserispor": "4.47"
+        },
+        {
+            "Giresunspor": "4.35"
+        },
+        {
+            "Altay": "4.31"
+        },
+        {
+            "Karagumruk": "4.13"
+        },
+        {
+            "Trabzonspor": "4.12"
+        },
+        {
+            "Galatasaray": "4.06"
+        },
+        {
+            "Goztepe": "4.06"
+        },
+        {
+            "Sivasspor": "3.81"
+        },
+        {
+            "Kasimpasa": "3.65"
+        },
+        {
+            "Basaksehir": "3.31"
+        },
+        {
+            "Antalyaspor": "3.19"
+        },
+        {
+            "Besiktas": "3.19"
+        },
+        {
+            "Fenerbahce": "3.06"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Hatayspor": "6.94"
+        },
+        {
+            "Alanyaspor": "6.50"
+        },
+        {
+            "Altay": "6.29"
+        },
+        {
+            "Kayserispor": "6.25"
+        },
+        {
+            "Adana Demirspor": "5.71"
+        },
+        {
+            "Yeni Malatyaspor": "5.71"
+        },
+        {
+            "Giresunspor": "5.50"
+        },
+        {
+            "Karagumruk": "5.47"
+        },
+        {
+            "Rizespor": "5.38"
+        },
+        {
+            "Konyaspor": "5.25"
+        },
+        {
+            "Galatasaray": "5.13"
+        },
+        {
+            "Trabzonspor": "5.13"
+        },
+        {
+            "Antalyaspor": "5.00"
+        },
+        {
+            "Kasimpasa": "4.81"
+        },
+        {
+            "Sivasspor": "4.76"
+        },
+        {
+            "Gaziantep": "4.59"
+        },
+        {
+            "Fenerbahce": "4.56"
+        },
+        {
+            "Goztepe": "4.56"
+        },
+        {
+            "Besiktas": "4.24"
+        },
+        {
+            "Basaksehir": "4.00"
+        }
+    ]
+}

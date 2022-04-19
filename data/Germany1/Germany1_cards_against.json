@@ -1,0 +1,114 @@
+{
+    "Home Teams": [
+        {
+            "Frankfurt": "2.33"
+        },
+        {
+            "Bielefeld": "2.27"
+        },
+        {
+            "Bochum": "2.27"
+        },
+        {
+            "FC Koln": "2.07"
+        },
+        {
+            "Freiburg": "2.07"
+        },
+        {
+            "Mainz": "2.07"
+        },
+        {
+            "Monchengladbach": "2.07"
+        },
+        {
+            "RB Leipzig": "2.07"
+        },
+        {
+            "Wolfsburg": "2.07"
+        },
+        {
+            "Dortmund": "1.87"
+        },
+        {
+            "Leverkusen": "1.80"
+        },
+        {
+            "Augsburg": "1.73"
+        },
+        {
+            "Stuttgart": "1.67"
+        },
+        {
+            "Hoffenheim": "1.60"
+        },
+        {
+            "Furth": "1.47"
+        },
+        {
+            "Union Berlin": "1.47"
+        },
+        {
+            "Bayern": "1.40"
+        },
+        {
+            "Hertha": "1.40"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Dortmund": "2.33"
+        },
+        {
+            "Monchengladbach": "2.27"
+        },
+        {
+            "Mainz": "2.07"
+        },
+        {
+            "RB Leipzig": "1.87"
+        },
+        {
+            "Wolfsburg": "1.87"
+        },
+        {
+            "FC Koln": "1.80"
+        },
+        {
+            "Freiburg": "1.73"
+        },
+        {
+            "Stuttgart": "1.67"
+        },
+        {
+            "Augsburg": "1.60"
+        },
+        {
+            "Bochum": "1.60"
+        },
+        {
+            "Bayern": "1.53"
+        },
+        {
+            "Union Berlin": "1.53"
+        },
+        {
+            "Furth": "1.47"
+        },
+        {
+            "Bielefeld": "1.40"
+        },
+        {
+            "Frankfurt": "1.40"
+        },
+        {
+            "Hoffenheim": "1.40"
+        },
+        {
+            "Hertha": "1.33"
+        },
+        {
+            "Leverkusen": "1.27"
+        }
+    ]
+}

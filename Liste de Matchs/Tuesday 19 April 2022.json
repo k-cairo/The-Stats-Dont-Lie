@@ -1,0 +1,37 @@
+{
+    "France : Ligue 2": [
+        "Ajaccio-Dunkerque",
+        "Amiens SC-Le Havre",
+        "Auxerre-Dijon",
+        "Grenoble-Valenciennes",
+        "Guingamp-Pau",
+        "Niort-Bastia",
+        "Paris FC-Caen",
+        "Quevilly-Rouen-N\u00eemes",
+        "Rodez-Nancy",
+        "Sochaux-Toulouse"
+    ],
+    "Angleterre : Premier League": [
+        "Liverpool-Manchester United"
+    ],
+    "Espagne : Liga BBVA": [
+        "Majorque-Alav\u00e9s",
+        "Real B\u00e9tis-Elche",
+        "Villarreal-Valence"
+    ],
+    "Angleterre : League Championship": [
+        "Fulham-Preston North End"
+    ],
+    "Pays-Bas : Eredivisie": [
+        "Vitesse Arnheim-Sparta Rotterdam"
+    ],
+    "Pays-Bas : Eerste Divisie": [
+        "ADO Den Haag-Jong PSV"
+    ],
+    "Australie : A-League": [
+        "Western United-Macarthur"
+    ],
+    "Danemark : Superligaen": [
+        "Randers-Silkeborg"
+    ]
+}

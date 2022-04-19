@@ -1,0 +1,102 @@
+{
+    "Home Teams": [
+        {
+            "Degerfors": "9.00"
+        },
+        {
+            "Hacken": "8.00"
+        },
+        {
+            "Helsingborg": "7.00"
+        },
+        {
+            "Goteborg": "6.00"
+        },
+        {
+            "Sirius": "6.00"
+        },
+        {
+            "Varnamo": "6.00"
+        },
+        {
+            "Malmo FF": "5.50"
+        },
+        {
+            "AIK Stockholm": "5.00"
+        },
+        {
+            "Norrkoping": "5.00"
+        },
+        {
+            "Djurgarden": "4.50"
+        },
+        {
+            "Kalmar": "4.50"
+        },
+        {
+            "Elfsborg": "4.00"
+        },
+        {
+            "Hammarby": "4.00"
+        },
+        {
+            "Varbergs": "4.00"
+        },
+        {
+            "Sundsvall": "3.00"
+        },
+        {
+            "Mjallby": "2.00"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Hacken": "9.00"
+        },
+        {
+            "AIK Stockholm": "7.50"
+        },
+        {
+            "Goteborg": "7.50"
+        },
+        {
+            "Helsingborg": "6.50"
+        },
+        {
+            "Sirius": "6.00"
+        },
+        {
+            "Norrkoping": "5.00"
+        },
+        {
+            "Sundsvall": "5.00"
+        },
+        {
+            "Varbergs": "5.00"
+        },
+        {
+            "Degerfors": "4.50"
+        },
+        {
+            "Elfsborg": "4.00"
+        },
+        {
+            "Kalmar": "4.00"
+        },
+        {
+            "Malmo FF": "4.00"
+        },
+        {
+            "Mjallby": "4.00"
+        },
+        {
+            "Varnamo": "3.50"
+        },
+        {
+            "Hammarby": "3.00"
+        },
+        {
+            "Djurgarden": "2.00"
+        }
+    ]
+}

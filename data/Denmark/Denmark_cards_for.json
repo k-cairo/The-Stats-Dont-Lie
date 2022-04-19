@@ -1,0 +1,78 @@
+{
+    "Home Teams": [
+        {
+            "Aarhus": "2.77"
+        },
+        {
+            "FC Copenhagen": "2.31"
+        },
+        {
+            "Aalborg": "2.23"
+        },
+        {
+            "Randers": "2.08"
+        },
+        {
+            "Vejle": "2.08"
+        },
+        {
+            "Viborg": "2.00"
+        },
+        {
+            "Sonderjyske": "1.77"
+        },
+        {
+            "Nordsjaelland": "1.69"
+        },
+        {
+            "Brondby": "1.54"
+        },
+        {
+            "Midtjylland": "1.46"
+        },
+        {
+            "Odense": "1.38"
+        },
+        {
+            "Silkeborg": "1.31"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Viborg": "2.92"
+        },
+        {
+            "Vejle": "2.77"
+        },
+        {
+            "Aarhus": "2.38"
+        },
+        {
+            "Aalborg": "2.31"
+        },
+        {
+            "FC Copenhagen": "2.15"
+        },
+        {
+            "Odense": "2.00"
+        },
+        {
+            "Sonderjyske": "2.00"
+        },
+        {
+            "Brondby": "1.92"
+        },
+        {
+            "Nordsjaelland": "1.92"
+        },
+        {
+            "Midtjylland": "1.69"
+        },
+        {
+            "Randers": "1.69"
+        },
+        {
+            "Silkeborg": "0.83"
+        }
+    ]
+}

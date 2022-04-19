@@ -40,7 +40,7 @@ def get_data(url, championship, path_iframe):
 
 
 def write_data_in_json_file(championship, home_teams, home_stats, away_teams, away_stats, path_iframe):
-    outfile_list = ["cards_for", "cards_against", "corners_for", "corner_against"]
+    outfile_list = ["cards_for", "cards_against", "corners_for", "corners_against"]
     outfile = ""
 
     for file in outfile_list:

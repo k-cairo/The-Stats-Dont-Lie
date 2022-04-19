@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Dordrecht": "6.78"
+        },
+        {
+            "Jong AZ": "5.89"
+        },
+        {
+            "FC Volendam": "5.67"
+        },
+        {
+            "Den Bosch": "5.65"
+        },
+        {
+            "Oss": "5.59"
+        },
+        {
+            "Almere": "5.50"
+        },
+        {
+            "Maastricht": "5.50"
+        },
+        {
+            "Excelsior": "5.29"
+        },
+        {
+            "Jong PSV": "5.12"
+        },
+        {
+            "Telstar": "4.94"
+        },
+        {
+            "Jong Utrecht": "4.89"
+        },
+        {
+            "Eindhoven": "4.83"
+        },
+        {
+            "Den Haag": "4.75"
+        },
+        {
+            "Breda": "4.71"
+        },
+        {
+            "Helmond": "4.71"
+        },
+        {
+            "Jong Ajax": "4.71"
+        },
+        {
+            "Venlo": "4.50"
+        },
+        {
+            "Roda": "4.17"
+        },
+        {
+            "FC Emmen": "3.76"
+        },
+        {
+            "Graafschap": "2.89"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Maastricht": "7.59"
+        },
+        {
+            "Dordrecht": "6.88"
+        },
+        {
+            "Excelsior": "6.61"
+        },
+        {
+            "Venlo": "6.41"
+        },
+        {
+            "Helmond": "6.11"
+        },
+        {
+            "Jong Utrecht": "6.00"
+        },
+        {
+            "Jong AZ": "5.82"
+        },
+        {
+            "Eindhoven": "5.59"
+        },
+        {
+            "Jong Ajax": "5.11"
+        },
+        {
+            "Breda": "5.06"
+        },
+        {
+            "FC Emmen": "4.94"
+        },
+        {
+            "Den Bosch": "4.89"
+        },
+        {
+            "Oss": "4.83"
+        },
+        {
+            "FC Volendam": "4.71"
+        },
+        {
+            "Almere": "4.65"
+        },
+        {
+            "Jong PSV": "4.65"
+        },
+        {
+            "Den Haag": "4.44"
+        },
+        {
+            "Telstar": "4.44"
+        },
+        {
+            "Roda": "4.41"
+        },
+        {
+            "Graafschap": "4.18"
+        }
+    ]
+}

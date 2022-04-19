@@ -1,0 +1,78 @@
+{
+    "Home Teams": [
+        {
+            "A. Klagenfurt": "5.85"
+        },
+        {
+            "Wolfsberger": "5.79"
+        },
+        {
+            "Ried": "5.71"
+        },
+        {
+            "Hartberg": "5.50"
+        },
+        {
+            "Rapid Vienna": "5.31"
+        },
+        {
+            "Altach": "5.29"
+        },
+        {
+            "Admira": "5.23"
+        },
+        {
+            "Austria Vienna": "4.93"
+        },
+        {
+            "Sturm Graz": "4.36"
+        },
+        {
+            "Tirol": "4.31"
+        },
+        {
+            "LASK": "2.85"
+        },
+        {
+            "Salzburg": "2.31"
+        }
+    ],
+    "Away Teams": [
+        {
+            "A. Klagenfurt": "6.86"
+        },
+        {
+            "Wolfsberger": "6.15"
+        },
+        {
+            "Ried": "6.00"
+        },
+        {
+            "Altach": "5.92"
+        },
+        {
+            "Hartberg": "5.62"
+        },
+        {
+            "Admira": "5.43"
+        },
+        {
+            "Tirol": "5.00"
+        },
+        {
+            "Rapid Vienna": "4.79"
+        },
+        {
+            "Austria Vienna": "4.77"
+        },
+        {
+            "Sturm Graz": "4.62"
+        },
+        {
+            "LASK": "3.93"
+        },
+        {
+            "Salzburg": "3.00"
+        }
+    ]
+}

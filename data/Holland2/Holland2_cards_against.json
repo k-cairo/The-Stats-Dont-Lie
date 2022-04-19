@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Almere": "2.11"
+        },
+        {
+            "Jong PSV": "1.88"
+        },
+        {
+            "Eindhoven": "1.78"
+        },
+        {
+            "Venlo": "1.78"
+        },
+        {
+            "Dordrecht": "1.67"
+        },
+        {
+            "FC Volendam": "1.61"
+        },
+        {
+            "Graafschap": "1.61"
+        },
+        {
+            "Jong Ajax": "1.59"
+        },
+        {
+            "Roda": "1.56"
+        },
+        {
+            "Excelsior": "1.53"
+        },
+        {
+            "Maastricht": "1.50"
+        },
+        {
+            "Oss": "1.35"
+        },
+        {
+            "FC Emmen": "1.29"
+        },
+        {
+            "Telstar": "1.29"
+        },
+        {
+            "Jong Utrecht": "1.28"
+        },
+        {
+            "Den Haag": "1.25"
+        },
+        {
+            "Jong AZ": "1.17"
+        },
+        {
+            "Breda": "1.00"
+        },
+        {
+            "Helmond": "0.71"
+        },
+        {
+            "Den Bosch": "0.65"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Eindhoven": "1.88"
+        },
+        {
+            "Excelsior": "1.78"
+        },
+        {
+            "Jong Ajax": "1.61"
+        },
+        {
+            "Roda": "1.59"
+        },
+        {
+            "Dordrecht": "1.53"
+        },
+        {
+            "Den Haag": "1.39"
+        },
+        {
+            "Graafschap": "1.35"
+        },
+        {
+            "FC Volendam": "1.29"
+        },
+        {
+            "Almere": "1.24"
+        },
+        {
+            "Jong Utrecht": "1.18"
+        },
+        {
+            "Maastricht": "1.18"
+        },
+        {
+            "Den Bosch": "1.17"
+        },
+        {
+            "Jong AZ": "1.12"
+        },
+        {
+            "FC Emmen": "1.11"
+        },
+        {
+            "Telstar": "1.11"
+        },
+        {
+            "Jong PSV": "1.06"
+        },
+        {
+            "Venlo": "1.06"
+        },
+        {
+            "Breda": "1.00"
+        },
+        {
+            "Helmond": "0.94"
+        },
+        {
+            "Oss": "0.78"
+        }
+    ]
+}

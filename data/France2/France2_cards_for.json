@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Valenciennes": "2.47"
+        },
+        {
+            "Guingamp": "2.25"
+        },
+        {
+            "Bastia": "2.12"
+        },
+        {
+            "Pau FC": "2.12"
+        },
+        {
+            "Nimes": "2.00"
+        },
+        {
+            "Sochaux": "2.00"
+        },
+        {
+            "Quevilly Rouen": "1.94"
+        },
+        {
+            "AC Ajaccio": "1.88"
+        },
+        {
+            "Grenoble": "1.81"
+        },
+        {
+            "Rodez": "1.81"
+        },
+        {
+            "Dijon": "1.76"
+        },
+        {
+            "Le Havre": "1.71"
+        },
+        {
+            "Toulouse": "1.59"
+        },
+        {
+            "Amiens": "1.47"
+        },
+        {
+            "Dunkerque": "1.47"
+        },
+        {
+            "Auxerre": "1.38"
+        },
+        {
+            "Nancy": "1.25"
+        },
+        {
+            "Paris FC": "1.19"
+        },
+        {
+            "Caen": "1.06"
+        },
+        {
+            "Niort": "1.00"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Amiens": "2.44"
+        },
+        {
+            "Dunkerque": "2.44"
+        },
+        {
+            "Bastia": "2.31"
+        },
+        {
+            "Guingamp": "2.29"
+        },
+        {
+            "Rodez": "2.29"
+        },
+        {
+            "Pau FC": "2.25"
+        },
+        {
+            "AC Ajaccio": "2.24"
+        },
+        {
+            "Caen": "2.19"
+        },
+        {
+            "Grenoble": "2.06"
+        },
+        {
+            "Sochaux": "2.06"
+        },
+        {
+            "Nimes": "2.00"
+        },
+        {
+            "Valenciennes": "2.00"
+        },
+        {
+            "Nancy": "1.94"
+        },
+        {
+            "Toulouse": "1.94"
+        },
+        {
+            "Dijon": "1.88"
+        },
+        {
+            "Quevilly Rouen": "1.76"
+        },
+        {
+            "Auxerre": "1.59"
+        },
+        {
+            "Niort": "1.53"
+        },
+        {
+            "Le Havre": "1.50"
+        },
+        {
+            "Paris FC": "1.41"
+        }
+    ]
+}

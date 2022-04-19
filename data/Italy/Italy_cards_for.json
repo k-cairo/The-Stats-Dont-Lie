@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "AS Roma": "3.18"
+        },
+        {
+            "Venezia": "2.94"
+        },
+        {
+            "Sampdoria": "2.59"
+        },
+        {
+            "Genoa": "2.50"
+        },
+        {
+            "Verona": "2.50"
+        },
+        {
+            "Spezia": "2.44"
+        },
+        {
+            "Udinese": "2.44"
+        },
+        {
+            "Cagliari": "2.29"
+        },
+        {
+            "Sassuolo": "2.19"
+        },
+        {
+            "Juventus": "2.12"
+        },
+        {
+            "Bologna": "2.06"
+        },
+        {
+            "Torino": "1.94"
+        },
+        {
+            "Salernitana": "1.93"
+        },
+        {
+            "Atalanta": "1.81"
+        },
+        {
+            "Empoli": "1.81"
+        },
+        {
+            "Fiorentina": "1.81"
+        },
+        {
+            "Lazio": "1.81"
+        },
+        {
+            "Napoli": "1.59"
+        },
+        {
+            "Inter": "1.56"
+        },
+        {
+            "AC Milan": "1.47"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Bologna": "3.13"
+        },
+        {
+            "Torino": "3.06"
+        },
+        {
+            "AS Roma": "3.00"
+        },
+        {
+            "Cagliari": "3.00"
+        },
+        {
+            "Lazio": "2.94"
+        },
+        {
+            "Salernitana": "2.94"
+        },
+        {
+            "Venezia": "2.88"
+        },
+        {
+            "Empoli": "2.71"
+        },
+        {
+            "Sassuolo": "2.71"
+        },
+        {
+            "Udinese": "2.67"
+        },
+        {
+            "Verona": "2.65"
+        },
+        {
+            "Atalanta": "2.63"
+        },
+        {
+            "Fiorentina": "2.63"
+        },
+        {
+            "AC Milan": "2.56"
+        },
+        {
+            "Genoa": "2.47"
+        },
+        {
+            "Sampdoria": "2.38"
+        },
+        {
+            "Inter": "2.31"
+        },
+        {
+            "Spezia": "2.29"
+        },
+        {
+            "Napoli": "1.81"
+        },
+        {
+            "Juventus": "1.69"
+        }
+    ]
+}

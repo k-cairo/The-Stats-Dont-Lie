@@ -1,0 +1,138 @@
+{
+    "Home Teams": [
+        {
+            "Fuenlabrada": "3.22"
+        },
+        {
+            "Las Palmas": "2.83"
+        },
+        {
+            "Malaga": "2.61"
+        },
+        {
+            "Amorebieta": "2.50"
+        },
+        {
+            "Huesca": "2.47"
+        },
+        {
+            "Gijon": "2.33"
+        },
+        {
+            "R. Oviedo": "2.28"
+        },
+        {
+            "Valladolid": "2.28"
+        },
+        {
+            "Zaragoza": "2.28"
+        },
+        {
+            "Alcorcon": "2.24"
+        },
+        {
+            "Lugo": "2.24"
+        },
+        {
+            "Ponferradina": "2.22"
+        },
+        {
+            "UD Ibiza": "2.17"
+        },
+        {
+            "Mirandes": "2.11"
+        },
+        {
+            "Tenerife": "2.11"
+        },
+        {
+            "Leganes": "2.06"
+        },
+        {
+            "Girona": "2.00"
+        },
+        {
+            "Cartagena": "1.94"
+        },
+        {
+            "Eibar": "1.94"
+        },
+        {
+            "R. Sociedad B": "1.89"
+        },
+        {
+            "Almeria": "1.78"
+        },
+        {
+            "Burgos CF": "1.78"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Cartagena": "3.17"
+        },
+        {
+            "Fuenlabrada": "3.00"
+        },
+        {
+            "Huesca": "3.00"
+        },
+        {
+            "Girona": "2.82"
+        },
+        {
+            "Malaga": "2.78"
+        },
+        {
+            "Leganes": "2.67"
+        },
+        {
+            "Almeria": "2.61"
+        },
+        {
+            "Las Palmas": "2.61"
+        },
+        {
+            "Lugo": "2.58"
+        },
+        {
+            "Gijon": "2.50"
+        },
+        {
+            "R. Oviedo": "2.50"
+        },
+        {
+            "Tenerife": "2.44"
+        },
+        {
+            "Eibar": "2.33"
+        },
+        {
+            "Ponferradina": "2.33"
+        },
+        {
+            "Zaragoza": "2.33"
+        },
+        {
+            "Alcorcon": "2.26"
+        },
+        {
+            "Mirandes": "2.22"
+        },
+        {
+            "Valladolid": "2.17"
+        },
+        {
+            "UD Ibiza": "2.00"
+        },
+        {
+            "Burgos CF": "1.94"
+        },
+        {
+            "Amorebieta": "1.83"
+        },
+        {
+            "R. Sociedad B": "1.83"
+        }
+    ]
+}

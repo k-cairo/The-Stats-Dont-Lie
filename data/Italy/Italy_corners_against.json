@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Empoli": "5.69"
+        },
+        {
+            "Inter": "5.31"
+        },
+        {
+            "Sassuolo": "5.25"
+        },
+        {
+            "Napoli": "5.18"
+        },
+        {
+            "Sampdoria": "4.94"
+        },
+        {
+            "Lazio": "4.94"
+        },
+        {
+            "AS Roma": "4.82"
+        },
+        {
+            "Genoa": "4.75"
+        },
+        {
+            "Cagliari": "4.71"
+        },
+        {
+            "Salernitana": "4.67"
+        },
+        {
+            "Udinese": "4.56"
+        },
+        {
+            "Spezia": "4.50"
+        },
+        {
+            "Atalanta": "4.44"
+        },
+        {
+            "Venezia": "4.44"
+        },
+        {
+            "Bologna": "4.25"
+        },
+        {
+            "Verona": "4.19"
+        },
+        {
+            "Juventus": "4.18"
+        },
+        {
+            "Torino": "3.75"
+        },
+        {
+            "Fiorentina": "3.63"
+        },
+        {
+            "AC Milan": "3.47"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Udinese": "5.93"
+        },
+        {
+            "Spezia": "5.47"
+        },
+        {
+            "Juventus": "5.25"
+        },
+        {
+            "Salernitana": "5.25"
+        },
+        {
+            "AC Milan": "4.94"
+        },
+        {
+            "Inter": "4.88"
+        },
+        {
+            "Torino": "4.88"
+        },
+        {
+            "Fiorentina": "4.75"
+        },
+        {
+            "Venezia": "4.75"
+        },
+        {
+            "AS Roma": "4.50"
+        },
+        {
+            "Sampdoria": "4.50"
+        },
+        {
+            "Empoli": "4.47"
+        },
+        {
+            "Sassuolo": "4.41"
+        },
+        {
+            "Cagliari": "4.31"
+        },
+        {
+            "Atalanta": "4.25"
+        },
+        {
+            "Napoli": "4.25"
+        },
+        {
+            "Bologna": "4.13"
+        },
+        {
+            "Verona": "4.00"
+        },
+        {
+            "Lazio": "3.59"
+        },
+        {
+            "Genoa": "3.35"
+        }
+    ]
+}

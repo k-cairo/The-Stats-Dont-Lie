@@ -1,0 +1,78 @@
+{
+    "Home Teams": [
+        {
+            "Rangers": "2.94"
+        },
+        {
+            "Hearts": "2.82"
+        },
+        {
+            "Aberdeen": "2.75"
+        },
+        {
+            "St. Mirren": "2.38"
+        },
+        {
+            "Hibernian": "2.18"
+        },
+        {
+            "Livingston": "2.13"
+        },
+        {
+            "Dundee FC": "2.12"
+        },
+        {
+            "Dundee Utd": "2.06"
+        },
+        {
+            "St. Johnstone": "2.00"
+        },
+        {
+            "Motherwell": "1.82"
+        },
+        {
+            "Ross County": "1.75"
+        },
+        {
+            "Celtic": "1.63"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Aberdeen": "2.88"
+        },
+        {
+            "Hibernian": "2.88"
+        },
+        {
+            "Rangers": "2.63"
+        },
+        {
+            "Hearts": "2.44"
+        },
+        {
+            "Celtic": "2.12"
+        },
+        {
+            "St. Johnstone": "1.88"
+        },
+        {
+            "Ross County": "1.71"
+        },
+        {
+            "Motherwell": "1.56"
+        },
+        {
+            "Dundee Utd": "1.41"
+        },
+        {
+            "Dundee FC": "1.38"
+        },
+        {
+            "St. Mirren": "1.35"
+        },
+        {
+            "Livingston": "0.94"
+        }
+    ]
+}

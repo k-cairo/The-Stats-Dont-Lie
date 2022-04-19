@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Ath. Bilbao": "5.13"
+        },
+        {
+            "Espanyol": "4.88"
+        },
+        {
+            "Real Madrid": "4.88"
+        },
+        {
+            "Villarreal": "4.75"
+        },
+        {
+            "Barcelona": "4.73"
+        },
+        {
+            "Betis": "4.69"
+        },
+        {
+            "Elche": "4.56"
+        },
+        {
+            "Osasuna": "4.56"
+        },
+        {
+            "Sevilla": "4.50"
+        },
+        {
+            "Atl. Madrid": "4.38"
+        },
+        {
+            "Cadiz": "4.38"
+        },
+        {
+            "Getafe": "4.19"
+        },
+        {
+            "Valencia": "4.19"
+        },
+        {
+            "Rayo Vallecano": "4.13"
+        },
+        {
+            "Alaves": "4.06"
+        },
+        {
+            "Celta Vigo": "4.00"
+        },
+        {
+            "Levante": "3.88"
+        },
+        {
+            "Mallorca": "3.69"
+        },
+        {
+            "Granada": "3.44"
+        },
+        {
+            "Real Sociedad": "3.19"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Villarreal": "5.31"
+        },
+        {
+            "Real Sociedad": "4.88"
+        },
+        {
+            "Ath. Bilbao": "4.81"
+        },
+        {
+            "Betis": "4.75"
+        },
+        {
+            "Osasuna": "4.63"
+        },
+        {
+            "Espanyol": "4.56"
+        },
+        {
+            "Granada": "4.50"
+        },
+        {
+            "Alaves": "4.44"
+        },
+        {
+            "Elche": "4.44"
+        },
+        {
+            "Mallorca": "4.44"
+        },
+        {
+            "Barcelona": "4.38"
+        },
+        {
+            "Real Madrid": "4.31"
+        },
+        {
+            "Valencia": "4.31"
+        },
+        {
+            "Levante": "4.25"
+        },
+        {
+            "Cadiz": "4.19"
+        },
+        {
+            "Rayo Vallecano": "3.80"
+        },
+        {
+            "Sevilla": "3.69"
+        },
+        {
+            "Atl. Madrid": "3.56"
+        },
+        {
+            "Getafe": "3.56"
+        },
+        {
+            "Celta Vigo": "3.31"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "Home Teams": [
+        {
+            "Augsburg": "5.53"
+        },
+        {
+            "Hoffenheim": "5.47"
+        },
+        {
+            "Hertha": "5.13"
+        },
+        {
+            "Frankfurt": "5.07"
+        },
+        {
+            "Freiburg": "4.87"
+        },
+        {
+            "Wolfsburg": "4.73"
+        },
+        {
+            "Bielefeld": "4.67"
+        },
+        {
+            "FC Koln": "4.67"
+        },
+        {
+            "Furth": "4.67"
+        },
+        {
+            "Leverkusen": "4.67"
+        },
+        {
+            "Stuttgart": "4.67"
+        },
+        {
+            "Bayern": "4.47"
+        },
+        {
+            "Mainz": "4.27"
+        },
+        {
+            "Dortmund": "4.13"
+        },
+        {
+            "Monchengladbach": "3.87"
+        },
+        {
+            "Bochum": "3.67"
+        },
+        {
+            "Union Berlin": "3.60"
+        },
+        {
+            "RB Leipzig": "3.47"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Bielefeld": "6.00"
+        },
+        {
+            "Bayern": "5.60"
+        },
+        {
+            "Monchengladbach": "5.40"
+        },
+        {
+            "Mainz": "5.00"
+        },
+        {
+            "Bochum": "4.93"
+        },
+        {
+            "Frankfurt": "4.60"
+        },
+        {
+            "Dortmund": "4.53"
+        },
+        {
+            "Freiburg": "4.53"
+        },
+        {
+            "Wolfsburg": "4.53"
+        },
+        {
+            "FC Koln": "4.47"
+        },
+        {
+            "Stuttgart": "4.33"
+        },
+        {
+            "Hertha": "4.13"
+        },
+        {
+            "Leverkusen": "4.13"
+        },
+        {
+            "Union Berlin": "4.07"
+        },
+        {
+            "RB Leipzig": "3.93"
+        },
+        {
+            "Augsburg": "3.80"
+        },
+        {
+            "Furth": "3.80"
+        },
+        {
+            "Hoffenheim": "3.80"
+        }
+    ]
+}

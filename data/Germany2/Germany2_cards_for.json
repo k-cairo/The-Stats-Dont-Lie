@@ -1,0 +1,114 @@
+{
+    "Home Teams": [
+        {
+            "Sandhausen": "2.80"
+        },
+        {
+            "Ingolstadt": "2.67"
+        },
+        {
+            "Rostock": "2.53"
+        },
+        {
+            "Darmstadt": "2.27"
+        },
+        {
+            "Paderborn": "2.13"
+        },
+        {
+            "Karlsruher": "2.07"
+        },
+        {
+            "Dusseldorf": "2.00"
+        },
+        {
+            "Hannover": "1.93"
+        },
+        {
+            "Kiel": "1.80"
+        },
+        {
+            "Schalke": "1.80"
+        },
+        {
+            "Aue": "1.73"
+        },
+        {
+            "Nurnberg": "1.73"
+        },
+        {
+            "Hamburger SV": "1.69"
+        },
+        {
+            "Dresden": "1.67"
+        },
+        {
+            "Bremen": "1.60"
+        },
+        {
+            "Heidenheim": "1.60"
+        },
+        {
+            "Regensburg": "1.60"
+        },
+        {
+            "St. Pauli": "1.14"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Rostock": "2.67"
+        },
+        {
+            "Sandhausen": "2.53"
+        },
+        {
+            "Aue": "2.47"
+        },
+        {
+            "Darmstadt": "2.40"
+        },
+        {
+            "Bremen": "2.33"
+        },
+        {
+            "Dresden": "2.33"
+        },
+        {
+            "Hamburger SV": "2.29"
+        },
+        {
+            "Ingolstadt": "2.13"
+        },
+        {
+            "Schalke": "2.07"
+        },
+        {
+            "Nurnberg": "2.00"
+        },
+        {
+            "Regensburg": "2.00"
+        },
+        {
+            "Kiel": "1.93"
+        },
+        {
+            "Karlsruher": "1.87"
+        },
+        {
+            "Dusseldorf": "1.80"
+        },
+        {
+            "St. Pauli": "1.75"
+        },
+        {
+            "Hannover": "1.67"
+        },
+        {
+            "Heidenheim": "1.67"
+        },
+        {
+            "Paderborn": "1.60"
+        }
+    ]
+}

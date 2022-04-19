@@ -1,0 +1,126 @@
+{
+    "Home Teams": [
+        {
+            "Fiorentina": "3.38"
+        },
+        {
+            "Udinese": "3.00"
+        },
+        {
+            "Napoli": "2.94"
+        },
+        {
+            "Torino": "2.94"
+        },
+        {
+            "Juventus": "2.88"
+        },
+        {
+            "Atalanta": "2.88"
+        },
+        {
+            "Lazio": "2.88"
+        },
+        {
+            "AS Roma": "2.82"
+        },
+        {
+            "Salernitana": "2.80"
+        },
+        {
+            "AC Milan": "2.71"
+        },
+        {
+            "Bologna": "2.69"
+        },
+        {
+            "Sampdoria": "2.47"
+        },
+        {
+            "Genoa": "2.44"
+        },
+        {
+            "Inter": "2.38"
+        },
+        {
+            "Venezia": "2.38"
+        },
+        {
+            "Empoli": "2.31"
+        },
+        {
+            "Spezia": "2.25"
+        },
+        {
+            "Sassuolo": "2.19"
+        },
+        {
+            "Cagliari": "2.18"
+        },
+        {
+            "Verona": "1.94"
+        }
+    ],
+    "Away Teams": [
+        {
+            "AS Roma": "2.81"
+        },
+        {
+            "Udinese": "2.80"
+        },
+        {
+            "Napoli": "2.50"
+        },
+        {
+            "Atalanta": "2.44"
+        },
+        {
+            "Sassuolo": "2.41"
+        },
+        {
+            "Spezia": "2.29"
+        },
+        {
+            "Fiorentina": "2.19"
+        },
+        {
+            "Inter": "2.19"
+        },
+        {
+            "Salernitana": "2.19"
+        },
+        {
+            "Lazio": "2.18"
+        },
+        {
+            "Juventus": "2.13"
+        },
+        {
+            "Torino": "2.13"
+        },
+        {
+            "Empoli": "2.12"
+        },
+        {
+            "Sampdoria": "2.06"
+        },
+        {
+            "Genoa": "2.00"
+        },
+        {
+            "AC Milan": "1.94"
+        },
+        {
+            "Verona": "1.88"
+        },
+        {
+            "Bologna": "1.81"
+        },
+        {
+            "Venezia": "1.56"
+        },
+        {
+            "Cagliari": "1.44"
+        }
+    ]
+}

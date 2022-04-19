@@ -1,0 +1,138 @@
+{
+    "Home Teams": [
+        {
+            "Fuenlabrada": "5.67"
+        },
+        {
+            "Lugo": "5.06"
+        },
+        {
+            "Burgos CF": "4.61"
+        },
+        {
+            "Amorebieta": "4.50"
+        },
+        {
+            "Eibar": "4.50"
+        },
+        {
+            "Mirandes": "4.44"
+        },
+        {
+            "Tenerife": "4.39"
+        },
+        {
+            "Ponferradina": "4.22"
+        },
+        {
+            "Almeria": "4.17"
+        },
+        {
+            "Gijon": "4.11"
+        },
+        {
+            "R. Oviedo": "4.11"
+        },
+        {
+            "Huesca": "4.05"
+        },
+        {
+            "Malaga": "3.83"
+        },
+        {
+            "Cartagena": "3.78"
+        },
+        {
+            "Alcorcon": "3.76"
+        },
+        {
+            "UD Ibiza": "3.50"
+        },
+        {
+            "R. Sociedad B": "3.44"
+        },
+        {
+            "Leganes": "3.28"
+        },
+        {
+            "Zaragoza": "3.28"
+        },
+        {
+            "Las Palmas": "3.06"
+        },
+        {
+            "Valladolid": "3.00"
+        },
+        {
+            "Girona": "2.95"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Gijon": "6.94"
+        },
+        {
+            "Amorebieta": "6.28"
+        },
+        {
+            "Malaga": "5.78"
+        },
+        {
+            "Burgos CF": "5.67"
+        },
+        {
+            "Ponferradina": "5.67"
+        },
+        {
+            "Lugo": "5.47"
+        },
+        {
+            "Alcorcon": "5.37"
+        },
+        {
+            "Huesca": "5.35"
+        },
+        {
+            "Fuenlabrada": "5.33"
+        },
+        {
+            "Zaragoza": "5.22"
+        },
+        {
+            "R. Sociedad B": "5.11"
+        },
+        {
+            "Valladolid": "5.00"
+        },
+        {
+            "Tenerife": "4.94"
+        },
+        {
+            "UD Ibiza": "4.94"
+        },
+        {
+            "Eibar": "4.83"
+        },
+        {
+            "Mirandes": "4.78"
+        },
+        {
+            "R. Oviedo": "4.78"
+        },
+        {
+            "Girona": "4.76"
+        },
+        {
+            "Cartagena": "4.67"
+        },
+        {
+            "Almeria": "4.28"
+        },
+        {
+            "Leganes": "4.11"
+        },
+        {
+            "Las Palmas": "3.83"
+        }
+    ]
+}

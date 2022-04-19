@@ -1,0 +1,150 @@
+{
+    "Home Teams": [
+        {
+            "Fulham": "5.40"
+        },
+        {
+            "QPR": "5.27"
+        },
+        {
+            "Hull": "5.10"
+        },
+        {
+            "Blackpool": "5.09"
+        },
+        {
+            "Stoke": "4.86"
+        },
+        {
+            "Blackburn": "4.73"
+        },
+        {
+            "Birmingham": "4.67"
+        },
+        {
+            "Coventry": "4.64"
+        },
+        {
+            "Nottm Forest": "4.64"
+        },
+        {
+            "West Brom": "4.62"
+        },
+        {
+            "Derby": "4.57"
+        },
+        {
+            "Sheff Utd": "4.57"
+        },
+        {
+            "Middlesbrough": "4.52"
+        },
+        {
+            "Bristol City": "4.50"
+        },
+        {
+            "Millwall": "4.41"
+        },
+        {
+            "Luton": "4.38"
+        },
+        {
+            "Reading": "4.32"
+        },
+        {
+            "Cardiff": "4.27"
+        },
+        {
+            "Peterborough": "4.19"
+        },
+        {
+            "Huddersfield": "4.10"
+        },
+        {
+            "Preston": "4.10"
+        },
+        {
+            "Barnsley": "4.05"
+        },
+        {
+            "Bournemouth": "3.90"
+        },
+        {
+            "Swansea": "3.45"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Bristol City": "6.29"
+        },
+        {
+            "Coventry": "5.57"
+        },
+        {
+            "Birmingham": "5.23"
+        },
+        {
+            "Middlesbrough": "4.86"
+        },
+        {
+            "Luton": "4.82"
+        },
+        {
+            "Stoke": "4.82"
+        },
+        {
+            "Barnsley": "4.81"
+        },
+        {
+            "Sheff Utd": "4.77"
+        },
+        {
+            "Bournemouth": "4.62"
+        },
+        {
+            "Hull": "4.59"
+        },
+        {
+            "Peterborough": "4.59"
+        },
+        {
+            "Nottm Forest": "4.53"
+        },
+        {
+            "Huddersfield": "4.50"
+        },
+        {
+            "QPR": "4.43"
+        },
+        {
+            "Fulham": "4.29"
+        },
+        {
+            "Swansea": "4.27"
+        },
+        {
+            "Preston": "4.24"
+        },
+        {
+            "Millwall": "4.19"
+        },
+        {
+            "Cardiff": "4.15"
+        },
+        {
+            "Derby": "4.00"
+        },
+        {
+            "West Brom": "3.95"
+        },
+        {
+            "Blackpool": "3.75"
+        },
+        {
+            "Blackburn": "3.67"
+        },
+        {
+            "Reading": "3.43"
+        }
+    ]
+}

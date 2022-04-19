@@ -1,0 +1,114 @@
+{
+    "Home Teams": [
+        {
+            "Vitesse": "2.29"
+        },
+        {
+            "Heracles": "2.00"
+        },
+        {
+            "Groningen": "1.71"
+        },
+        {
+            "Sparta Rotterdam": "1.60"
+        },
+        {
+            "Waalwijk": "1.57"
+        },
+        {
+            "Zwolle": "1.53"
+        },
+        {
+            "Twente": "1.50"
+        },
+        {
+            "Heerenveen": "1.47"
+        },
+        {
+            "Sittard": "1.43"
+        },
+        {
+            "Utrecht": "1.40"
+        },
+        {
+            "Alkmaar": "1.36"
+        },
+        {
+            "Nijmegen": "1.29"
+        },
+        {
+            "G.A. Eagles": "1.27"
+        },
+        {
+            "Feyenoord": "1.21"
+        },
+        {
+            "Ajax": "1.07"
+        },
+        {
+            "PSV": "1.07"
+        },
+        {
+            "Cambuur": "1.00"
+        },
+        {
+            "Willem II": "0.93"
+        }
+    ],
+    "Away Teams": [
+        {
+            "Sittard": "2.07"
+        },
+        {
+            "Cambuur": "2.00"
+        },
+        {
+            "Utrecht": "2.00"
+        },
+        {
+            "Alkmaar": "1.87"
+        },
+        {
+            "Waalwijk": "1.87"
+        },
+        {
+            "Vitesse": "1.79"
+        },
+        {
+            "Sparta Rotterdam": "1.77"
+        },
+        {
+            "Groningen": "1.73"
+        },
+        {
+            "Zwolle": "1.71"
+        },
+        {
+            "PSV": "1.64"
+        },
+        {
+            "Nijmegen": "1.60"
+        },
+        {
+            "Twente": "1.60"
+        },
+        {
+            "Willem II": "1.60"
+        },
+        {
+            "Heracles": "1.57"
+        },
+        {
+            "G.A. Eagles": "1.36"
+        },
+        {
+            "Feyenoord": "1.13"
+        },
+        {
+            "Ajax": "1.00"
+        },
+        {
+            "Heerenveen": "0.93"
+        }
+    ]
+}
