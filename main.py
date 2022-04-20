@@ -26,7 +26,6 @@ get_iframes.driver.close()
 get_data.driver.close()
 
 ##### GET ALL MATCHS ##### # OK
-get_matchs.get_all_matchs()
-get_matchs.driver.close()
+get_matchs.get_user_date()
 
 ##### SHOW FORMAT DATA ##### TODO

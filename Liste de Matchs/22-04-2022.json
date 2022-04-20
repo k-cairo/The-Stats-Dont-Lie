@@ -1,0 +1,60 @@
+{
+    "France2": [
+        "Bastia-Paris FC",
+        "Dijon-Guingamp",
+        "Dunkerque-Amiens",
+        "Le Havre-Grenoble",
+        "Nancy-Quevilly Rouen-Rouen",
+        "Nimes-Rodez",
+        "Pau FC-Sochaux",
+        "Valenciennes-AC Ajaccio"
+    ],
+    "Germany1": [
+        "Wolfsburg-Mainz"
+    ],
+    "Portugal": [
+        "Vizela-Arouca"
+    ],
+    "England2": [
+        "Huddersfield-Barnsley"
+    ],
+    "Spain2": [
+        "Tenerife-Huesca"
+    ],
+    "Germany2": [
+        "Dusseldorf-Dresden",
+        "Karlsruher-Ingolstadt"
+    ],
+    "Turkey": [
+        "Rizespor-Fenerbahce"
+    ],
+    "Holland1": [
+        "Twente-Sparta Rotterdam"
+    ],
+    "Holland2": [
+        "Den Bosch-FC Volendam",
+        "FC Emmen-Roda",
+        "Excelsior-Jong AZ",
+        "Helmond Sport-De Graafschap",
+        "NAC Breda-Dordrecht",
+        "TOP Oss-FC Omniworld",
+        "Telstar-FC Eindhoven"
+    ],
+    "Australia": [
+        "Macarthur-Melbourne Victory"
+    ],
+    "Croatia": [
+        "Hrvatski Dragovoljac-\u0160ibenik"
+    ],
+    "Denmark": [
+        "S\u00f8nderjyskE-Vejle-Kolding"
+    ],
+    "Finland": [
+        "Haka-HIFK",
+        "Lahti-KuPS"
+    ],
+    "Poland": [
+        "Radomiak Radom-MKS Cracovia Cracovie",
+        "Zaglebie Lubin SSA-KS G\u00f3rnik Zabrze"
+    ]
+}

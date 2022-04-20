@@ -1,0 +1,55 @@
+{
+    "France1": [
+        "Bordeaux-St. Etienne",
+        "Lorient-Metz",
+        "Monaco-Nice",
+        "Reims-Lille",
+        "Troyes-Clermont",
+        "Angers-PSG",
+        "Brest-Lyon",
+        "Lens-Montpellier",
+        "Marseille-Nantes",
+        "Strasbourg-Rennes"
+    ],
+    "England1": [
+        "Everton-Leicester",
+        "Chelsea-Arsenal",
+        "Newcastle-Crystal Palace",
+        "Man City-Brighton"
+    ],
+    "Spain1": [
+        "Atl. Madrid-Granada",
+        "Celta Vigo-Getafe",
+        "Osasuna-Real Madrid"
+    ],
+    "Italy": [
+        "Udinese-Salernitana"
+    ],
+    "Australia": [
+        "WS Wanderers-Newcastle Jets"
+    ],
+    "Croatia": [
+        "Hajduk Split-Din. Zagreb"
+    ],
+    "Poland": [
+        "Lech-Leczna",
+        "Pogon Szczecin-Rakow"
+    ],
+    "Czech_Republic": [
+        "Bohemians-Hradec Kralove",
+        "Sigma Olomouc-Sparta Prague",
+        "Mlada Boleslav-Plzen",
+        "Teplice-Ceske Budejovice",
+        "Karvina-Pardubice",
+        "Slavia Prague-Zlin",
+        "Ostrava-Jablonec",
+        "Slovacko-Liberec"
+    ],
+    "Sweden": [
+        "AIK Stockholm-Varbergs",
+        "Goteborg-Djurgarden",
+        "Norrkoping-Hacken",
+        "Mjallby-Sirius",
+        "Sundsvall-Kalmar"
+    ]
+}

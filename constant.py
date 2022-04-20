@@ -45,3 +45,33 @@ LIST_CHAMPIONSHIP = [
     "Pays-Bas : Eerste Divisie", "Italie : Serie A", "Pologne : Ekstraklasa", "Portugal : Liga Sagres",
     "Écosse : Premier League", "Espagne : Liga BBVA", "Espagne : Liga Adelante", "Suède : Allsvenskan",
     "Turquie : Süper Lig", "Etats-Unis : Major League Soccer "]
+
+#### CONVERSION #####
+CONVERSION_LIST = {
+    "Australie : A-League": "Australia",
+    "Autriche : Bundesliga": "Austria",
+    "Belgique : Pro League": "Belgium",
+    "Brésil : Série A": "Brazil",
+    "Chine : Super League": "China",
+    "Croatie : 1. HNL": "Croatia",
+    "République Tchèque : Ligue Tchèque": "Czech_Republic",
+    "Danemark : Superligaen": "Denmark",
+    "Angleterre : Premier League": "England1",
+    "Angleterre : League Championship": "England2",
+    "Finlande : Veikkausliiga": "Finland",
+    "France : Ligue 1": "France1",
+    "France : Ligue 2": "France2",
+    "Allemagne : Bundesliga": "Germany1",
+    "Allemagne : 2. Bundesliga": "Germany2",
+    "Pays-Bas : Eredivisie": "Holland1",
+    "Pays-Bas : Eerste Divisie": "Holland2",
+    "Italie : Serie A": "Italy",
+    "Pologne : Ekstraklasa": "Poland",
+    "Portugal : Liga Sagres": "Portugal",
+    "Écosse : Premier League": "Scotland",
+    "Espagne : Liga BBVA": "Spain1",
+    "Espagne : Liga Adelante": "Spain2",
+    "Suède : Allsvenskan": "Sweden",
+    "Turquie : Süper Lig": "Turkey",
+    "Etats-Unis : Major League Soccer": "USA"
+}
