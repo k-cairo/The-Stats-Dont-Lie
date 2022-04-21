@@ -19,13 +19,13 @@
             "Sydney FC": "2.08"
         },
         {
+            "Western United": "2.08"
+        },
+        {
             "Melbourne Victory": "2.00"
         },
         {
             "Melbourne City": "1.92"
-        },
-        {
-            "Western United": "1.92"
         },
         {
             "Perth Glory": "1.82"
@@ -34,12 +34,12 @@
             "Wellington Phoenix": "1.67"
         },
         {
-            "WS Wanderers": "0.91"
+            "WS Wanderers": "1.17"
         }
     ],
     "Away Teams": [
         {
-            "Newcastle Jets": "3.20"
+            "Newcastle Jets": "3.18"
         },
         {
             "Melbourne Victory": "2.60"
@@ -51,7 +51,7 @@
             "Central Coast Mariners": "2.00"
         },
         {
-            "Macarthur FC": "1.92"
+            "Macarthur FC": "2.00"
         },
         {
             "Wellington Phoenix": "1.90"

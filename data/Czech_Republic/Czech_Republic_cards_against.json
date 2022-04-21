@@ -4,37 +4,37 @@
             "Sparta Prague": "3.13"
         },
         {
-            "Slavia Prague": "2.86"
-        },
-        {
-            "Slovacko": "2.79"
+            "Slovacko": "2.80"
         },
         {
             "Liberec": "2.73"
         },
         {
-            "Ostrava": "2.43"
+            "Slavia Prague": "2.73"
+        },
+        {
+            "Ostrava": "2.53"
         },
         {
             "Jablonec": "2.40"
         },
         {
-            "Mlada Boleslav": "2.36"
+            "Mlada Boleslav": "2.40"
         },
         {
-            "Teplice": "2.29"
-        },
-        {
-            "Sigma Olomouc": "2.21"
+            "Bohemians": "2.33"
         },
         {
             "Hradec Kralove": "2.20"
         },
         {
-            "Karvina": "2.14"
+            "Teplice": "2.20"
         },
         {
-            "Bohemians": "2.07"
+            "Karvina": "2.13"
+        },
+        {
+            "Sigma Olomouc": "2.13"
         },
         {
             "Plzen": "2.00"
@@ -51,16 +51,16 @@
     ],
     "Away Teams": [
         {
-            "Sparta Prague": "2.79"
+            "Jablonec": "2.60"
         },
         {
             "Slavia Prague": "2.60"
         },
         {
-            "Jablonec": "2.50"
+            "Sparta Prague": "2.60"
         },
         {
-            "Liberec": "2.43"
+            "Liberec": "2.40"
         },
         {
             "Ostrava": "2.40"
@@ -69,34 +69,34 @@
             "Sigma Olomouc": "2.40"
         },
         {
-            "Plzen": "2.07"
+            "Mlada Boleslav": "2.07"
         },
         {
-            "Mlada Boleslav": "2.07"
+            "Plzen": "2.00"
         },
         {
             "Teplice": "1.87"
         },
         {
-            "Zlin": "1.71"
-        },
-        {
             "Karvina": "1.67"
         },
         {
-            "Ceske Budejovice": "1.64"
+            "Hradec Kralove": "1.60"
         },
         {
             "Slovacko": "1.60"
         },
         {
-            "Hradec Kralove": "1.43"
+            "Zlin": "1.60"
+        },
+        {
+            "Ceske Budejovice": "1.53"
+        },
+        {
+            "Pardubice": "1.47"
         },
         {
             "Bohemians": "1.40"
-        },
-        {
-            "Pardubice": "1.29"
         }
     ]
 }

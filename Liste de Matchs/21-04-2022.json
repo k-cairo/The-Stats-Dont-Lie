@@ -1,19 +1,11 @@
 {
     "England1": [
-        "Burnley-Southampton"
+        "Burnley|Southampton"
     ],
     "Spain1": [
-        "Espanyol-Rayo Vallecano",
-        "Levante-Sevilla",
-        "Cadiz-Ath. Bilbao",
-        "Real Sociedad-Barcelona"
-    ],
-    "Brazil": [
-        "Flamengo-Palmeiras"
-    ],
-    "Sweden": [
-        "Degerfors-Hammarby",
-        "Helsingborg-Elfsborg",
-        "Varnamo-Malmo FF"
+        "Espanyol|Rayo Vallecano",
+        "Levante|Sevilla",
+        "Cadiz|Ath. Bilbao",
+        "Real Sociedad|Barcelona"
     ]
 }

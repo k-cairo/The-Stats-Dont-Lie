@@ -11,11 +11,18 @@ iframes_yc_against = {}
 iframes_corner_for = {}
 iframes_corner_against = {}
 
-service = Service(executable_path=ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
+
+def open_browser():
+    try:
+        service = Service(executable_path=ChromeDriverManager().install())
+    except:
+        service = Service(executable_path="./chromedriver.exe")
+    finally:
+        driver = webdriver.Chrome(service=service)
+    return driver
 
 
-def get_card_iframe(link, championship):
+def get_card_iframe(link, championship, driver):
     driver.get(link)
     nb_team = TEAMS_IN_CHAMPIONSHIP[championship]
     try:
@@ -29,7 +36,7 @@ def get_card_iframe(link, championship):
         iframes_yc_against[championship] = iframe_yc_against
 
 
-def get_corner_iframe(link, championship):
+def get_corner_iframe(link, championship, driver):
     driver.get(link)
     nb_team = TEAMS_IN_CHAMPIONSHIP[championship]
     try:
@@ -72,16 +79,16 @@ def write_in_json_file(stats):
 
 
 def get_all_cards_iframes():
+    driver = open_browser()
     for key, value in LEAGUES_URLS.items():
         card_link = value + CARDS
-        get_card_iframe(link=card_link, championship=key)
+        get_card_iframe(link=card_link, championship=key, driver=driver)
     write_in_json_file(stats="cards")
 
 
 def get_all_corners_iframes():
+    driver = open_browser()
     for key, value in LEAGUES_URLS.items():
         corner_link = value + CORNERS
-        get_corner_iframe(link=corner_link, championship=key)
+        get_corner_iframe(link=corner_link, championship=key, driver=driver)
     write_in_json_file(stats="corners")
-
-

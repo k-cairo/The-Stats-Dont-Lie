@@ -1,0 +1,116 @@
+{
+    "France1": [
+        "Rennes|Lorient",
+        "Clermont|Angers",
+        "Metz|Brest",
+        "Nantes|Bordeaux",
+        "Nice|Troyes",
+        "Lille|Strasbourg",
+        "Reims|Marseille"
+    ],
+    "England1": [
+        "Brighton|Southampton",
+        "Burnley|Wolves",
+        "Chelsea|West Ham",
+        "Liverpool|Everton"
+    ],
+    "Spain1": [
+        "Barcelona|Rayo Vallecano"
+    ],
+    "Italy": [
+        "Salernitana|Fiorentina",
+        "Bologna|Udinese",
+        "Empoli|Napoli",
+        "Genoa|Cagliari",
+        "Lazio|AC Milan"
+    ],
+    "Germany1": [
+        "Bochum|Augsburg",
+        "Hertha|Stuttgart"
+    ],
+    "Belgium": [
+        "Club Brugge|Antwerp",
+        "Gent|Genk",
+        "Royal Union SG|Anderlecht"
+    ],
+    "Portugal": [
+        "Estoril|Belenenses",
+        "Tondela|Guimaraes"
+    ],
+    "Spain2": [
+        "Alcorcon|R. Oviedo",
+        "UD Ibiza|Las Palmas",
+        "Mirandes|Valladolid",
+        "Lugo|Leganes",
+        "Zaragoza|Burgos CF"
+    ],
+    "Germany2": [
+        "Paderborn|Hannover",
+        "Nurnberg|Sandhausen",
+        "Aue|Rostock"
+    ],
+    "Scotland": [
+        "Ross County|Celtic",
+        "Dundee Utd|Hearts"
+    ],
+    "Turkey": [
+        "Yeni Malatyaspor|Konyaspor",
+        "Basaksehir|Hatayspor",
+        "Altay|Galatasaray",
+        "Antalyaspor|Kayserispor"
+    ],
+    "Brazil": [
+        "Fluminense|Internacional",
+        "Palmeiras|Corinthians",
+        "Atletico-MG|Coritiba",
+        "Santos|America MG",
+        "Juventude|Cuiaba"
+    ],
+    "Holland1": [
+        "Willem II|Vitesse",
+        "Groningen|Heracles",
+        "Feyenoord|Utrecht",
+        "Sittard|G.A. Eagles"
+    ],
+    "Holland2": [
+        "Den Haag|Jong Utrecht"
+    ],
+    "Australia": [
+        "Wellington Phoenix|WS Wanderers",
+        "Adelaide United|Perth Glory"
+    ],
+    "Austria": [
+        "Salzburg|Austria Vienna",
+        "A. Klagenfurt|Wolfsberger",
+        "Rapid Vienna|Sturm Graz"
+    ],
+    "Croatia": [
+        "Slaven Belupo|Hajduk Split",
+        "Gorica|Din. Zagreb"
+    ],
+    "Denmark": [
+        "Aalborg|Silkeborg",
+        "Nordsjaelland|Viborg",
+        "FC Copenhagen|Randers",
+        "Aarhus|Odense"
+    ],
+    "Finland": [
+        "Mariehamn|Oulu"
+    ],
+    "Poland": [
+        "Lech|Stal Mielec",
+        "Rakow|Leczna",
+        "Pogon Szczecin|Legia"
+    ],
+    "Czech_Republic": [
+        "Plzen|Slovacko",
+        "Ceske Budejovice|Mlada Boleslav",
+        "Sigma Olomouc|Liberec",
+        "Hradec Kralove|Slavia Prague"
+    ],
+    "Sweden": [
+        "AIK Stockholm|Djurgarden",
+        "Varbergs|Mjallby",
+        "Helsingborg|Hacken"
+    ]
+}

@@ -5,12 +5,35 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import os
 
-service = Service(executable_path=ChromeDriverManager().install())
-driver = webdriver.Chrome(service=service)
+YELLOW_CARD_FOR_PATH = "./iframes/cards/iframes_cards_for.json"
+YELLOW_CARD_AGAINST_PATH = "./iframes/cards/iframes_cards_against.json"
+FULL_TIME_CORNER_FOR = "./iframes/corners/iframes_corners_for.json"
+FULL_TIME_CORNER_AGAINST = "./iframes/corners/iframes_corners_against.json"
+
+ALL_PATHS = [YELLOW_CARD_AGAINST_PATH, YELLOW_CARD_FOR_PATH, FULL_TIME_CORNER_AGAINST, FULL_TIME_CORNER_FOR]
 
 
-# GET DATA
-def get_data(url, championship, path_iframe):
+def open_browser():
+    try:
+        service = Service(executable_path=ChromeDriverManager().install())
+    except:
+        service = Service(executable_path="./chromedriver.exe")
+    finally:
+        driver = webdriver.Chrome(service=service)
+    return driver
+
+
+def get_all_datas():
+    driver = open_browser()
+    for path in ALL_PATHS:
+        if os.path.exists(path):
+            with open(path) as f:
+                data = json.load(f)
+                for championship, iframe in data.items():
+                    get_data(url=iframe, championship=championship, path_iframe=path, driver=driver)
+
+
+def get_data(url, championship, path_iframe, driver):
     other_teams = []
     home_teams = []
     driver.get(url)
