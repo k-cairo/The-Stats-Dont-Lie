@@ -129,7 +129,8 @@ def format_teams_names(team):
         .replace("Sporting Braga", "Braga").replace("Sporting CP", "Sporting").replace("Almería", "Almeria")\
         .replace("Sporting Gijón", "Gijon").replace("Kasimpasa SK", "Kasimpasa").replace("VVV", "Venlo")\
         .replace("MVV", "Maastricht").replace("Brøndby", "Brondby").replace("Wisla Cracovie SSA", "Wisla")\
-        .replace("Wisla Plock SA", "Wisla Plock").replace("Preston North End", "Preston")
+        .replace("Wisla Plock SA", "Wisla Plock").replace("Preston North End", "Preston").replace('Avaí', "Avai")\
+        .replace("Goiás", "Goias")
 
 
 def format_championships_names(championship):
