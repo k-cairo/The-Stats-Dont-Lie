@@ -44,7 +44,7 @@ LIST_CHAMPIONSHIP = [
     "France : Ligue 2", "Allemagne : Bundesliga", "Allemagne : 2. Bundesliga", "Pays-Bas : Eredivisie",
     "Pays-Bas : Eerste Divisie", "Italie : Serie A", "Pologne : Ekstraklasa", "Portugal : Liga Sagres",
     "Écosse : Premier League", "Espagne : Liga BBVA", "Espagne : Liga Adelante", "Suède : Allsvenskan",
-    "Turquie : Süper Lig", "Etats-Unis : Major League Soccer "]
+    "Turquie : Süper Lig", "Etats-Unis : Major League Soccer"]
 
 #### CONVERSION #####
 CONVERSION_LIST = {
@@ -74,4 +74,33 @@ CONVERSION_LIST = {
     "Suède : Allsvenskan": "Sweden",
     "Turquie : Süper Lig": "Turkey",
     "Etats-Unis : Major League Soccer": "USA"
+}
+
+NEW_CONVERSION_LIST = {
+    "Australie : A-League": "Australie - A-League",
+    "Autriche : Bundesliga": "Autriche - Bundesliga",
+    "Belgique : Pro League": "Belgique - Pro League",
+    "Brésil : Série A": "Brésil - Série A",
+    "Chine : Super League": "Chine - Super League",
+    "Croatie : 1. HNL": "Croatie - 1. HNL",
+    "République Tchèque : Ligue Tchèque": "République Tchèque - Ligue Tchèque",
+    "Danemark : Superligaen": "Danemark - Superligaen",
+    "Angleterre : Premier League": "Angleterre - Premier League",
+    "Angleterre : League Championship": "Angleterre - League Championship",
+    "Finlande : Veikkausliiga": "Finlande - Veikkausliiga",
+    "France : Ligue 1": "France - Ligue 1",
+    "France : Ligue 2": "France - Ligue 2",
+    "Allemagne : Bundesliga": "Allemagne - Bundesliga",
+    "Allemagne : 2. Bundesliga": "Allemagne - 2. Bundesliga",
+    "Pays-Bas : Eredivisie": "Pays-Bas - Eredivisie",
+    "Pays-Bas : Eerste Divisie": "Pays-Bas - Eerste Divisie",
+    "Italie : Serie A": "Italie - Serie A",
+    "Pologne : Ekstraklasa": "Pologne - Ekstraklasa",
+    "Portugal : Liga Sagres": "Portugal - Liga Sagres",
+    "Écosse : Premier League": "Écosse - Premier League",
+    "Espagne : Liga BBVA": "Espagne - Liga BBVA",
+    "Espagne : Liga Adelante": "Espagne - Liga Adelante",
+    "Suède : Allsvenskan": "Suède - Allsvenskan",
+    "Turquie : Süper Lig": "Turquie - Süper Lig",
+    "Etats-Unis : Major League Soccer": "Etats-Unis - Major League Soccer"
 }

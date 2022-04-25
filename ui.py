@@ -51,10 +51,6 @@ def define_bet(total_stats):
         return "+0"
 
 
-def launch_excel_file():
-    Popen(r'C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE ./Historique/Historique.xlsx')
-
-
 def championship_convert_name(old_championship, dictionary):
     for key, value in dictionary.items():
         if old_championship == value:
@@ -85,8 +81,9 @@ def write_in_excel_file(date, championship, home_team, away_team, bet_cards, bet
         worksheet["H1"] = "Résultats Bet Cartons"
         worksheet["I1"] = "Résultats Bet Corners"
         worksheet["J1"] = "Résultats Bet Global"
+        worksheet["K1"] = "Date"
 
-        letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"]
+        letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"]
         for letter in letters:
             worksheet[f"{letter}1"].font = Font(bold=True)
 
@@ -99,6 +96,7 @@ def write_in_excel_file(date, championship, home_team, away_team, bet_cards, bet
     worksheet[f"C{row}"] = away_team
     worksheet[f"D{row}"] = float(bet_cards.strip("+"))
     worksheet[f"E{row}"] = float(bet_corners.strip("+"))
+    worksheet[f"K{row}"] = date
 
     # Width Cells Auto-adjust
     dims = {}
@@ -142,7 +140,7 @@ class UserInterface:
 
         self.get_datas_button = Button(
             text="Get Datas",
-            command=get_data.get_all_datas,
+            command=self.check_before_get_datas,
             width=UserInterface.BUTTONS_WIDTH,
             height=UserInterface.LEFT_RIGHT_BUTTONS_HEIGHT)
         self.get_datas_button.grid(row=3, column=0)
@@ -157,7 +155,7 @@ class UserInterface:
 
         self.view_corners_iframes_button = Button(
             text="Launch Excel File",
-            command=launch_excel_file,
+            command=self.launch_excel_file,
             width=UserInterface.BUTTONS_WIDTH,
             height=UserInterface.LEFT_RIGHT_BUTTONS_HEIGHT)
         self.view_corners_iframes_button.grid(row=2, column=4)
@@ -232,6 +230,12 @@ class UserInterface:
         self.textbox.grid(row=1, rowspan=3, column=1, columnspan=3)
         self.window.mainloop()
 
+    def launch_excel_file(self):
+        if not os.path.exists("./Historique/Historique.xlsx"):
+            self.textbox.insert(index=1.0, chars="File not found\nLaunch 'View Match ...'")
+        else:
+            Popen(r'C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE ./Historique/Historique.xlsx')
+
     def read_match_list(self, date):
         excel_row = 1
         self.textbox.delete('1.0', END)
@@ -271,7 +275,14 @@ class UserInterface:
                     write_in_excel_file(date=date, championship=championship_convert_name(old_championship=championship, dictionary=CONVERSION_LIST), home_team=home_team, away_team=away_team,
                                         bet_cards=define_bet(total_stats=total_cards),
                                         bet_corners=define_bet(total_stats=total_corners), row=excel_row)
-                excel_row = 2
+            excel_row = 2
+
+    def check_before_get_datas(self):
+        for path in get_data.ALL_PATHS:
+            if not os.path.exists(path):
+                return self.textbox.insert(index=1.0, chars="Please Get Cards Iframes & Corners Iframes First !!!")
+            else:
+                get_data.get_all_datas()
 
     def analysis_excel_data(self):
         try:

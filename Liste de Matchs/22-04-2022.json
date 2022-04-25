@@ -1,13 +1,4 @@
 {
-    "England1": [
-        "Burnley|Southampton"
-    ],
-    "Spain1": [
-        "Espanyol|Rayo Vallecano",
-        "Levante|Sevilla",
-        "Cadiz|Ath. Bilbao",
-        "Real Sociedad|Barcelona"
-    ],
     "France2": [
         "Bastia|Paris FC",
         "Dijon|Guingamp",
@@ -17,5 +8,53 @@
         "Nimes|Rodez",
         "Pau FC|Sochaux",
         "Valenciennes|AC Ajaccio"
+    ],
+    "Germany1": [
+        "Wolfsburg|Mainz"
+    ],
+    "Portugal": [
+        "Vizela|Arouca"
+    ],
+    "England2": [
+        "Huddersfield|Barnsley"
+    ],
+    "Spain2": [
+        "Tenerife|Huesca"
+    ],
+    "Germany2": [
+        "Dusseldorf|Dresden",
+        "Karlsruher|Ingolstadt"
+    ],
+    "Turkey": [
+        "Rizespor|Fenerbahce"
+    ],
+    "Holland1": [
+        "Twente|Sparta Rotterdam"
+    ],
+    "Holland2": [
+        "Den Bosch|FC Volendam",
+        "FC Emmen|Roda",
+        "Excelsior|Jong Alkmaar",
+        "Helmond|Graafschap",
+        "Breda|Dordrecht",
+        "Oss|Almere",
+        "Telstar|Eindhoven"
+    ],
+    "Australia": [
+        "Macarthur FC|Melbourne Victory"
+    ],
+    "Croatia": [
+        "Dragovoljac|Sibenik"
+    ],
+    "Denmark": [
+        "Sonderjyske|Vejle-Kolding"
+    ],
+    "Finland": [
+        "Haka|HIFK",
+        "Lahti|KuPS"
+    ],
+    "Poland": [
+        "Radomiak Radom|Cracovia",
+        "Zaglebie|Gornik Z."
     ]
 }

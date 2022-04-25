@@ -59,12 +59,26 @@
         "Altay|Galatasaray",
         "Antalyaspor|Kayserispor"
     ],
+    "USA": [
+        "DC United|New England Revolution",
+        "Austin FC|Vancouver Whitecaps",
+        "Sporting Kansas City|Columbus Crew",
+        "Colorado Rapids|Charlotte",
+        "Portland Timbers|Real Salt Lake",
+        "San Jose Earthquakes|Seattle Sounders",
+        "Los Angeles Galaxy|Nashville SC",
+        "Inter Miami|Atlanta United",
+        "Orlando City|New York Red Bulls",
+        "Cincinnati|Los Angeles FC",
+        "New York City|Toronto FC"
+    ],
     "Brazil": [
         "Fluminense|Internacional",
         "Palmeiras|Corinthians",
         "Atletico-MG|Coritiba",
         "Santos|America MG",
-        "Juventude|Cuiaba"
+        "Juventude|Cuiaba",
+        "Atletico GO|Botafogo RJ"
     ],
     "Holland1": [
         "Willem II|Vitesse",

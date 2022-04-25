@@ -9,7 +9,6 @@ import os
 
 all_matchs = {}
 
-
 def open_browser():
     try:
         service = Service(executable_path=ChromeDriverManager().install())
@@ -34,6 +33,8 @@ def get_all_matchs(date):
             print("Problème avec un Championnat")
         else:
             if championship in LIST_CHAMPIONSHIP:
+                print(date)
+                print(championship)
                 championship_format = format_championships_names(championship=championship)
                 all_matchs[championship_format] = []
                 raw_matchs = div_championship.find_elements(By.CSS_SELECTOR, "tbody td.lm3")
@@ -46,6 +47,7 @@ def get_all_matchs(date):
                     all_matchs[championship_format].append(format_match)
 
     write_to_json_file(content=all_matchs, date2=date)
+    all_matchs.clear()
 
 
 def write_to_json_file(content, date2):
@@ -130,7 +132,12 @@ def format_teams_names(team):
         .replace("Sporting Gijón", "Gijon").replace("Kasimpasa SK", "Kasimpasa").replace("VVV", "Venlo")\
         .replace("MVV", "Maastricht").replace("Brøndby", "Brondby").replace("Wisla Cracovie SSA", "Wisla")\
         .replace("Wisla Plock SA", "Wisla Plock").replace("Preston North End", "Preston").replace('Avaí', "Avai")\
-        .replace("Goiás", "Goias")
+        .replace("Goiás", "Goias").replace("Montréal Impact", "CF Montreal").replace("Los Angeles", "Los Angeles FC")\
+        .replace("LA Galaxy", "Los Angeles Galaxy").replace("SJ Earthquakes", "San Jose Earthquakes")\
+        .replace("Minnesota United", "Minnesota").replace("Austin", "Austin FC")\
+        .replace("New England", "New England Revolution").replace('New York RB', "New York Red Bulls")\
+        .replace("Toronto", "Toronto FC").replace("Dallas", "FC Dallas").replace("Sporting KC", "Sporting Kansas City")\
+        .replace("Whitecaps", "Vancouver Whitecaps")
 
 
 def format_championships_names(championship):

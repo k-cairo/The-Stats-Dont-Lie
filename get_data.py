@@ -5,6 +5,9 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import os
 
+import get_iframes
+import ui
+
 YELLOW_CARD_FOR_PATH = "./iframes/cards/iframes_cards_for.json"
 YELLOW_CARD_AGAINST_PATH = "./iframes/cards/iframes_cards_against.json"
 FULL_TIME_CORNER_FOR = "./iframes/corners/iframes_corners_for.json"
@@ -25,6 +28,7 @@ def open_browser():
 
 def get_all_datas():
     driver = open_browser()
+
     for path in ALL_PATHS:
         if os.path.exists(path):
             with open(path) as f:
