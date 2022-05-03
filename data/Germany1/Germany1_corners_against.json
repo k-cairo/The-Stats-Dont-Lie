@@ -7,25 +7,19 @@
             "Hoffenheim": "5.47"
         },
         {
-            "Hertha": "5.13"
+            "Frankfurt": "5.19"
         },
         {
-            "Frankfurt": "5.07"
+            "Hertha": "5.06"
         },
         {
-            "Freiburg": "4.87"
+            "Freiburg": "4.81"
         },
         {
-            "Wolfsburg": "4.73"
+            "Furth": "4.69"
         },
         {
             "Bielefeld": "4.67"
-        },
-        {
-            "FC Koln": "4.67"
-        },
-        {
-            "Furth": "4.67"
         },
         {
             "Leverkusen": "4.67"
@@ -34,10 +28,16 @@
             "Stuttgart": "4.67"
         },
         {
-            "Bayern": "4.47"
+            "FC Koln": "4.63"
+        },
+        {
+            "Wolfsburg": "4.50"
         },
         {
             "Mainz": "4.27"
+        },
+        {
+            "Bayern": "4.25"
         },
         {
             "Dortmund": "4.13"
@@ -46,36 +46,33 @@
             "Monchengladbach": "3.87"
         },
         {
-            "Bochum": "3.67"
+            "Bochum": "3.81"
         },
         {
             "Union Berlin": "3.60"
         },
         {
-            "RB Leipzig": "3.47"
+            "RB Leipzig": "3.44"
         }
     ],
     "Away Teams": [
         {
-            "Bielefeld": "6.00"
+            "Bielefeld": "5.88"
         },
         {
             "Bayern": "5.60"
         },
         {
-            "Monchengladbach": "5.40"
-        },
-        {
-            "Mainz": "5.00"
+            "Monchengladbach": "5.31"
         },
         {
             "Bochum": "4.93"
         },
         {
-            "Frankfurt": "4.60"
+            "Mainz": "4.75"
         },
         {
-            "Dortmund": "4.53"
+            "Frankfurt": "4.60"
         },
         {
             "Freiburg": "4.53"
@@ -87,28 +84,31 @@
             "FC Koln": "4.47"
         },
         {
-            "Stuttgart": "4.33"
+            "Dortmund": "4.31"
+        },
+        {
+            "Stuttgart": "4.31"
+        },
+        {
+            "Leverkusen": "4.19"
         },
         {
             "Hertha": "4.13"
         },
         {
-            "Leverkusen": "4.13"
+            "Hoffenheim": "4.00"
         },
         {
-            "Union Berlin": "4.07"
+            "Union Berlin": "4.00"
+        },
+        {
+            "Augsburg": "3.94"
         },
         {
             "RB Leipzig": "3.93"
         },
         {
-            "Augsburg": "3.80"
-        },
-        {
             "Furth": "3.80"
-        },
-        {
-            "Hoffenheim": "3.80"
         }
     ]
 }

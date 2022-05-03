@@ -1,37 +1,40 @@
 {
     "Home Teams": [
         {
-            "Degerfors": "9.00"
+            "Degerfors": "8.00"
         },
         {
             "Hacken": "8.00"
         },
         {
-            "Helsingborg": "7.00"
+            "Goteborg": "7.50"
         },
         {
-            "Goteborg": "6.00"
+            "AIK Stockholm": "7.00"
         },
         {
-            "Sirius": "6.00"
+            "Kalmar": "6.33"
         },
         {
-            "Varnamo": "6.00"
+            "Sirius": "6.33"
         },
         {
-            "Malmo FF": "5.50"
+            "Norrkoping": "6.00"
         },
         {
-            "AIK Stockholm": "5.00"
+            "Malmo FF": "5.33"
         },
         {
-            "Norrkoping": "5.00"
+            "Varnamo": "5.33"
         },
         {
             "Djurgarden": "4.50"
         },
         {
-            "Kalmar": "4.50"
+            "Sundsvall": "4.50"
+        },
+        {
+            "Helsingborg": "4.33"
         },
         {
             "Elfsborg": "4.00"
@@ -40,63 +43,60 @@
             "Hammarby": "4.00"
         },
         {
-            "Varbergs": "4.00"
+            "Varbergs": "3.00"
         },
         {
-            "Sundsvall": "3.00"
-        },
-        {
-            "Mjallby": "2.00"
+            "Mjallby": "2.50"
         }
     ],
     "Away Teams": [
         {
-            "Hacken": "9.00"
-        },
-        {
             "AIK Stockholm": "7.50"
         },
         {
-            "Goteborg": "7.50"
+            "Djurgarden": "7.00"
+        },
+        {
+            "Goteborg": "6.67"
+        },
+        {
+            "Norrkoping": "6.67"
         },
         {
             "Helsingborg": "6.50"
         },
         {
-            "Sirius": "6.00"
+            "Hacken": "6.33"
         },
         {
-            "Norrkoping": "5.00"
+            "Degerfors": "5.67"
         },
         {
-            "Sundsvall": "5.00"
+            "Hammarby": "5.67"
         },
         {
-            "Varbergs": "5.00"
+            "Varbergs": "5.50"
         },
         {
-            "Degerfors": "4.50"
+            "Kalmar": "5.00"
         },
         {
-            "Elfsborg": "4.00"
+            "Sundsvall": "4.67"
         },
         {
-            "Kalmar": "4.00"
+            "Sirius": "4.50"
         },
         {
-            "Malmo FF": "4.00"
-        },
-        {
-            "Mjallby": "4.00"
+            "Elfsborg": "3.50"
         },
         {
             "Varnamo": "3.50"
         },
         {
-            "Hammarby": "3.00"
+            "Malmo FF": "3.00"
         },
         {
-            "Djurgarden": "2.00"
+            "Mjallby": "3.00"
         }
     ]
 }

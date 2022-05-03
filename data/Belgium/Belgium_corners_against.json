@@ -4,10 +4,10 @@
             "Antwerp": "6.06"
         },
         {
-            "Gent": "5.76"
+            "Gent": "5.56"
         },
         {
-            "KV Mechelen": "5.76"
+            "KV Mechelen": "5.50"
         },
         {
             "Charleroi": "5.47"
@@ -22,7 +22,7 @@
             "Waregem": "5.12"
         },
         {
-            "Club Brugge": "4.88"
+            "Club Brugge": "4.94"
         },
         {
             "Beerschot VA": "4.82"
@@ -40,9 +40,6 @@
             "Cercle Brugge": "4.41"
         },
         {
-            "Royal Union SG": "4.38"
-        },
-        {
             "Anderlecht": "4.35"
         },
         {
@@ -52,12 +49,15 @@
             "St. Liege": "4.24"
         },
         {
+            "Royal Union SG": "4.17"
+        },
+        {
             "Seraing": "3.82"
         }
     ],
     "Away Teams": [
         {
-            "Antwerp": "6.12"
+            "Antwerp": "6.11"
         },
         {
             "Club Brugge": "5.94"
@@ -75,28 +75,28 @@
             "KV Mechelen": "5.35"
         },
         {
-            "Genk": "4.88"
-        },
-        {
             "Seraing": "4.88"
-        },
-        {
-            "Beerschot VA": "4.81"
         },
         {
             "Royal Union SG": "4.76"
         },
         {
-            "Charleroi": "4.65"
+            "Genk": "4.72"
         },
         {
-            "Anderlecht": "4.53"
+            "Anderlecht": "4.56"
+        },
+        {
+            "Beerschot VA": "4.53"
         },
         {
             "Eupen": "4.53"
         },
         {
             "Cercle Brugge": "4.47"
+        },
+        {
+            "Charleroi": "4.44"
         },
         {
             "Leuven": "4.35"

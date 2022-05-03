@@ -4,25 +4,34 @@
             "Internacional": "5.00"
         },
         {
+            "Avai": "4.00"
+        },
+        {
             "Goias": "4.00"
         },
         {
-            "Juventude": "4.00"
-        },
-        {
-            "Palmeiras": "4.00"
+            "Juventude": "3.50"
         },
         {
             "America MG": "3.00"
         },
         {
-            "Atletico GO": "3.00"
+            "Athletico-PR": "3.00"
         },
         {
-            "Avai": "3.00"
+            "Bragantino": "3.00"
         },
         {
-            "Athletico-PR": "2.00"
+            "Fluminense": "3.00"
+        },
+        {
+            "Atletico GO": "2.50"
+        },
+        {
+            "Flamengo": "2.50"
+        },
+        {
+            "Palmeiras": "2.50"
         },
         {
             "Atletico-MG": "2.00"
@@ -34,9 +43,6 @@
             "Cuiaba": "2.00"
         },
         {
-            "Flamengo": "2.00"
-        },
-        {
             "Fortaleza": "2.00"
         },
         {
@@ -46,16 +52,10 @@
             "Botafogo RJ": "1.00"
         },
         {
-            "Bragantino": "1.00"
-        },
-        {
             "Ceara": "1.00"
         },
         {
             "Corinthians": "1.00"
-        },
-        {
-            "Fluminense": "1.00"
         },
         {
             "Sao Paulo": "1.00"
@@ -66,28 +66,22 @@
             "Ceara": "8.00"
         },
         {
-            "Sao Paulo": "6.00"
-        },
-        {
             "Bragantino": "5.00"
         },
         {
             "Fortaleza": "5.00"
         },
         {
-            "Botafogo RJ": "4.00"
+            "Goias": "4.50"
         },
         {
-            "Corinthians": "4.00"
+            "Sao Paulo": "4.00"
         },
         {
-            "Coritiba": "4.00"
+            "Cuiaba": "3.50"
         },
         {
-            "Goias": "4.00"
-        },
-        {
-            "Internacional": "4.00"
+            "Internacional": "3.50"
         },
         {
             "Athletico-PR": "3.00"
@@ -99,13 +93,22 @@
             "Atletico-MG": "3.00"
         },
         {
-            "Cuiaba": "3.00"
+            "Corinthians": "3.00"
         },
         {
-            "America MG": "2.00"
+            "Coritiba": "3.00"
+        },
+        {
+            "Botafogo RJ": "2.50"
         },
         {
             "Flamengo": "2.00"
+        },
+        {
+            "Palmeiras": "2.00"
+        },
+        {
+            "America MG": "1.00"
         },
         {
             "Avai": "1.00"
@@ -115,9 +118,6 @@
         },
         {
             "Juventude": "0.00"
-        },
-        {
-            "Palmeiras": "0.00"
         },
         {
             "Santos": "0.00"

@@ -4,16 +4,16 @@
             "Chicago Fire": "3.75"
         },
         {
-            "DC United": "3.50"
+            "Inter Miami": "3.40"
         },
         {
-            "Portland Timbers": "3.50"
-        },
-        {
-            "Inter Miami": "3.25"
+            "Portland Timbers": "3.40"
         },
         {
             "CF Montreal": "3.00"
+        },
+        {
+            "DC United": "3.00"
         },
         {
             "Los Angeles FC": "3.00"
@@ -22,64 +22,64 @@
             "Houston Dynamo": "2.80"
         },
         {
-            "Columbus Crew": "2.75"
+            "Cincinnati": "2.75"
         },
         {
-            "Minnesota": "2.75"
+            "Columbus Crew": "2.75"
         },
         {
             "New York Red Bulls": "2.75"
         },
         {
-            "Cincinnati": "2.67"
-        },
-        {
-            "Sporting Kansas City": "2.67"
-        },
-        {
             "Atlanta United": "2.50"
-        },
-        {
-            "Los Angeles Galaxy": "2.50"
         },
         {
             "New England Revolution": "2.50"
         },
         {
-            "New York City": "2.33"
+            "New York City": "2.50"
+        },
+        {
+            "Los Angeles Galaxy": "2.40"
+        },
+        {
+            "Minnesota": "2.40"
         },
         {
             "Seattle Sounders": "2.33"
         },
         {
-            "FC Dallas": "2.25"
-        },
-        {
-            "Orlando City": "2.25"
+            "Sporting Kansas City": "2.25"
         },
         {
             "Toronto FC": "2.25"
         },
         {
+            "FC Dallas": "2.20"
+        },
+        {
+            "Philadelphia Union": "2.20"
+        },
+        {
+            "Austin FC": "2.00"
+        },
+        {
             "Charlotte": "2.00"
         },
         {
-            "Colorado Rapids": "2.00"
-        },
-        {
-            "Philadelphia Union": "2.00"
+            "Orlando City": "2.00"
         },
         {
             "Real Salt Lake": "2.00"
         },
         {
+            "San Jose Earthquakes": "2.00"
+        },
+        {
             "Vancouver Whitecaps": "2.00"
         },
         {
-            "Austin FC": "1.75"
-        },
-        {
-            "San Jose Earthquakes": "1.75"
+            "Colorado Rapids": "1.75"
         },
         {
             "Nashville SC": "0.00"
@@ -90,22 +90,19 @@
             "Los Angeles FC": "4.00"
         },
         {
+            "New York Red Bulls": "3.75"
+        },
+        {
             "Austin FC": "3.67"
         },
         {
             "Inter Miami": "3.67"
         },
         {
-            "CF Montreal": "3.60"
-        },
-        {
-            "Houston Dynamo": "3.50"
+            "CF Montreal": "3.50"
         },
         {
             "Portland Timbers": "3.50"
-        },
-        {
-            "New York Red Bulls": "3.33"
         },
         {
             "Colorado Rapids": "3.00"
@@ -114,28 +111,25 @@
             "San Jose Earthquakes": "3.00"
         },
         {
-            "Real Salt Lake": "2.80"
-        },
-        {
             "Cincinnati": "2.75"
         },
         {
-            "Atlanta United": "2.67"
+            "New England Revolution": "2.75"
         },
         {
-            "New England Revolution": "2.67"
+            "Houston Dynamo": "2.67"
+        },
+        {
+            "Vancouver Whitecaps": "2.60"
+        },
+        {
+            "Chicago Fire": "2.50"
         },
         {
             "Los Angeles Galaxy": "2.50"
         },
         {
             "Orlando City": "2.50"
-        },
-        {
-            "Vancouver Whitecaps": "2.50"
-        },
-        {
-            "Columbus Crew": "2.33"
         },
         {
             "Minnesota": "2.33"
@@ -147,28 +141,34 @@
             "Philadelphia Union": "2.33"
         },
         {
-            "Nashville SC": "2.14"
+            "Real Salt Lake": "2.33"
         },
         {
-            "Chicago Fire": "2.00"
+            "Atlanta United": "2.25"
+        },
+        {
+            "Columbus Crew": "2.25"
         },
         {
             "DC United": "2.00"
         },
         {
-            "Seattle Sounders": "2.00"
+            "Nashville SC": "1.88"
+        },
+        {
+            "Charlotte": "1.80"
         },
         {
             "Sporting Kansas City": "1.80"
         },
         {
+            "Seattle Sounders": "1.75"
+        },
+        {
             "FC Dallas": "1.67"
         },
         {
-            "Toronto FC": "1.67"
-        },
-        {
-            "Charlotte": "1.50"
+            "Toronto FC": "1.50"
         }
     ]
 }

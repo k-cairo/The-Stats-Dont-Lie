@@ -1,31 +1,31 @@
 {
     "Home Teams": [
         {
-            "Alaves": "5.94"
+            "Espanyol": "6.00"
         },
         {
-            "Espanyol": "5.75"
+            "Alaves": "5.94"
         },
         {
             "Getafe": "5.19"
         },
         {
-            "Betis": "5.06"
-        },
-        {
             "Rayo Vallecano": "5.06"
         },
         {
-            "Cadiz": "4.75"
+            "Betis": "4.94"
         },
         {
             "Valencia": "4.63"
         },
         {
+            "Cadiz": "4.53"
+        },
+        {
             "Elche": "4.50"
         },
         {
-            "Levante": "4.50"
+            "Levante": "4.47"
         },
         {
             "Granada": "4.19"
@@ -34,39 +34,39 @@
             "Sevilla": "4.06"
         },
         {
-            "Villarreal": "4.06"
+            "Villarreal": "3.94"
         },
         {
-            "Osasuna": "3.81"
+            "Osasuna": "3.82"
         },
         {
-            "Real Sociedad": "3.81"
+            "Real Sociedad": "3.76"
         },
         {
-            "Celta Vigo": "3.63"
+            "Celta Vigo": "3.47"
         },
         {
-            "Atl. Madrid": "3.44"
+            "Mallorca": "3.47"
         },
         {
             "Real Madrid": "3.38"
         },
         {
-            "Mallorca": "3.31"
+            "Atl. Madrid": "3.29"
         },
         {
             "Ath. Bilbao": "3.00"
         },
         {
-            "Barcelona": "2.07"
+            "Barcelona": "2.00"
         }
     ],
     "Away Teams": [
         {
-            "Alaves": "6.94"
+            "Granada": "6.76"
         },
         {
-            "Granada": "6.50"
+            "Alaves": "6.53"
         },
         {
             "Villarreal": "6.25"
@@ -75,10 +75,10 @@
             "Betis": "6.06"
         },
         {
-            "Elche": "6.00"
+            "Elche": "5.76"
         },
         {
-            "Ath. Bilbao": "5.69"
+            "Ath. Bilbao": "5.59"
         },
         {
             "Espanyol": "5.50"
@@ -99,28 +99,28 @@
             "Real Sociedad": "4.81"
         },
         {
-            "Valencia": "4.75"
+            "Valencia": "4.65"
         },
         {
-            "Getafe": "4.50"
+            "Barcelona": "4.47"
         },
         {
-            "Barcelona": "4.44"
+            "Sevilla": "4.47"
+        },
+        {
+            "Rayo Vallecano": "4.47"
         },
         {
             "Celta Vigo": "4.44"
         },
         {
-            "Rayo Vallecano": "4.27"
+            "Getafe": "4.35"
         },
         {
             "Atl. Madrid": "4.25"
         },
         {
-            "Sevilla": "4.13"
-        },
-        {
-            "Real Madrid": "4.00"
+            "Real Madrid": "3.94"
         }
     ]
 }

@@ -1,22 +1,22 @@
 {
     "Home Teams": [
         {
-            "Hertha": "6.40"
+            "Hertha": "6.38"
         },
         {
             "Augsburg": "5.73"
         },
         {
-            "Furth": "5.73"
+            "Furth": "5.56"
         },
         {
-            "Freiburg": "5.33"
+            "FC Koln": "5.31"
         },
         {
-            "Bochum": "5.13"
+            "Bochum": "5.06"
         },
         {
-            "FC Koln": "5.00"
+            "Freiburg": "5.00"
         },
         {
             "Union Berlin": "4.73"
@@ -25,13 +25,13 @@
             "Dortmund": "4.67"
         },
         {
-            "Wolfsburg": "4.60"
+            "Wolfsburg": "4.50"
         },
         {
             "Bielefeld": "4.40"
         },
         {
-            "Frankfurt": "4.13"
+            "Frankfurt": "4.31"
         },
         {
             "Stuttgart": "3.93"
@@ -49,15 +49,15 @@
             "Leverkusen": "3.20"
         },
         {
-            "Bayern": "2.80"
+            "RB Leipzig": "2.75"
         },
         {
-            "RB Leipzig": "2.60"
+            "Bayern": "2.69"
         }
     ],
     "Away Teams": [
         {
-            "Bielefeld": "7.20"
+            "Bielefeld": "7.06"
         },
         {
             "Furth": "6.00"
@@ -66,16 +66,13 @@
             "Bochum": "5.80"
         },
         {
-            "Monchengladbach": "5.60"
+            "Augsburg": "5.75"
         },
         {
-            "Stuttgart": "5.60"
+            "Monchengladbach": "5.75"
         },
         {
-            "Augsburg": "5.47"
-        },
-        {
-            "Mainz": "5.47"
+            "Stuttgart": "5.50"
         },
         {
             "Frankfurt": "5.40"
@@ -93,19 +90,22 @@
             "Hertha": "5.27"
         },
         {
+            "Mainz": "5.25"
+        },
+        {
             "RB Leipzig": "5.07"
         },
         {
-            "Leverkusen": "4.73"
+            "Leverkusen": "4.81"
         },
         {
-            "Union Berlin": "4.27"
+            "Hoffenheim": "4.50"
         },
         {
-            "Dortmund": "4.20"
+            "Dortmund": "4.13"
         },
         {
-            "Hoffenheim": "4.20"
+            "Union Berlin": "4.13"
         },
         {
             "Bayern": "3.40"

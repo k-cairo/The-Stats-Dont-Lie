@@ -13,25 +13,25 @@
             "Termalica B-B.": "6.00"
         },
         {
-            "Wisla": "5.71"
-        },
-        {
-            "Piast": "5.64"
+            "Piast": "5.87"
         },
         {
             "Jagiellonia": "5.60"
         },
         {
-            "Lechia": "5.43"
+            "Lechia": "5.53"
         },
         {
             "Gornik Z.": "5.40"
         },
         {
-            "Zaglebie": "4.79"
+            "Wisla": "5.33"
         },
         {
-            "Radomiak Radom": "4.71"
+            "Zaglebie": "4.80"
+        },
+        {
+            "Radomiak Radom": "4.60"
         },
         {
             "Warta": "4.53"
@@ -40,24 +40,27 @@
             "Cracovia": "4.47"
         },
         {
-            "Slask": "4.43"
+            "Slask": "4.40"
+        },
+        {
+            "Lech": "4.06"
+        },
+        {
+            "Pogon Szczecin": "3.88"
         },
         {
             "Legia": "3.87"
         },
         {
-            "Rakow": "3.86"
-        },
-        {
-            "Lech": "3.79"
-        },
-        {
-            "Pogon Szczecin": "3.43"
+            "Rakow": "3.73"
         }
     ],
     "Away Teams": [
         {
             "Zaglebie": "6.87"
+        },
+        {
+            "Leczna": "6.81"
         },
         {
             "Piast": "6.53"
@@ -66,46 +69,43 @@
             "Radomiak Radom": "6.40"
         },
         {
-            "Jagiellonia": "6.29"
+            "Gornik Z.": "6.27"
         },
         {
             "Slask": "6.27"
         },
         {
-            "Termalica B-B.": "6.21"
-        },
-        {
             "Lechia": "6.13"
         },
         {
-            "Gornik Z.": "6.07"
+            "Jagiellonia": "6.07"
         },
         {
-            "Leczna": "5.86"
+            "Termalica B-B.": "6.07"
         },
         {
-            "Stal Mielec": "5.36"
+            "Stal Mielec": "5.67"
         },
         {
             "Wisla": "5.20"
         },
         {
-            "Wisla Plock": "5.14"
+            "Wisla Plock": "5.00"
         },
         {
-            "Legia": "4.86"
+            "Legia": "4.73"
         },
         {
-            "Warta": "4.86"
+            "Cracovia": "4.67"
         },
         {
-            "Cracovia": "4.64"
+            "Warta": "4.60"
         },
         {
             "Pogon Szczecin": "4.13"
         },
         {
-            "Rakow": "3.87"
+            "Rakow": "3.88"
         },
         {
             "Lech": "3.80"

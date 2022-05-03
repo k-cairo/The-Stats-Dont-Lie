@@ -7,10 +7,10 @@
             "Eupen": "2.12"
         },
         {
-            "Royal Union SG": "2.06"
+            "Oostende": "2.06"
         },
         {
-            "Oostende": "2.06"
+            "Royal Union SG": "1.94"
         },
         {
             "Kortrijk": "1.94"
@@ -28,7 +28,7 @@
             "Cercle Brugge": "1.88"
         },
         {
-            "KV Mechelen": "1.82"
+            "KV Mechelen": "1.83"
         },
         {
             "Seraing": "1.76"
@@ -43,10 +43,10 @@
             "Antwerp": "1.59"
         },
         {
-            "Club Brugge": "1.59"
+            "Club Brugge": "1.56"
         },
         {
-            "Gent": "1.35"
+            "Gent": "1.50"
         },
         {
             "Genk": "1.29"
@@ -63,13 +63,13 @@
             "Kortrijk": "3.41"
         },
         {
-            "Beerschot VA": "3.06"
+            "Beerschot VA": "2.88"
+        },
+        {
+            "Antwerp": "2.72"
         },
         {
             "St. Truiden": "2.71"
-        },
-        {
-            "Antwerp": "2.59"
         },
         {
             "Cercle Brugge": "2.59"
@@ -93,7 +93,7 @@
             "Gent": "2.18"
         },
         {
-            "Charleroi": "2.06"
+            "Charleroi": "2.11"
         },
         {
             "Seraing": "2.06"
@@ -105,10 +105,10 @@
             "Club Brugge": "1.82"
         },
         {
-            "Anderlecht": "1.71"
+            "Anderlecht": "1.78"
         },
         {
-            "Genk": "1.65"
+            "Genk": "1.72"
         }
     ]
 }

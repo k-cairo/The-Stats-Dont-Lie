@@ -7,28 +7,28 @@
             "Odense": "5.54"
         },
         {
-            "Aalborg": "5.23"
+            "Aalborg": "5.36"
         },
         {
-            "Sonderjyske": "4.85"
+            "Sonderjyske": "5.14"
         },
         {
-            "Randers": "4.83"
+            "Nordsjaelland": "5.00"
         },
         {
-            "Nordsjaelland": "4.69"
+            "Randers": "4.77"
         },
         {
             "Midtjylland": "4.62"
         },
         {
-            "Brondby": "4.54"
+            "Brondby": "4.50"
         },
         {
-            "Aarhus": "4.46"
+            "Aarhus": "4.29"
         },
         {
-            "FC Copenhagen": "4.31"
+            "FC Copenhagen": "4.14"
         },
         {
             "Silkeborg": "3.92"
@@ -42,37 +42,37 @@
             "Aalborg": "5.69"
         },
         {
-            "Randers": "5.46"
+            "Vejle": "5.36"
         },
         {
             "Sonderjyske": "5.23"
         },
         {
-            "Vejle": "5.08"
+            "Randers": "5.21"
+        },
+        {
+            "Viborg": "5.00"
         },
         {
             "Brondby": "4.92"
         },
         {
-            "Viborg": "4.69"
-        },
-        {
             "FC Copenhagen": "4.54"
-        },
-        {
-            "Odense": "4.54"
         },
         {
             "Aarhus": "4.46"
         },
         {
+            "Odense": "4.36"
+        },
+        {
             "Nordsjaelland": "4.23"
         },
         {
-            "Midtjylland": "4.08"
+            "Midtjylland": "4.07"
         },
         {
-            "Silkeborg": "3.83"
+            "Silkeborg": "4.07"
         }
     ]
 }

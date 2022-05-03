@@ -1,19 +1,19 @@
 {
     "Home Teams": [
         {
-            "Lechia": "6.29"
+            "Lechia": "6.07"
         },
         {
-            "Wisla": "6.29"
+            "Wisla": "5.93"
         },
         {
-            "Pogon Szczecin": "5.43"
+            "Pogon Szczecin": "5.44"
         },
         {
-            "Radomiak Radom": "5.43"
+            "Piast": "5.40"
         },
         {
-            "Piast": "5.29"
+            "Radomiak Radom": "5.33"
         },
         {
             "Jagiellonia": "5.13"
@@ -37,19 +37,19 @@
             "Cracovia": "4.47"
         },
         {
-            "Zaglebie": "4.36"
+            "Rakow": "4.47"
         },
         {
-            "Slask": "4.21"
+            "Lech": "4.44"
         },
         {
-            "Rakow": "4.14"
+            "Zaglebie": "4.40"
+        },
+        {
+            "Slask": "4.13"
         },
         {
             "Legia": "4.07"
-        },
-        {
-            "Lech": "4.00"
         },
         {
             "Wisla Plock": "4.00"
@@ -66,49 +66,49 @@
             "Radomiak Radom": "5.87"
         },
         {
-            "Gornik Z.": "5.79"
+            "Leczna": "5.75"
+        },
+        {
+            "Gornik Z.": "5.73"
+        },
+        {
+            "Jagiellonia": "5.27"
         },
         {
             "Zaglebie": "5.27"
         },
         {
-            "Leczna": "5.21"
-        },
-        {
-            "Jagiellonia": "5.14"
-        },
-        {
             "Slask": "5.07"
-        },
-        {
-            "Termalica B-B.": "4.71"
         },
         {
             "Piast": "4.60"
         },
         {
+            "Termalica B-B.": "4.60"
+        },
+        {
             "Lech": "4.47"
         },
         {
-            "Wisla Plock": "4.43"
-        },
-        {
-            "Rakow": "4.20"
+            "Rakow": "4.25"
         },
         {
             "Wisla": "4.20"
         },
         {
+            "Wisla Plock": "4.20"
+        },
+        {
             "Cracovia": "4.00"
+        },
+        {
+            "Stal Mielec": "3.93"
         },
         {
             "Pogon Szczecin": "3.87"
         },
         {
-            "Stal Mielec": "3.86"
-        },
-        {
-            "Warta": "3.57"
+            "Warta": "3.53"
         }
     ]
 }

@@ -1,37 +1,37 @@
 {
     "Home Teams": [
         {
-            "Vizela": "6.53"
+            "Vizela": "6.38"
         },
         {
-            "Benfica": "5.93"
+            "Benfica": "6.00"
         },
         {
-            "Ferreira": "5.80"
+            "Pacos Ferreira": "5.80"
         },
         {
-            "Gil Vicente": "5.60"
+            "Gil Vicente": "5.56"
         },
         {
-            "Portimonense": "5.40"
-        },
-        {
-            "Boavista": "5.33"
+            "Portimonense": "5.50"
         },
         {
             "Famalicao": "5.33"
         },
         {
-            "Tondela": "5.33"
+            "Tondela": "5.25"
         },
         {
             "Guimaraes": "5.20"
         },
         {
-            "Braga": "4.93"
+            "Boavista": "5.19"
         },
         {
-            "Santa Clara": "4.80"
+            "Braga": "5.13"
+        },
+        {
+            "Santa Clara": "5.06"
         },
         {
             "Arouca": "4.67"
@@ -49,7 +49,7 @@
             "Sporting": "4.40"
         },
         {
-            "Estoril": "4.20"
+            "Estoril": "4.31"
         },
         {
             "Moreirense": "3.73"
@@ -60,10 +60,10 @@
             "Portimonense": "6.33"
         },
         {
-            "Belenenses": "5.93"
+            "Belenenses": "5.94"
         },
         {
-            "Ferreira": "5.87"
+            "Pacos Ferreira": "5.81"
         },
         {
             "Benfica": "5.67"
@@ -75,25 +75,25 @@
             "Gil Vicente": "5.53"
         },
         {
-            "Famalicao": "5.40"
+            "Famalicao": "5.50"
         },
         {
-            "FC Porto": "5.13"
+            "FC Porto": "5.31"
         },
         {
-            "Arouca": "5.07"
+            "Maritimo": "5.31"
         },
         {
             "Estoril": "5.07"
         },
         {
-            "Maritimo": "5.07"
+            "Moreirense": "5.06"
         },
         {
-            "Moreirense": "4.93"
+            "Arouca": "5.00"
         },
         {
-            "Guimaraes": "4.73"
+            "Guimaraes": "4.69"
         },
         {
             "Braga": "4.47"
@@ -105,7 +105,7 @@
             "Tondela": "4.20"
         },
         {
-            "Sporting": "4.00"
+            "Sporting": "3.94"
         },
         {
             "Boavista": "3.60"

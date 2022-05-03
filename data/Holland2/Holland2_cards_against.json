@@ -4,7 +4,7 @@
             "Almere": "2.11"
         },
         {
-            "Jong PSV": "1.88"
+            "Jong PSV": "1.83"
         },
         {
             "Eindhoven": "1.78"
@@ -22,48 +22,48 @@
             "Graafschap": "1.61"
         },
         {
-            "Jong Ajax": "1.59"
+            "Jong Ajax": "1.61"
         },
         {
             "Roda": "1.56"
         },
         {
-            "Excelsior": "1.53"
+            "Excelsior": "1.50"
         },
         {
             "Maastricht": "1.50"
         },
         {
-            "Oss": "1.35"
-        },
-        {
-            "FC Emmen": "1.29"
-        },
-        {
-            "Telstar": "1.29"
+            "Oss": "1.33"
         },
         {
             "Jong Utrecht": "1.28"
         },
         {
-            "Den Haag": "1.25"
+            "Den Haag": "1.22"
+        },
+        {
+            "FC Emmen": "1.22"
+        },
+        {
+            "Telstar": "1.22"
         },
         {
             "Jong AZ": "1.17"
         },
         {
-            "Breda": "1.00"
+            "Breda": "1.06"
         },
         {
-            "Helmond": "0.71"
+            "Den Bosch": "0.78"
         },
         {
-            "Den Bosch": "0.65"
+            "Helmond": "0.72"
         }
     ],
     "Away Teams": [
         {
-            "Eindhoven": "1.88"
+            "Eindhoven": "1.83"
         },
         {
             "Excelsior": "1.78"
@@ -72,49 +72,49 @@
             "Jong Ajax": "1.61"
         },
         {
-            "Roda": "1.59"
+            "Dordrecht": "1.50"
         },
         {
-            "Dordrecht": "1.53"
+            "Roda": "1.50"
         },
         {
             "Den Haag": "1.39"
         },
         {
-            "Graafschap": "1.35"
+            "FC Volendam": "1.39"
         },
         {
-            "FC Volendam": "1.29"
+            "Graafschap": "1.39"
         },
         {
-            "Almere": "1.24"
+            "Almere": "1.22"
         },
         {
-            "Jong Utrecht": "1.18"
-        },
-        {
-            "Maastricht": "1.18"
+            "Jong Utrecht": "1.22"
         },
         {
             "Den Bosch": "1.17"
         },
         {
-            "Jong AZ": "1.12"
+            "FC Emmen": "1.11"
         },
         {
-            "FC Emmen": "1.11"
+            "Maastricht": "1.11"
         },
         {
             "Telstar": "1.11"
         },
         {
+            "Jong AZ": "1.06"
+        },
+        {
             "Jong PSV": "1.06"
         },
         {
-            "Venlo": "1.06"
+            "Breda": "1.00"
         },
         {
-            "Breda": "1.00"
+            "Venlo": "1.00"
         },
         {
             "Helmond": "0.94"

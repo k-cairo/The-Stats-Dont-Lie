@@ -1,78 +1,78 @@
 {
     "Home Teams": [
         {
-            "Rapid Vienna": "5.46"
+            "Salzburg": "5.14"
         },
         {
-            "Salzburg": "5.46"
-        },
-        {
-            "Wolfsberger": "5.14"
+            "Rapid Vienna": "5.13"
         },
         {
             "Sturm Graz": "5.07"
         },
         {
+            "Wolfsberger": "5.07"
+        },
+        {
             "Altach": "4.71"
         },
         {
-            "Admira": "4.38"
+            "Admira": "4.57"
         },
         {
-            "Hartberg": "4.36"
+            "Hartberg": "4.53"
         },
         {
-            "LASK": "4.23"
+            "Tirol": "4.53"
         },
         {
-            "Tirol": "4.23"
+            "Ried": "4.40"
         },
         {
-            "Ried": "4.21"
-        },
-        {
-            "A. Klagenfurt": "4.15"
+            "A. Klagenfurt": "4.29"
         },
         {
             "Austria Vienna": "4.14"
+        },
+        {
+            "LASK": "4.00"
         }
     ],
     "Away Teams": [
         {
-            "LASK": "5.93"
+            "LASK": "6.13"
         },
         {
-            "Wolfsberger": "5.92"
+            "Wolfsberger": "5.93"
         },
         {
-            "A. Klagenfurt": "4.93"
+            "Hartberg": "5.07"
         },
         {
-            "Hartberg": "4.92"
+            "Admira": "5.00"
         },
         {
-            "Admira": "4.86"
+            "A. Klagenfurt": "4.87"
         },
         {
             "Tirol": "4.57"
         },
         {
-            "Ried": "4.38"
-        },
-        {
-            "Sturm Graz": "4.31"
+            "Ried": "4.36"
         },
         {
             "Rapid Vienna": "4.29"
         },
         {
-            "Salzburg": "4.14"
+            "Salzburg": "4.20"
         },
         {
-            "Austria Vienna": "4.08"
+            "Sturm Graz": "4.14"
         },
         {
-            "Altach": "3.15"
+            "Austria Vienna": "3.87"
+        },
+        {
+            "Altach": "3.27"
         }
     ]
 }

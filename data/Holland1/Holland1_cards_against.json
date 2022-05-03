@@ -1,31 +1,28 @@
 {
     "Home Teams": [
         {
-            "Twente": "2.57"
+            "Twente": "2.60"
         },
         {
             "Utrecht": "2.13"
         },
         {
-            "Vitesse": "1.93"
+            "Vitesse": "2.07"
         },
         {
-            "Groningen": "1.86"
+            "Groningen": "1.80"
+        },
+        {
+            "Alkmaar": "1.73"
+        },
+        {
+            "Feyenoord": "1.73"
         },
         {
             "Zwolle": "1.73"
         },
         {
-            "Alkmaar": "1.71"
-        },
-        {
-            "Feyenoord": "1.71"
-        },
-        {
             "Sparta Rotterdam": "1.67"
-        },
-        {
-            "Nijmegen": "1.50"
         },
         {
             "Ajax": "1.47"
@@ -37,7 +34,7 @@
             "Heerenveen": "1.47"
         },
         {
-            "Waalwijk": "1.43"
+            "Nijmegen": "1.47"
         },
         {
             "Heracles": "1.40"
@@ -46,13 +43,16 @@
             "PSV": "1.40"
         },
         {
-            "Cambuur": "1.36"
+            "Waalwijk": "1.40"
         },
         {
-            "Sittard": "1.29"
+            "Willem II": "1.40"
         },
         {
-            "Willem II": "1.21"
+            "Cambuur": "1.27"
+        },
+        {
+            "Sittard": "1.20"
         }
     ],
     "Away Teams": [
@@ -69,10 +69,7 @@
             "Willem II": "1.87"
         },
         {
-            "G.A. Eagles": "1.64"
-        },
-        {
-            "PSV": "1.64"
+            "PSV": "1.80"
         },
         {
             "Cambuur": "1.60"
@@ -84,31 +81,34 @@
             "Twente": "1.60"
         },
         {
+            "G.A. Eagles": "1.53"
+        },
+        {
             "Waalwijk": "1.33"
         },
         {
-            "Heerenveen": "1.29"
-        },
-        {
-            "Heracles": "1.14"
-        },
-        {
-            "Vitesse": "1.14"
+            "Heerenveen": "1.27"
         },
         {
             "Sittard": "1.13"
         },
         {
+            "Heracles": "1.07"
+        },
+        {
+            "Vitesse": "1.07"
+        },
+        {
             "Alkmaar": "1.00"
         },
         {
-            "Zwolle": "0.93"
+            "Sparta Rotterdam": "1.00"
         },
         {
-            "Sparta Rotterdam": "0.92"
+            "Zwolle": "1.00"
         },
         {
-            "Utrecht": "0.86"
+            "Utrecht": "0.87"
         }
     ]
 }

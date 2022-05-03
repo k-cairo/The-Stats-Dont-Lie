@@ -10,46 +10,46 @@
             "Wisla Plock": "2.73"
         },
         {
-            "Radomiak Radom": "2.50"
+            "Radomiak Radom": "2.47"
         },
         {
-            "Rakow": "2.43"
+            "Rakow": "2.47"
         },
         {
             "Termalica B-B.": "2.40"
         },
         {
-            "Slask": "2.36"
+            "Piast": "2.27"
         },
         {
-            "Lech": "2.21"
-        },
-        {
-            "Piast": "2.21"
-        },
-        {
-            "Zaglebie": "2.14"
+            "Slask": "2.27"
         },
         {
             "Gornik Z.": "2.13"
         },
         {
-            "Wisla": "2.00"
+            "Zaglebie": "2.13"
+        },
+        {
+            "Lech": "2.06"
         },
         {
             "Jagiellonia": "1.93"
         },
         {
+            "Wisla": "1.93"
+        },
+        {
+            "Lechia": "1.87"
+        },
+        {
             "Leczna": "1.87"
         },
         {
+            "Pogon Szczecin": "1.81"
+        },
+        {
             "Legia": "1.80"
-        },
-        {
-            "Pogon Szczecin": "1.79"
-        },
-        {
-            "Lechia": "1.71"
         },
         {
             "Warta": "1.67"
@@ -57,7 +57,7 @@
     ],
     "Away Teams": [
         {
-            "Cracovia": "2.93"
+            "Cracovia": "3.00"
         },
         {
             "Pogon Szczecin": "2.87"
@@ -69,19 +69,19 @@
             "Slask": "2.47"
         },
         {
-            "Legia": "2.36"
+            "Legia": "2.27"
         },
         {
-            "Rakow": "2.33"
+            "Rakow": "2.25"
         },
         {
             "Lechia": "2.20"
         },
         {
-            "Termalica B-B.": "2.07"
+            "Termalica B-B.": "2.20"
         },
         {
-            "Wisla Plock": "2.00"
+            "Wisla Plock": "2.13"
         },
         {
             "Zaglebie": "2.00"
@@ -90,25 +90,25 @@
             "Wisla": "1.93"
         },
         {
-            "Stal Mielec": "1.86"
+            "Stal Mielec": "1.80"
         },
         {
-            "Gornik Z.": "1.79"
+            "Warta": "1.80"
+        },
+        {
+            "Gornik Z.": "1.73"
         },
         {
             "Radomiak Radom": "1.73"
         },
         {
-            "Warta": "1.71"
+            "Leczna": "1.56"
         },
         {
             "Piast": "1.53"
         },
         {
-            "Jagiellonia": "1.29"
-        },
-        {
-            "Leczna": "1.29"
+            "Jagiellonia": "1.20"
         }
     ]
 }

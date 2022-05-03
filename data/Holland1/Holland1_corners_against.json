@@ -1,7 +1,7 @@
 {
     "Home Teams": [
         {
-            "Nijmegen": "6.14"
+            "Nijmegen": "6.07"
         },
         {
             "Ajax": "5.93"
@@ -13,7 +13,7 @@
             "Heracles": "5.27"
         },
         {
-            "Willem II": "4.93"
+            "Willem II": "4.73"
         },
         {
             "PSV": "4.67"
@@ -25,39 +25,39 @@
             "Sparta Rotterdam": "4.53"
         },
         {
-            "Utrecht": "4.47"
+            "Cambuur": "4.47"
         },
         {
-            "Waalwijk": "4.21"
+            "Utrecht": "4.47"
         },
         {
             "Zwolle": "4.20"
         },
         {
-            "Sittard": "4.07"
+            "Waalwijk": "4.07"
         },
         {
-            "Cambuur": "4.00"
+            "Sittard": "3.93"
         },
         {
-            "Vitesse": "4.00"
+            "Twente": "3.93"
         },
         {
-            "Groningen": "3.93"
+            "Feyenoord": "3.80"
         },
         {
-            "Twente": "3.86"
+            "Vitesse": "3.80"
         },
         {
-            "Feyenoord": "3.57"
+            "Groningen": "3.73"
         },
         {
-            "Alkmaar": "3.21"
+            "Alkmaar": "3.27"
         }
     ],
     "Away Teams": [
         {
-            "Heerenveen": "6.14"
+            "Heerenveen": "6.00"
         },
         {
             "Feyenoord": "5.67"
@@ -66,31 +66,31 @@
             "Cambuur": "5.33"
         },
         {
-            "Sparta Rotterdam": "4.77"
-        },
-        {
             "Waalwijk": "4.73"
         },
         {
             "Nijmegen": "4.67"
         },
         {
-            "Ajax": "4.57"
+            "PSV": "4.67"
         },
         {
-            "Heracles": "4.57"
+            "Ajax": "4.60"
+        },
+        {
+            "Sparta Rotterdam": "4.53"
         },
         {
             "Twente": "4.53"
         },
         {
+            "Heracles": "4.33"
+        },
+        {
+            "Utrecht": "4.27"
+        },
+        {
             "Willem II": "4.27"
-        },
-        {
-            "PSV": "4.21"
-        },
-        {
-            "Vitesse": "4.14"
         },
         {
             "Alkmaar": "4.13"
@@ -99,16 +99,16 @@
             "Sittard": "4.13"
         },
         {
-            "G.A. Eagles": "4.07"
-        },
-        {
-            "Utrecht": "4.07"
-        },
-        {
             "Groningen": "4.07"
         },
         {
-            "Zwolle": "3.57"
+            "Vitesse": "4.00"
+        },
+        {
+            "G.A. Eagles": "3.93"
+        },
+        {
+            "Zwolle": "3.47"
         }
     ]
 }

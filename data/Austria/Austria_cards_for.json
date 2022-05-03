@@ -1,78 +1,78 @@
 {
     "Home Teams": [
         {
-            "Tirol": "2.38"
+            "Tirol": "2.40"
         },
         {
-            "LASK": "2.23"
+            "Hartberg": "2.20"
+        },
+        {
+            "Admira": "2.14"
         },
         {
             "Altach": "2.14"
         },
         {
-            "Admira": "2.08"
-        },
-        {
-            "Hartberg": "2.07"
+            "LASK": "2.07"
         },
         {
             "Austria Vienna": "2.00"
         },
         {
-            "Ried": "1.86"
+            "Rapid Vienna": "1.80"
         },
         {
-            "Wolfsberger": "1.64"
+            "Ried": "1.80"
         },
         {
-            "Rapid Vienna": "1.62"
+            "Wolfsberger": "1.73"
         },
         {
-            "A. Klagenfurt": "1.54"
+            "A. Klagenfurt": "1.71"
         },
         {
-            "Sturm Graz": "1.50"
+            "Sturm Graz": "1.47"
         },
         {
-            "Salzburg": "1.38"
+            "Salzburg": "1.36"
         }
     ],
     "Away Teams": [
         {
-            "Admira": "2.79"
+            "Admira": "2.80"
         },
         {
-            "Altach": "2.69"
+            "Altach": "2.73"
         },
         {
-            "Austria Vienna": "2.54"
+            "A. Klagenfurt": "2.60"
         },
         {
-            "A. Klagenfurt": "2.43"
+            "Tirol": "2.47"
         },
         {
-            "Tirol": "2.43"
+            "Austria Vienna": "2.40"
         },
         {
             "Rapid Vienna": "2.36"
         },
         {
-            "LASK": "2.21"
-        },
-        {
-            "Hartberg": "2.08"
+            "LASK": "2.13"
         },
         {
             "Salzburg": "2.00"
         },
         {
-            "Ried": "1.77"
+            "Hartberg": "1.93"
         },
         {
-            "Sturm Graz": "1.62"
+            "Ried": "1.86"
         },
         {
-            "Wolfsberger": "1.62"
+            "Sturm Graz": "1.86"
+        },
+        {
+            "Wolfsberger": "1.64"
         }
     ]
 }

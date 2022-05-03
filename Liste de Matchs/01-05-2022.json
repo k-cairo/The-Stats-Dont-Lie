@@ -1,0 +1,106 @@
+{
+    "France1": [
+        "Troyes|Lille",
+        "Brest|Clermont",
+        "Lorient|Reims",
+        "Monaco|Angers",
+        "Montpellier|Metz",
+        "Bordeaux|Nice",
+        "Marseille|Lyon"
+    ],
+    "England1": [
+        "Everton|Chelsea",
+        "Tottenham|Leicester",
+        "West Ham|Arsenal"
+    ],
+    "Spain1": [
+        "Elche|Osasuna",
+        "Granada|Celta Vigo",
+        "Rayo Vallecano|Real Sociedad",
+        "Barcelona|Majorque"
+    ],
+    "Italy": [
+        "Juventus|Venezia",
+        "Empoli|Torino",
+        "AC Milan|Fiorentina",
+        "Udinese|Inter",
+        "AS Roma|Bologna"
+    ],
+    "Belgium": [
+        "Antwerp|Royal Union SG",
+        "Anderlecht|Club Brugge"
+    ],
+    "Portugal": [
+        "Guimaraes|Santa Clara",
+        "Moreirense|Boavista",
+        "Sporting|Gil Vicente"
+    ],
+    "Spain2": [
+        "Amorebieta|Fuenlabrada",
+        "Gijon|UD Ibiza",
+        "Alcorcon|Girona",
+        "Lugo|Tenerife",
+        "Ponferradina|Cartagena"
+    ],
+    "Scotland": [
+        "Celtic|Rangers"
+    ],
+    "Turkey": [
+        "Kayserispor|Besiktas",
+        "Alanyaspor|Yeni Malatyaspor",
+        "Galatasaray|Sivasspor",
+        "Goztepe|Rizespor"
+    ],
+    "USA": [
+        "Columbus Crew|DC United",
+        "New England Revolution|Inter Miami",
+        "Orlando City|Charlotte",
+        "Chicago Fire|New York Red Bulls",
+        "Sporting Kansas City|FC Dallas",
+        "Colorado Rapids|Portland Timbers",
+        "New York City|San Jose Earthquakes",
+        "Nashville SC|Philadelphie Union"
+    ],
+    "Brazil": [
+        "Cuiaba|Atletico GO",
+        "Botafogo RJ|Juventude",
+        "Corinthians|Fortaleza",
+        "Coritiba|Fluminense"
+    ],
+    "Holland1": [
+        "Heerenveen|Cambuur",
+        "G.A. Eagles|Vitesse",
+        "PSV|Willem II",
+        "Sittard|Feyenoord",
+        "Waalwijk|Groningen"
+    ],
+    "Australia": [
+        "Macarthur FC|Newcastle Jets"
+    ],
+    "Croatia": [
+        "Osijek|Istra 1961",
+        "Lok. Zagreb|Din. Zagreb"
+    ],
+    "Denmark": [
+        "Odense|Aarhus",
+        "Vejle-Kolding|Sonderjyske",
+        "Randers|Brondby",
+        "Midtjylland|FC Copenhagen"
+    ],
+    "Poland": [
+        "Termalica B-B.|Wisla Plock",
+        "Cracovia|Wisla"
+    ],
+    "Czech_Republic": [
+        "Bohemians|Pardubice",
+        "Jablonec|Karvina",
+        "Zlin|Teplice",
+        "Slavia Prague|Plzen"
+    ],
+    "Sweden": [
+        "Degerfors|Elfsborg",
+        "Mjallby|Helsingborg",
+        "Hacken|Varbergs",
+        "Sundsvall|AIK Stockholm"
+    ]
+}

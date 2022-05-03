@@ -1,7 +1,7 @@
 {
     "Home Teams": [
         {
-            "Sparta Prague": "3.13"
+            "Sparta Prague": "3.06"
         },
         {
             "Slovacko": "2.80"
@@ -16,28 +16,28 @@
             "Ostrava": "2.53"
         },
         {
-            "Jablonec": "2.40"
-        },
-        {
             "Mlada Boleslav": "2.40"
         },
         {
             "Bohemians": "2.33"
         },
         {
-            "Hradec Kralove": "2.20"
+            "Jablonec": "2.31"
         },
         {
-            "Teplice": "2.20"
-        },
-        {
-            "Karvina": "2.13"
+            "Hradec Kralove": "2.19"
         },
         {
             "Sigma Olomouc": "2.13"
         },
         {
-            "Plzen": "2.00"
+            "Karvina": "2.13"
+        },
+        {
+            "Teplice": "2.13"
+        },
+        {
+            "Plzen": "1.88"
         },
         {
             "Zlin": "1.73"
@@ -54,19 +54,19 @@
             "Jablonec": "2.60"
         },
         {
-            "Slavia Prague": "2.60"
+            "Sparta Prague": "2.60"
         },
         {
-            "Sparta Prague": "2.60"
+            "Slavia Prague": "2.56"
         },
         {
             "Liberec": "2.40"
         },
         {
-            "Ostrava": "2.40"
+            "Sigma Olomouc": "2.40"
         },
         {
-            "Sigma Olomouc": "2.40"
+            "Ostrava": "2.38"
         },
         {
             "Mlada Boleslav": "2.07"
@@ -81,22 +81,22 @@
             "Karvina": "1.67"
         },
         {
+            "Zlin": "1.63"
+        },
+        {
             "Hradec Kralove": "1.60"
-        },
-        {
-            "Slovacko": "1.60"
-        },
-        {
-            "Zlin": "1.60"
         },
         {
             "Ceske Budejovice": "1.53"
         },
         {
-            "Pardubice": "1.47"
+            "Slovacko": "1.50"
         },
         {
-            "Bohemians": "1.40"
+            "Pardubice": "1.38"
+        },
+        {
+            "Bohemians": "1.31"
         }
     ]
 }

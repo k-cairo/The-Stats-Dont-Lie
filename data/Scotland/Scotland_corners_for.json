@@ -1,34 +1,34 @@
 {
     "Home Teams": [
         {
-            "Dundee FC": "7.18"
+            "Dundee FC": "7.17"
         },
         {
-            "Dundee Utd": "5.94"
+            "Dundee Utd": "6.12"
         },
         {
             "St. Johnstone": "5.76"
         },
         {
-            "Ross County": "5.31"
-        },
-        {
-            "Motherwell": "5.12"
+            "Ross County": "5.65"
         },
         {
             "Livingston": "5.06"
         },
         {
-            "St. Mirren": "5.06"
+            "Motherwell": "4.94"
+        },
+        {
+            "St. Mirren": "4.94"
         },
         {
             "Hibernian": "4.71"
         },
         {
-            "Hearts": "4.18"
+            "Aberdeen": "4.18"
         },
         {
-            "Aberdeen": "4.06"
+            "Hearts": "4.18"
         },
         {
             "Rangers": "2.76"
@@ -51,28 +51,28 @@
             "St. Mirren": "6.59"
         },
         {
+            "Livingston": "6.28"
+        },
+        {
             "Dundee FC": "6.19"
         },
         {
             "Aberdeen": "6.00"
         },
         {
-            "Livingston": "5.94"
+            "St. Johnstone": "5.71"
         },
         {
-            "St. Johnstone": "5.81"
-        },
-        {
-            "Hearts": "5.25"
+            "Hearts": "5.24"
         },
         {
             "Hibernian": "5.06"
         },
         {
-            "Rangers": "4.75"
+            "Rangers": "4.76"
         },
         {
-            "Celtic": "3.59"
+            "Celtic": "3.50"
         }
     ]
 }

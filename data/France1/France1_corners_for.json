@@ -1,69 +1,69 @@
 {
     "Home Teams": [
         {
-            "Metz": "5.56"
+            "Metz": "5.65"
         },
         {
-            "Brest": "5.33"
+            "Bordeaux": "5.24"
         },
         {
-            "Bordeaux": "5.31"
+            "Brest": "5.13"
         },
         {
-            "Troyes": "5.25"
+            "Troyes": "5.06"
         },
         {
-            "Nantes": "4.88"
+            "Strasbourg": "4.94"
         },
         {
-            "Strasbourg": "4.81"
+            "Nantes": "4.82"
+        },
+        {
+            "Lorient": "4.81"
         },
         {
             "Montpellier": "4.71"
         },
         {
-            "Reims": "4.47"
+            "Reims": "4.29"
         },
         {
-            "Lorient": "4.33"
-        },
-        {
-            "Angers": "4.06"
+            "Angers": "4.24"
         },
         {
             "Clermont": "4.06"
         },
         {
-            "Marseille": "4.06"
+            "Lille": "4.00"
         },
         {
-            "PSG": "4.00"
+            "Marseille": "4.00"
         },
         {
-            "Lyon": "3.94"
-        },
-        {
-            "Lille": "3.88"
+            "PSG": "3.94"
         },
         {
             "Rennes": "3.88"
         },
         {
-            "St. Etienne": "3.82"
+            "Lyon": "3.83"
         },
         {
-            "Lens": "3.38"
+            "St. Etienne": "3.67"
         },
         {
-            "Nice": "3.31"
+            "Monaco": "3.59"
         },
         {
-            "Monaco": "3.19"
+            "Lens": "3.35"
+        },
+        {
+            "Nice": "3.29"
         }
     ],
     "Away Teams": [
         {
-            "Metz": "7.88"
+            "Metz": "8.00"
         },
         {
             "Montpellier": "6.53"
@@ -72,55 +72,55 @@
             "Reims": "6.47"
         },
         {
-            "Nice": "6.00"
+            "Nice": "6.06"
         },
         {
-            "Rennes": "5.88"
+            "Bordeaux": "5.82"
         },
         {
-            "Bordeaux": "5.81"
+            "Lille": "5.76"
         },
         {
-            "Lille": "5.81"
+            "Nantes": "5.71"
         },
         {
-            "Lorient": "5.65"
+            "Rennes": "5.65"
         },
         {
-            "Angers": "5.63"
+            "Angers": "5.53"
         },
         {
-            "Nantes": "5.63"
+            "Lorient": "5.44"
         },
         {
-            "Lyon": "5.60"
+            "St. Etienne": "5.44"
         },
         {
-            "St. Etienne": "5.47"
+            "Troyes": "5.41"
         },
         {
-            "Lens": "5.38"
+            "Lyon": "5.38"
         },
         {
-            "Troyes": "5.31"
+            "Lens": "5.29"
         },
         {
-            "Brest": "5.29"
+            "Brest": "5.22"
         },
         {
-            "Strasbourg": "5.19"
+            "Strasbourg": "5.12"
         },
         {
-            "PSG": "4.81"
+            "Clermont": "4.71"
         },
         {
-            "Clermont": "4.69"
+            "PSG": "4.71"
         },
         {
-            "Marseille": "4.13"
+            "Marseille": "4.06"
         },
         {
-            "Monaco": "4.13"
+            "Monaco": "3.94"
         }
     ]
 }

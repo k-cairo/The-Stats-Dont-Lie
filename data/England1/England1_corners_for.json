@@ -1,13 +1,13 @@
 {
     "Home Teams": [
         {
-            "Norwich": "6.75"
+            "Burnley": "6.65"
         },
         {
-            "Burnley": "6.47"
+            "Norwich": "6.53"
         },
         {
-            "Leicester": "5.93"
+            "Leicester": "5.94"
         },
         {
             "Aston Villa": "5.80"
@@ -16,13 +16,13 @@
             "Wolves": "5.75"
         },
         {
-            "Brentford": "5.56"
+            "Brentford": "5.71"
         },
         {
             "Watford": "5.50"
         },
         {
-            "Everton": "5.20"
+            "Everton": "5.13"
         },
         {
             "Tottenham": "5.00"
@@ -40,25 +40,25 @@
             "West Ham": "4.71"
         },
         {
-            "Newcastle": "4.56"
+            "Newcastle": "4.59"
         },
         {
-            "Chelsea": "4.43"
+            "Brighton": "4.41"
         },
         {
-            "Brighton": "4.31"
+            "Arsenal": "4.29"
         },
         {
-            "Crystal Palace": "4.31"
+            "Crystal Palace": "4.24"
         },
         {
-            "Arsenal": "4.13"
+            "Chelsea": "4.00"
         },
         {
-            "Liverpool": "3.27"
+            "Liverpool": "3.06"
         },
         {
-            "Man City": "1.93"
+            "Man City": "2.18"
         }
     ],
     "Away Teams": [
@@ -72,46 +72,46 @@
             "Brentford": "6.76"
         },
         {
-            "Brighton": "6.38"
+            "Watford": "6.65"
         },
         {
-            "Watford": "6.38"
+            "Everton": "6.44"
         },
         {
-            "Leicester": "6.20"
+            "Brighton": "6.41"
         },
         {
-            "Everton": "6.00"
+            "Leicester": "6.13"
         },
         {
-            "Man Utd": "5.93"
+            "Aston Villa": "5.82"
         },
         {
-            "Crystal Palace": "5.87"
+            "Man Utd": "5.82"
         },
         {
-            "Aston Villa": "5.75"
+            "Crystal Palace": "5.63"
         },
         {
-            "West Ham": "5.44"
+            "Southampton": "5.41"
         },
         {
-            "Wolves": "5.44"
+            "Tottenham": "5.35"
         },
         {
-            "Southampton": "5.07"
+            "West Ham": "5.29"
         },
         {
-            "Arsenal": "5.00"
+            "Wolves": "5.29"
         },
         {
-            "Newcastle": "5.00"
+            "Arsenal": "5.06"
         },
         {
-            "Tottenham": "4.94"
+            "Leeds": "4.88"
         },
         {
-            "Leeds": "4.81"
+            "Newcastle": "4.82"
         },
         {
             "Chelsea": "4.69"

@@ -4,13 +4,7 @@
             "Atlanta United": "4.00"
         },
         {
-            "Orlando City": "3.50"
-        },
-        {
-            "Portland Timbers": "3.50"
-        },
-        {
-            "Inter Miami": "3.25"
+            "Orlando City": "3.80"
         },
         {
             "Houston Dynamo": "3.20"
@@ -25,34 +19,40 @@
             "Los Angeles FC": "3.00"
         },
         {
-            "Los Angeles Galaxy": "3.00"
+            "Minnesota": "3.00"
         },
         {
-            "San Jose Earthquakes": "3.00"
+            "Inter Miami": "2.80"
         },
         {
-            "Minnesota": "2.75"
+            "Portland Timbers": "2.80"
         },
         {
-            "New York City": "2.67"
+            "Cincinnati": "2.75"
         },
         {
-            "Austin FC": "2.50"
+            "Austin FC": "2.60"
+        },
+        {
+            "DC United": "2.60"
+        },
+        {
+            "San Jose Earthquakes": "2.60"
         },
         {
             "Columbus Crew": "2.50"
         },
         {
-            "DC United": "2.50"
-        },
-        {
             "New England Revolution": "2.50"
         },
         {
-            "Cincinnati": "2.33"
+            "Los Angeles Galaxy": "2.40"
         },
         {
             "Real Salt Lake": "2.33"
+        },
+        {
+            "New York City": "2.25"
         },
         {
             "New York Red Bulls": "2.25"
@@ -64,7 +64,7 @@
             "Chicago Fire": "2.00"
         },
         {
-            "FC Dallas": "2.00"
+            "Philadelphia Union": "2.00"
         },
         {
             "Seattle Sounders": "2.00"
@@ -76,7 +76,7 @@
             "Vancouver Whitecaps": "2.00"
         },
         {
-            "Philadelphia Union": "1.75"
+            "FC Dallas": "1.80"
         },
         {
             "Charlotte": "1.50"
@@ -87,9 +87,6 @@
     ],
     "Away Teams": [
         {
-            "New England Revolution": "4.00"
-        },
-        {
             "Austin FC": "3.67"
         },
         {
@@ -99,10 +96,13 @@
             "San Jose Earthquakes": "3.67"
         },
         {
-            "Los Angeles FC": "3.33"
+            "Atlanta United": "3.25"
         },
         {
-            "Atlanta United": "3.00"
+            "Los Angeles FC": "3.25"
+        },
+        {
+            "New England Revolution": "3.25"
         },
         {
             "FC Dallas": "3.00"
@@ -114,43 +114,43 @@
             "Orlando City": "3.00"
         },
         {
-            "Real Salt Lake": "2.80"
+            "Real Salt Lake": "2.83"
         },
         {
             "Colorado Rapids": "2.75"
         },
         {
-            "Chicago Fire": "2.67"
-        },
-        {
-            "CF Montreal": "2.60"
+            "CF Montreal": "2.67"
         },
         {
             "Sporting Kansas City": "2.60"
         },
         {
-            "Charlotte": "2.50"
+            "Vancouver Whitecaps": "2.60"
         },
         {
             "DC United": "2.50"
         },
         {
-            "Vancouver Whitecaps": "2.50"
+            "Seattle Sounders": "2.50"
         },
         {
-            "Columbus Crew": "2.33"
+            "Toronto FC": "2.50"
         },
         {
-            "Seattle Sounders": "2.33"
+            "Chicago Fire": "2.25"
         },
         {
-            "Toronto FC": "2.33"
+            "Charlotte": "2.20"
         },
         {
-            "Nashville SC": "2.14"
+            "Nashville SC": "2.13"
         },
         {
             "Cincinnati": "2.00"
+        },
+        {
+            "Columbus Crew": "2.00"
         },
         {
             "Houston Dynamo": "2.00"
@@ -162,7 +162,7 @@
             "Minnesota": "2.00"
         },
         {
-            "New York Red Bulls": "1.33"
+            "New York Red Bulls": "1.25"
         },
         {
             "Portland Timbers": "1.25"

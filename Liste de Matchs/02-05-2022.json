@@ -1,0 +1,42 @@
+{
+    "France2": [
+        "Rodez|Toulouse"
+    ],
+    "England1": [
+        "Man Utd|Brentford"
+    ],
+    "Spain1": [
+        "Getafe|Real B\u00e9tis"
+    ],
+    "Italy": [
+        "Atalanta|Salernitana"
+    ],
+    "Germany1": [
+        "Leverkusen|Frankfurt",
+        "Monchengladbach|RB Leipzig"
+    ],
+    "Portugal": [
+        "Ferreira|Tondela"
+    ],
+    "England2": [
+        "Fulham|Luton"
+    ],
+    "Spain2": [
+        "Leganes|Huesca",
+        "Valladolid|R. Sociedad B"
+    ],
+    "USA": [
+        "Los Angeles FC|Minnesota"
+    ],
+    "Brazil": [
+        "Internacional|Avai"
+    ],
+    "Denmark": [
+        "Silkeborg|Aalborg"
+    ],
+    "Sweden": [
+        "Goteborg|Kalmar",
+        "Norrkoping|Varnamo",
+        "Hammarby|Malmo FF"
+    ]
+}

@@ -13,69 +13,69 @@
             "Leczna": "2.40"
         },
         {
-            "Zaglebie": "2.36"
-        },
-        {
             "Legia": "2.33"
         },
         {
             "Termalica B-B.": "2.33"
         },
         {
+            "Zaglebie": "2.27"
+        },
+        {
+            "Wisla": "2.20"
+        },
+        {
+            "Lechia": "2.13"
+        },
+        {
             "Stal Mielec": "2.13"
-        },
-        {
-            "Lechia": "2.07"
-        },
-        {
-            "Wisla": "2.07"
         },
         {
             "Gornik Z.": "2.00"
         },
         {
+            "Rakow": "2.00"
+        },
+        {
             "Warta": "1.87"
         },
         {
-            "Rakow": "1.86"
+            "Radomiak Radom": "1.67"
         },
         {
-            "Piast": "1.57"
+            "Slask": "1.60"
         },
         {
-            "Radomiak Radom": "1.50"
+            "Lech": "1.50"
         },
         {
-            "Lech": "1.43"
+            "Piast": "1.47"
         },
         {
-            "Slask": "1.43"
-        },
-        {
-            "Pogon Szczecin": "1.29"
+            "Pogon Szczecin": "1.25"
         }
     ],
     "Away Teams": [
         {
-            "Legia": "3.29"
+            "Legia": "3.13"
         },
         {
-            "Wisla Plock": "2.93"
+            "Wisla Plock": "2.80"
         },
         {
-            "Jagiellonia": "2.57"
+            "Jagiellonia": "2.60"
         },
         {
-            "Rakow": "2.53"
+            "Rakow": "2.56"
         },
         {
             "Zaglebie": "2.53"
         },
         {
-            "Stal Mielec": "2.43"
+            "Radomiak Radom": "2.40"
         },
         {
-            "Radomiak Radom": "2.40"
+            "Stal Mielec": "2.40"
         },
         {
             "Pogon Szczecin": "2.27"
@@ -84,10 +84,10 @@
             "Wisla": "2.20"
         },
         {
-            "Termalica B-B.": "2.14"
+            "Slask": "2.13"
         },
         {
-            "Slask": "2.13"
+            "Warta": "2.13"
         },
         {
             "Cracovia": "2.07"
@@ -96,13 +96,13 @@
             "Gornik Z.": "2.07"
         },
         {
-            "Warta": "2.00"
+            "Termalica B-B.": "2.07"
         },
         {
             "Lechia": "1.87"
         },
         {
-            "Leczna": "1.64"
+            "Leczna": "1.63"
         },
         {
             "Lech": "1.53"

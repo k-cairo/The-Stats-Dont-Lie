@@ -1,19 +1,19 @@
 {
     "Home Teams": [
         {
-            "Vizela": "5.53"
-        },
-        {
-            "Estoril": "5.27"
+            "Vizela": "5.44"
         },
         {
             "Moreirense": "5.27"
         },
         {
+            "Estoril": "5.19"
+        },
+        {
             "FC Porto": "5.13"
         },
         {
-            "Benfica": "5.07"
+            "Benfica": "5.13"
         },
         {
             "Belenenses": "5.00"
@@ -25,22 +25,22 @@
             "Arouca": "4.73"
         },
         {
-            "Boavista": "4.67"
+            "Portimonense": "4.56"
         },
         {
-            "Ferreira": "4.53"
+            "Pacos Ferreira": "4.53"
         },
         {
-            "Portimonense": "4.53"
+            "Boavista": "4.50"
         },
         {
-            "Gil Vicente": "4.47"
+            "Gil Vicente": "4.38"
         },
         {
-            "Braga": "4.33"
+            "Braga": "4.31"
         },
         {
-            "Tondela": "4.27"
+            "Tondela": "4.19"
         },
         {
             "Maritimo": "4.13"
@@ -49,7 +49,7 @@
             "Famalicao": "4.07"
         },
         {
-            "Santa Clara": "4.07"
+            "Santa Clara": "4.06"
         },
         {
             "Sporting": "3.87"
@@ -57,7 +57,7 @@
     ],
     "Away Teams": [
         {
-            "Moreirense": "5.60"
+            "Moreirense": "5.56"
         },
         {
             "Vizela": "5.33"
@@ -66,13 +66,13 @@
             "Gil Vicente": "5.20"
         },
         {
-            "Guimaraes": "5.13"
-        },
-        {
-            "Sporting": "5.00"
+            "Guimaraes": "5.00"
         },
         {
             "Benfica": "4.87"
+        },
+        {
+            "Sporting": "4.81"
         },
         {
             "Boavista": "4.80"
@@ -93,7 +93,7 @@
             "Tondela": "4.73"
         },
         {
-            "Ferreira": "4.53"
+            "Pacos Ferreira": "4.44"
         },
         {
             "Maritimo": "4.13"
@@ -105,10 +105,10 @@
             "Belenenses": "4.00"
         },
         {
-            "Famalicao": "3.87"
+            "Famalicao": "4.00"
         },
         {
-            "FC Porto": "3.60"
+            "FC Porto": "3.63"
         }
     ]
 }

@@ -13,28 +13,28 @@
             "Darmstadt": "2.27"
         },
         {
-            "Paderborn": "2.13"
+            "Karlsruher": "2.06"
         },
         {
-            "Karlsruher": "2.07"
+            "Paderborn": "2.06"
         },
         {
-            "Dusseldorf": "2.00"
+            "Dusseldorf": "1.94"
         },
         {
             "Hannover": "1.93"
         },
         {
-            "Kiel": "1.80"
+            "Regensburg": "1.88"
         },
         {
-            "Schalke": "1.80"
+            "Aue": "1.81"
         },
         {
-            "Aue": "1.73"
+            "Schalke": "1.81"
         },
         {
-            "Nurnberg": "1.73"
+            "Kiel": "1.75"
         },
         {
             "Hamburger SV": "1.69"
@@ -43,42 +43,42 @@
             "Dresden": "1.67"
         },
         {
+            "Nurnberg": "1.63"
+        },
+        {
             "Bremen": "1.60"
         },
         {
             "Heidenheim": "1.60"
         },
         {
-            "Regensburg": "1.60"
-        },
-        {
-            "St. Pauli": "1.14"
+            "St. Pauli": "1.27"
         }
     ],
     "Away Teams": [
         {
-            "Rostock": "2.67"
+            "Rostock": "2.63"
         },
         {
-            "Sandhausen": "2.53"
+            "Sandhausen": "2.56"
+        },
+        {
+            "Darmstadt": "2.50"
         },
         {
             "Aue": "2.47"
         },
         {
-            "Darmstadt": "2.40"
+            "Dresden": "2.44"
         },
         {
-            "Bremen": "2.33"
+            "Bremen": "2.38"
         },
         {
-            "Dresden": "2.33"
+            "Ingolstadt": "2.31"
         },
         {
-            "Hamburger SV": "2.29"
-        },
-        {
-            "Ingolstadt": "2.13"
+            "Hamburger SV": "2.27"
         },
         {
             "Schalke": "2.07"
@@ -99,13 +99,13 @@
             "Dusseldorf": "1.80"
         },
         {
+            "Heidenheim": "1.75"
+        },
+        {
             "St. Pauli": "1.75"
         },
         {
-            "Hannover": "1.67"
-        },
-        {
-            "Heidenheim": "1.67"
+            "Hannover": "1.63"
         },
         {
             "Paderborn": "1.60"

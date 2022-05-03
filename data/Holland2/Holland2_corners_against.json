@@ -19,72 +19,75 @@
             "Roda": "5.28"
         },
         {
-            "Breda": "5.24"
+            "Breda": "5.17"
         },
         {
-            "Excelsior": "5.24"
+            "Excelsior": "5.17"
         },
         {
-            "Jong Ajax": "5.06"
+            "Jong Ajax": "5.11"
         },
         {
-            "Oss": "4.94"
+            "Oss": "4.83"
         },
         {
-            "Den Haag": "4.75"
+            "FC Emmen": "4.78"
         },
         {
             "Graafschap": "4.72"
         },
         {
-            "Telstar": "4.71"
-        },
-        {
             "Maastricht": "4.67"
         },
         {
-            "FC Emmen": "4.65"
+            "Den Haag": "4.56"
         },
         {
-            "Den Bosch": "4.47"
+            "Telstar": "4.56"
+        },
+        {
+            "Den Bosch": "4.39"
         },
         {
             "Jong AZ": "4.28"
         },
         {
-            "Jong PSV": "4.24"
+            "Jong PSV": "4.28"
         },
         {
             "Eindhoven": "4.11"
         },
         {
-            "Helmond": "3.41"
+            "Helmond": "3.39"
         }
     ],
     "Away Teams": [
         {
-            "Venlo": "5.71"
+            "Venlo": "5.72"
         },
         {
-            "Almere": "5.41"
+            "Almere": "5.28"
         },
         {
-            "Eindhoven": "5.41"
+            "Dordrecht": "5.22"
         },
         {
-            "Dordrecht": "5.29"
+            "Eindhoven": "5.22"
         },
         {
-            "Jong Utrecht": "5.24"
+            "Jong Utrecht": "5.17"
         },
         {
-            "Jong AZ": "5.18"
-        },
-        {
-            "FC Volendam": "5.06"
+            "Jong AZ": "5.11"
         },
         {
             "Excelsior": "5.06"
+        },
+        {
+            "FC Volendam": "4.94"
+        },
+        {
+            "Roda": "4.94"
         },
         {
             "FC Emmen": "4.89"
@@ -93,19 +96,16 @@
             "Helmond": "4.83"
         },
         {
-            "Roda": "4.82"
-        },
-        {
-            "Graafschap": "4.76"
-        },
-        {
-            "Jong PSV": "4.76"
-        },
-        {
-            "Maastricht": "4.71"
+            "Maastricht": "4.72"
         },
         {
             "Breda": "4.67"
+        },
+        {
+            "Graafschap": "4.67"
+        },
+        {
+            "Jong PSV": "4.61"
         },
         {
             "Oss": "4.28"

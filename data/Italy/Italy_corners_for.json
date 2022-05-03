@@ -1,87 +1,87 @@
 {
     "Home Teams": [
         {
-            "Venezia": "6.63"
+            "Venezia": "6.65"
         },
         {
             "Spezia": "5.69"
         },
         {
-            "Genoa": "5.25"
-        },
-        {
-            "Sassuolo": "5.19"
-        },
-        {
-            "Salernitana": "5.13"
-        },
-        {
             "Cagliari": "5.12"
         },
         {
-            "Empoli": "4.88"
+            "Genoa": "5.12"
+        },
+        {
+            "Sassuolo": "5.12"
+        },
+        {
+            "Salernitana": "5.06"
+        },
+        {
+            "Empoli": "5.00"
         },
         {
             "Sampdoria": "4.71"
         },
         {
-            "Verona": "4.50"
+            "Verona": "4.53"
         },
         {
-            "Udinese": "4.44"
-        },
-        {
-            "Torino": "4.38"
+            "Torino": "4.47"
         },
         {
             "Juventus": "4.35"
         },
         {
+            "Udinese": "4.35"
+        },
+        {
             "AC Milan": "3.71"
+        },
+        {
+            "Lazio": "3.71"
         },
         {
             "AS Roma": "3.65"
         },
         {
-            "Lazio": "3.44"
-        },
-        {
-            "Atalanta": "3.13"
-        },
-        {
             "Napoli": "3.12"
         },
         {
-            "Inter": "2.75"
+            "Bologna": "2.94"
         },
         {
-            "Fiorentina": "2.69"
+            "Atalanta": "2.94"
         },
         {
-            "Bologna": "2.63"
+            "Inter": "2.76"
+        },
+        {
+            "Fiorentina": "2.65"
         }
     ],
     "Away Teams": [
         {
-            "Salernitana": "7.31"
+            "Salernitana": "7.41"
         },
         {
-            "Sampdoria": "6.88"
+            "Sampdoria": "6.71"
         },
         {
             "Venezia": "6.38"
         },
         {
-            "Spezia": "6.12"
+            "Udinese": "6.06"
         },
         {
-            "Udinese": "5.80"
+            "Spezia": "6.06"
         },
         {
-            "Cagliari": "5.63"
+            "Juventus": "5.59"
         },
         {
-            "Juventus": "5.56"
+            "Cagliari": "5.41"
         },
         {
             "Verona": "5.29"
@@ -99,28 +99,28 @@
             "Sassuolo": "5.00"
         },
         {
-            "AC Milan": "4.88"
+            "Torino": "5.00"
         },
         {
-            "Torino": "4.81"
+            "AC Milan": "4.71"
         },
         {
-            "Atalanta": "4.63"
-        },
-        {
-            "Inter": "4.56"
+            "Napoli": "4.53"
         },
         {
             "Lazio": "4.41"
         },
         {
-            "Napoli": "4.19"
+            "Atalanta": "4.35"
         },
         {
-            "Fiorentina": "4.06"
+            "Inter": "4.29"
         },
         {
-            "AS Roma": "3.19"
+            "Fiorentina": "4.18"
+        },
+        {
+            "AS Roma": "3.24"
         }
     ]
 }

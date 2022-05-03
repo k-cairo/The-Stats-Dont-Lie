@@ -4,87 +4,87 @@
             "Niort": "4.88"
         },
         {
-            "Quevilly Rouen": "4.75"
-        },
-        {
             "Nancy": "4.63"
         },
         {
-            "Amiens": "4.53"
+            "Quevilly Rouen": "4.47"
         },
         {
-            "Paris FC": "4.19"
+            "Amiens": "4.39"
         },
         {
-            "Nimes": "4.12"
+            "Paris FC": "4.29"
         },
         {
-            "Le Havre": "4.06"
+            "Nimes": "4.28"
         },
         {
-            "Valenciennes": "3.94"
+            "Le Havre": "4.00"
         },
         {
-            "Grenoble": "3.88"
+            "Grenoble": "3.94"
         },
         {
-            "Bastia": "3.65"
+            "Bastia": "3.89"
         },
         {
-            "Pau FC": "3.65"
+            "Valenciennes": "3.89"
         },
         {
-            "Sochaux": "3.56"
+            "Dijon": "3.72"
         },
         {
-            "Rodez": "3.50"
+            "Dunkerque": "3.61"
         },
         {
-            "Auxerre": "3.44"
+            "Pau FC": "3.61"
         },
         {
-            "Caen": "3.41"
+            "Rodez": "3.59"
         },
         {
-            "Dijon": "3.35"
+            "Sochaux": "3.59"
         },
         {
-            "Dunkerque": "3.35"
+            "Caen": "3.44"
         },
         {
-            "Guingamp": "3.19"
+            "Guingamp": "3.41"
         },
         {
-            "Toulouse": "3.06"
+            "Auxerre": "3.35"
         },
         {
-            "AC Ajaccio": "2.75"
+            "Toulouse": "3.00"
+        },
+        {
+            "AC Ajaccio": "2.71"
         }
     ],
     "Away Teams": [
         {
-            "Valenciennes": "6.06"
+            "Nimes": "5.82"
         },
         {
-            "Nimes": "6.00"
+            "Valenciennes": "5.76"
         },
         {
-            "Pau FC": "5.69"
+            "Niort": "5.72"
         },
         {
-            "Niort": "5.65"
+            "Pau FC": "5.59"
         },
         {
-            "Amiens": "5.38"
+            "Dunkerque": "5.35"
         },
         {
-            "Dunkerque": "5.31"
+            "Nancy": "5.28"
         },
         {
-            "Guingamp": "5.29"
+            "Guingamp": "5.17"
         },
         {
-            "Nancy": "5.24"
+            "Amiens": "5.12"
         },
         {
             "Quevilly Rouen": "5.06"
@@ -93,34 +93,34 @@
             "Dijon": "4.94"
         },
         {
-            "Sochaux": "4.88"
+            "Auxerre": "4.83"
         },
         {
-            "Auxerre": "4.71"
+            "Sochaux": "4.83"
         },
         {
-            "Grenoble": "4.71"
+            "Grenoble": "4.72"
         },
         {
-            "Bastia": "4.69"
+            "Le Havre": "4.65"
         },
         {
-            "Le Havre": "4.69"
+            "Bastia": "4.53"
         },
         {
-            "Caen": "4.63"
+            "Caen": "4.53"
         },
         {
-            "Toulouse": "4.44"
+            "Toulouse": "4.47"
         },
         {
-            "AC Ajaccio": "4.41"
+            "AC Ajaccio": "4.44"
         },
         {
-            "Paris FC": "4.41"
+            "Paris FC": "4.33"
         },
         {
-            "Rodez": "4.00"
+            "Rodez": "3.83"
         }
     ]
 }

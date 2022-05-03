@@ -1,25 +1,22 @@
 {
     "Home Teams": [
         {
-            "Gil Vicente": "3.80"
+            "Gil Vicente": "3.88"
         },
         {
             "FC Porto": "3.73"
         },
         {
-            "Tondela": "3.67"
+            "Tondela": "3.69"
         },
         {
-            "Benfica": "3.60"
+            "Benfica": "3.63"
         },
         {
             "Arouca": "3.47"
         },
         {
-            "Portimonense": "3.27"
-        },
-        {
-            "Vizela": "3.27"
+            "Portimonense": "3.38"
         },
         {
             "Maritimo": "3.20"
@@ -28,28 +25,31 @@
             "Sporting": "3.20"
         },
         {
-            "Boavista": "3.13"
-        },
-        {
             "Famalicao": "3.13"
         },
         {
             "Moreirense": "3.13"
         },
         {
-            "Braga": "3.07"
+            "Vizela": "3.13"
         },
         {
-            "Estoril": "2.80"
+            "Boavista": "3.06"
         },
         {
-            "Ferreira": "2.73"
+            "Braga": "3.00"
+        },
+        {
+            "Estoril": "2.81"
+        },
+        {
+            "Pacos Ferreira": "2.73"
+        },
+        {
+            "Santa Clara": "2.63"
         },
         {
             "Guimaraes": "2.60"
-        },
-        {
-            "Santa Clara": "2.60"
         },
         {
             "Belenenses": "2.40"
@@ -57,16 +57,16 @@
     ],
     "Away Teams": [
         {
-            "Arouca": "3.53"
+            "Arouca": "3.56"
         },
         {
-            "FC Porto": "3.53"
+            "FC Porto": "3.44"
         },
         {
-            "Sporting": "3.33"
+            "Sporting": "3.25"
         },
         {
-            "Famalicao": "3.20"
+            "Famalicao": "3.13"
         },
         {
             "Boavista": "3.07"
@@ -75,22 +75,22 @@
             "Gil Vicente": "3.07"
         },
         {
-            "Maritimo": "2.93"
+            "Belenenses": "2.94"
         },
         {
             "Tondela": "2.93"
         },
         {
-            "Moreirense": "2.87"
+            "Maritimo": "2.88"
         },
         {
-            "Ferreira": "2.80"
+            "Moreirense": "2.81"
+        },
+        {
+            "Pacos Ferreira": "2.75"
         },
         {
             "Benfica": "2.73"
-        },
-        {
-            "Belenenses": "2.67"
         },
         {
             "Vizela": "2.67"
@@ -108,7 +108,7 @@
             "Santa Clara": "2.33"
         },
         {
-            "Guimaraes": "2.27"
+            "Guimaraes": "2.25"
         }
     ]
 }

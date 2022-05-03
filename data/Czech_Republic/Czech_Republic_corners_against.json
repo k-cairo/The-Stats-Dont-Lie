@@ -1,31 +1,31 @@
 {
     "Home Teams": [
         {
-            "Hradec Kralove": "5.80"
+            "Hradec Kralove": "5.94"
         },
         {
-            "Bohemians": "5.43"
+            "Bohemians": "5.40"
         },
         {
-            "Teplice": "5.43"
+            "Ostrava": "5.27"
+        },
+        {
+            "Teplice": "5.25"
         },
         {
             "Zlin": "5.20"
         },
         {
-            "Ostrava": "5.14"
+            "Jablonec": "5.19"
         },
         {
             "Plzen": "5.13"
         },
         {
-            "Jablonec": "5.07"
+            "Karvina": "5.06"
         },
         {
-            "Sparta Prague": "4.73"
-        },
-        {
-            "Slavia Prague": "4.71"
+            "Sparta Prague": "5.06"
         },
         {
             "Ceske Budejovice": "4.67"
@@ -34,16 +34,16 @@
             "Pardubice": "4.67"
         },
         {
-            "Karvina": "4.64"
+            "Mlada Boleslav": "4.60"
         },
         {
-            "Slovacko": "4.50"
+            "Slavia Prague": "4.60"
         },
         {
-            "Mlada Boleslav": "4.43"
+            "Sigma Olomouc": "4.53"
         },
         {
-            "Sigma Olomouc": "4.43"
+            "Slovacko": "4.53"
         },
         {
             "Liberec": "4.27"
@@ -51,49 +51,49 @@
     ],
     "Away Teams": [
         {
-            "Ceske Budejovice": "6.86"
+            "Ceske Budejovice": "6.60"
         },
         {
-            "Ostrava": "5.73"
+            "Ostrava": "6.00"
         },
         {
-            "Hradec Kralove": "5.43"
+            "Pardubice": "5.56"
         },
         {
-            "Jablonec": "5.43"
+            "Jablonec": "5.53"
         },
         {
-            "Pardubice": "5.21"
+            "Hradec Kralove": "5.40"
+        },
+        {
+            "Slavia Prague": "4.94"
+        },
+        {
+            "Zlin": "4.88"
         },
         {
             "Teplice": "4.87"
         },
         {
-            "Zlin": "4.86"
-        },
-        {
-            "Bohemians": "4.73"
-        },
-        {
-            "Slavia Prague": "4.73"
+            "Bohemians": "4.75"
         },
         {
             "Mlada Boleslav": "4.67"
         },
         {
-            "Slovacko": "4.53"
+            "Slovacko": "4.56"
         },
         {
-            "Sparta Prague": "4.43"
+            "Plzen": "4.53"
+        },
+        {
+            "Sparta Prague": "4.53"
         },
         {
             "Karvina": "4.40"
         },
         {
-            "Plzen": "4.36"
-        },
-        {
-            "Liberec": "4.14"
+            "Liberec": "4.20"
         },
         {
             "Sigma Olomouc": "4.00"

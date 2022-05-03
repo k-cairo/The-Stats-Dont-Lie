@@ -1,16 +1,16 @@
 {
     "Home Teams": [
         {
-            "WS Wanderers": "5.91"
+            "Macarthur FC": "6.00"
         },
         {
-            "Western United": "5.75"
+            "WS Wanderers": "5.83"
         },
         {
-            "Macarthur FC": "5.50"
+            "Western United": "5.38"
         },
         {
-            "Adelaide United": "5.40"
+            "Adelaide United": "5.36"
         },
         {
             "Perth Glory": "5.36"
@@ -22,13 +22,13 @@
             "Sydney FC": "5.08"
         },
         {
-            "Newcastle Jets": "5.00"
+            "Newcastle Jets": "4.75"
         },
         {
-            "Wellington Phoenix": "4.75"
+            "Wellington Phoenix": "4.62"
         },
         {
-            "Brisbane Roar": "4.60"
+            "Brisbane Roar": "4.45"
         },
         {
             "Melbourne Victory": "4.42"
@@ -39,13 +39,16 @@
     ],
     "Away Teams": [
         {
-            "Central Coast Mariners": "6.00"
-        },
-        {
             "Adelaide United": "5.85"
         },
         {
-            "Newcastle Jets": "5.60"
+            "Central Coast Mariners": "5.67"
+        },
+        {
+            "Newcastle Jets": "5.55"
+        },
+        {
+            "Melbourne Victory": "5.50"
         },
         {
             "Sydney FC": "5.33"
@@ -54,13 +57,10 @@
             "Melbourne City": "5.25"
         },
         {
-            "Melbourne Victory": "5.20"
+            "WS Wanderers": "5.00"
         },
         {
-            "WS Wanderers": "5.20"
-        },
-        {
-            "Macarthur FC": "5.08"
+            "Macarthur FC": "4.77"
         },
         {
             "Western United": "4.70"
@@ -69,7 +69,7 @@
             "Wellington Phoenix": "4.60"
         },
         {
-            "Perth Glory": "4.17"
+            "Perth Glory": "4.23"
         },
         {
             "Brisbane Roar": "4.08"

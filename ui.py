@@ -11,6 +11,7 @@ from constant import CONVERSION_LIST
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Font
 from subprocess import Popen
+from analysis import analyze_datas
 
 today = datetime.today().strftime("%d-%m-%Y")
 tomorrow = (date.today() + timedelta(days=1)).strftime("%d-%m-%Y")
@@ -119,9 +120,24 @@ class UserInterface:
         self.window.title("Statistiques Corners & Cartons")
         self.window.geometry("1070x465")
 
+        # Config our Columns
+        self.window.columnconfigure(index=0, weight=1)
+        self.window.columnconfigure(index=1, weight=1)
+        self.window.columnconfigure(index=2, weight=1)
+        self.window.columnconfigure(index=3, weight=1)
+        self.window.columnconfigure(index=4, weight=1)
+
+        # Config our Rows
+        self.window.rowconfigure(index=0, weight=1)
+        self.window.rowconfigure(index=1, weight=1)
+        self.window.rowconfigure(index=2, weight=1)
+        self.window.rowconfigure(index=3, weight=1)
+        self.window.rowconfigure(index=4, weight=1)
+        self.window.rowconfigure(index=5, weight=1)
+
         # Label
         self.main_label = Label(text="Statistiques Corners & Cartons", )
-        self.main_label.grid(row=0, column=0, columnspan=5)
+        self.main_label.grid(row=0, column=0, columnspan=5, sticky="nsew")
 
         # Left Buttons GET
         self.get_cards_iframes_button = Button(
@@ -129,105 +145,105 @@ class UserInterface:
             command=get_iframes.get_all_cards_iframes,
             width=UserInterface.BUTTONS_WIDTH,
             height=UserInterface.LEFT_RIGHT_BUTTONS_HEIGHT)
-        self.get_cards_iframes_button.grid(row=1, column=0)
+        self.get_cards_iframes_button.grid(row=1, column=0, sticky="nsew")
 
         self.get_corners_iframes_button = Button(
             text="Get Corners Iframes",
             command=get_iframes.get_all_corners_iframes,
             width=UserInterface.BUTTONS_WIDTH,
             height=UserInterface.LEFT_RIGHT_BUTTONS_HEIGHT)
-        self.get_corners_iframes_button.grid(row=2, column=0)
+        self.get_corners_iframes_button.grid(row=2, column=0, sticky="nsew")
 
         self.get_datas_button = Button(
             text="Get Datas",
             command=self.check_before_get_datas,
             width=UserInterface.BUTTONS_WIDTH,
             height=UserInterface.LEFT_RIGHT_BUTTONS_HEIGHT)
-        self.get_datas_button.grid(row=3, column=0)
+        self.get_datas_button.grid(row=3, column=0, sticky="nsew")
 
-        # Right Buttons VIEW
+        # Right Buttons Analysis
         self.view_cards_iframes_button = Button(
-            text="Launch Game Analysis",
+            text="Game Analysis\nHistorique.xlsx",
             command=self.analysis_excel_data,
             width=UserInterface.BUTTONS_WIDTH,
             height=UserInterface.LEFT_RIGHT_BUTTONS_HEIGHT)
-        self.view_cards_iframes_button.grid(row=1, column=4)
+        self.view_cards_iframes_button.grid(row=1, column=4, sticky="nsew")
 
         self.view_corners_iframes_button = Button(
-            text="Launch Excel File",
+            text="Open Excel File\nHistorique.xlsx",
             command=self.launch_excel_file,
             width=UserInterface.BUTTONS_WIDTH,
             height=UserInterface.LEFT_RIGHT_BUTTONS_HEIGHT)
-        self.view_corners_iframes_button.grid(row=2, column=4)
+        self.view_corners_iframes_button.grid(row=2, column=4, sticky="nsew")
 
         self.view_datas_button = Button(
-            text="View Datas\nComing Next",
-            state="disabled",
+            text="Datas Analysis\nAnalysis.xlsx",
+            command=self.get_last_day_analyze,
             width=UserInterface.BUTTONS_WIDTH,
             height=UserInterface.LEFT_RIGHT_BUTTONS_HEIGHT)
-        self.view_datas_button.grid(row=3, column=4)
+        self.view_datas_button.grid(row=3, column=4, sticky="nsew")
 
         # Bottom Buttons GET
         self.get_todays_matchs_button = Button(
             text=f"Get Matchs : {datetime.today().strftime('%A %d %B')}",
             command=partial(get_matchs.get_all_matchs, date=today),
             width=UserInterface.BUTTONS_WIDTH)
-        self.get_todays_matchs_button.grid(row=4, column=0)
+        self.get_todays_matchs_button.grid(row=4, column=0, sticky="nsew")
 
         self.get_tomorrows_matchs_button = Button(
             text=f"Get Matchs : {(datetime.today() + timedelta(days=1)).strftime('%A %d %B')}",
             command=partial(get_matchs.get_all_matchs, date=tomorrow), width=UserInterface.BUTTONS_WIDTH)
-        self.get_tomorrows_matchs_button.grid(row=4, column=1)
+        self.get_tomorrows_matchs_button.grid(row=4, column=1, sticky="nsew")
 
         self.get_J2_matchs_button = Button(
             text=f"Get Matchs : {(datetime.today() + timedelta(days=2)).strftime('%A %d %B')}",
             command=partial(get_matchs.get_all_matchs, date=j2), width=UserInterface.BUTTONS_WIDTH)
-        self.get_J2_matchs_button.grid(row=4, column=2)
+        self.get_J2_matchs_button.grid(row=4, column=2, sticky="nsew")
 
         self.get_J3_matchs_button = Button(
             text=f"Get Matchs : {(datetime.today() + timedelta(days=3)).strftime('%A %d %B')}",
             command=partial(get_matchs.get_all_matchs, date=j3), width=UserInterface.BUTTONS_WIDTH)
-        self.get_J3_matchs_button.grid(row=4, column=3)
+        self.get_J3_matchs_button.grid(row=4, column=3, sticky="nsew")
 
         self.get_J4_matchs_button = Button(
             text=f"Get Matchs : {(datetime.today() + timedelta(days=4)).strftime('%A %d %B')}",
             command=partial(get_matchs.get_all_matchs, date=j4), width=UserInterface.BUTTONS_WIDTH)
-        self.get_J4_matchs_button.grid(row=4, column=4)
+        self.get_J4_matchs_button.grid(row=4, column=4, sticky="nsew")
 
         # Bottom Buttons VIEW
         self.view_todays_matchs_button = Button(
             text=f"View Matchs : {datetime.today().strftime('%A %d %B')}",
             command=partial(self.read_match_list, date=today),
             width=UserInterface.BUTTONS_WIDTH)
-        self.view_todays_matchs_button.grid(row=5, column=0)
+        self.view_todays_matchs_button.grid(row=5, column=0, sticky="nsew")
 
         self.view_tomorrows_matchs_button = Button(
             text=f"View Matchs : {(datetime.today() + timedelta(days=1)).strftime('%A %d %B')}",
             command=partial(self.read_match_list, date=tomorrow),
             width=UserInterface.BUTTONS_WIDTH)
-        self.view_tomorrows_matchs_button.grid(row=5, column=1)
+        self.view_tomorrows_matchs_button.grid(row=5, column=1, sticky="nsew")
 
         self.view_tomorrows_matchs_button = Button(
             text=f"View Matchs : {(datetime.today() + timedelta(days=2)).strftime('%A %d %B')}",
             command=partial(self.read_match_list, date=j2),
             width=UserInterface.BUTTONS_WIDTH)
-        self.view_tomorrows_matchs_button.grid(row=5, column=2)
+        self.view_tomorrows_matchs_button.grid(row=5, column=2, sticky="nsew")
 
         self.view_tomorrows_matchs_button = Button(
             text=f"View Matchs : {(datetime.today() + timedelta(days=3)).strftime('%A %d %B')}",
             command=partial(self.read_match_list, date=j3),
             width=UserInterface.BUTTONS_WIDTH)
-        self.view_tomorrows_matchs_button.grid(row=5, column=3)
+        self.view_tomorrows_matchs_button.grid(row=5, column=3, sticky="nsew")
 
         self.view_tomorrows_matchs_button = Button(
             text=f"View Matchs : {(datetime.today() + timedelta(days=4)).strftime('%A %d %B')}",
             command=partial(self.read_match_list, date=j4),
             width=UserInterface.BUTTONS_WIDTH)
-        self.view_tomorrows_matchs_button.grid(row=5, column=4)
+        self.view_tomorrows_matchs_button.grid(row=5, column=4, sticky="nsew")
 
         # Text
         self.textbox = Text(master=self.window)
-        self.textbox.grid(row=1, rowspan=3, column=1, columnspan=3)
+        self.textbox.grid(row=1, rowspan=3, column=1, columnspan=3, sticky="nsew")
         self.window.mainloop()
 
     def launch_excel_file(self):
@@ -235,6 +251,13 @@ class UserInterface:
             self.textbox.insert(index=1.0, chars="File not found\nLaunch 'View Match ...'")
         else:
             Popen(r'C:\Program Files (x86)\Microsoft Office\root\Office16\EXCEL.EXE ./Historique/Historique.xlsx')
+
+    def get_last_day_analyze(self):
+        self.textbox.delete('1.0', END)
+        analyze_datas()
+        with open("analysis/sheet_list.txt", "r") as sheet_file:
+            last_day_analyze = sheet_file.readlines()[-1]
+            self.textbox.insert(index=1.0, chars=f"Last day analyse : {last_day_analyze}")
 
     def read_match_list(self, date):
         excel_row = 1
@@ -285,6 +308,7 @@ class UserInterface:
                 get_data.get_all_datas()
 
     def analysis_excel_data(self):
+        self.textbox.delete('1.0', END)
         try:
             workbook = load_workbook("./Historique/Historique.xlsx")
         except FileNotFoundError:
@@ -294,30 +318,51 @@ class UserInterface:
             for sheet in workbook.sheetnames[1:]:
                 ws = workbook[sheet]
 
+                # Check if Sheet is totally full
                 row = 2
+                sheet_totally_full = True
                 while ws[f"A{row}"].value != None:
-                    # Cards Logiq
-                    if not ws[f"F{row}"].value == None:
-                        if ws[f"D{row}"].value < ws[f"F{row}"].value:
-                            ws[f"H{row}"] = "Passed"
-                        else:
-                            ws[f"H{row}"] = "Failed"
-
-                    # Corners Logiq
-                    if not ws[f"G{row}"].value == None:
-                        if ws[f"E{row}"].value < ws[f"G{row}"].value:
-                            ws[f"I{row}"] = "Passed"
-                        else:
-                            ws[f"I{row}"] = "Failed"
-
-                    # Bet Global Logiq
-                    if ws[f"I{row}"].value != None and ws[f"H{row}"].value != None:
-                        if ws[f"I{row}"].value == "Passed" and ws[f"H{row}"].value == "Passed":
-                            ws[f"J{row}"] = "Passed"
-                        else:
-                            ws[f"J{row}"] = "Failed"
+                    if  ws[f"F{row}"].value == None:
+                        sheet_totally_full = False
                     row += 1
-                row = 2
 
-            workbook.save("./Historique/Historique.xlsx")
+                if sheet_totally_full:
+                    row = 2
+                    while ws[f"A{row}"].value != None:
+                        # Cards Logiq
+                        if not ws[f"F{row}"].value == None:
+                            if ws[f"D{row}"].value <= ws[f"F{row}"].value:
+                                ws[f"H{row}"] = "Passed"
+                            else:
+                                ws[f"H{row}"] = "Failed"
+
+                        # Corners Logiq
+                        if not ws[f"G{row}"].value == None:
+                            if 5.5 <= ws[f"G{row}"].value:
+                                ws[f"I{row}"] = "Passed"
+                            else:
+                                ws[f"I{row}"] = "Failed"
+                        # if not ws[f"G{row}"].value == None:
+                        #     if ws[f"E{row}"].value <= ws[f"G{row}"].value:
+                        #         ws[f"I{row}"] = "Passed"
+                        #     else:
+                        #         ws[f"I{row}"] = "Failed"
+
+                        # Bet Global Logiq
+                        if ws[f"I{row}"].value != None and ws[f"H{row}"].value != None:
+                            if ws[f"I{row}"].value == "Passed" and ws[f"H{row}"].value == "Passed":
+                                ws[f"J{row}"] = "Passed"
+                            else:
+                                ws[f"J{row}"] = "Failed"
+                        row += 1
+                    self.textbox.insert(index=END, chars=f"{sheet} : Analysis done !!\n")
+                    row = 2
+                else:
+                    self.textbox.insert(index=END, chars=f"{sheet} : Analysis can't be launch because Excel sheet is not totally full!!\n")
+
+                workbook.save("./Historique/Historique.xlsx")
+
+
+if __name__ == "__main__":
+    UserInterface()
 
