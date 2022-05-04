@@ -1,6 +1,6 @@
 from django import template
 from django.template.defaultfilters import stringfilter
-from constant import CONVERSION_LIST
+from ..constant2 import CONVERSION_LIST
 
 register = template.Library()
 

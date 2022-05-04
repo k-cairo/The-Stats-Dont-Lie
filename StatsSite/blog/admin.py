@@ -1,3 +1,8 @@
 from django.contrib import admin
+from .models import Match
 
-# Register your models here.
+
+@admin.register(Match)
+class Match(admin.ModelAdmin):
+    list_display = ("date", "match", "championship")
+    list_filter = ("date", "championship")

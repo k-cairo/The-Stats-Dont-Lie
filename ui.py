@@ -13,6 +13,7 @@ from openpyxl.styles import Font
 from subprocess import Popen
 from analysis import analyze_datas
 
+
 today = datetime.today().strftime("%d-%m-%Y")
 tomorrow = (date.today() + timedelta(days=1)).strftime("%d-%m-%Y")
 j2 = (date.today() + timedelta(days=2)).strftime("%d-%m-%Y")
@@ -268,38 +269,39 @@ class UserInterface:
         except FileNotFoundError:
             self.textbox.insert(index=1.0, chars="Please get matchs list first")
         else:
-            for championship in matchs_list:
-                matchs = matchs_list[championship]
-                for match in matchs:
-                    excel_row += 1
-                    match_split = match.split("|")
-                    home_team = match_split[0]
-                    away_team = match_split[1]
-                    # show_infos.debug_format_teams(champ=championship, ht=home_team, at=away_team) # Only for Debugging
-                    cards_for_stats = show_infos.get_card_for(champ=championship, ht=home_team, at=away_team)
-                    cards_against_stats = show_infos.get_card_against(champ=championship, ht=home_team, at=away_team)
-                    corners_for_stats = show_infos.get_corner_for(champ=championship, ht=home_team, at=away_team)
-                    corners_against_stats = show_infos.get_corner_against(champ=championship, ht=home_team,
-                                                                          at=away_team)
-                    total_cards = float(cards_against_stats) + float(cards_for_stats)
-                    define_bet(total_stats=total_cards)
-                    total_corners = float(corners_against_stats) + float(corners_for_stats)
-                    content = f"Championnat : {championship_convert_name(old_championship=championship, dictionary=CONVERSION_LIST)}" \
-                              f"\nMatch : {match.replace('|', ' - ')}" \
-                              f"\n{cards_for_stats} Cards For" \
-                              f"\n{cards_against_stats} Cards Against" \
-                              f"\n{corners_for_stats} Corners For" \
-                              f"\n{corners_against_stats} Corners Against" \
-                              f"\nTotal Cards: {total_cards}" \
-                              f"\nTotal Corners: {total_corners}" \
-                              f"\nBet à tenter : {define_bet(total_stats=total_cards)} Cards" \
-                              f"\nBet à tenter : {define_bet(total_stats=total_corners)} Corners\n\n\n"
-                    self.textbox.insert(index=1.0, chars=content)
-                    write_in_excel_file(date=date, championship=championship_convert_name(old_championship=championship, dictionary=CONVERSION_LIST), home_team=home_team, away_team=away_team,
-                                        bet_cards=define_bet(total_stats=total_cards),
-                                        bet_corners=define_bet(total_stats=total_corners), row=excel_row)
-            excel_row = 2
+            for format_date, date_matchs in matchs_list.items():
+                for championship in date_matchs:
+                    matchs = date_matchs[championship]
+                    for match in matchs:
+                        excel_row += 1
+                        match_split = match.split("|")
+                        home_team = match_split[0]
+                        away_team = match_split[1]
+                        # show_infos.debug_format_teams(champ=championship, ht=home_team, at=away_team) # Only for Debugging
+                        cards_for_stats = show_infos.get_card_for(champ=championship, ht=home_team, at=away_team)
+                        cards_against_stats = show_infos.get_card_against(champ=championship, ht=home_team, at=away_team)
+                        corners_for_stats = show_infos.get_corner_for(champ=championship, ht=home_team, at=away_team)
+                        corners_against_stats = show_infos.get_corner_against(champ=championship, ht=home_team,
+                                                                              at=away_team)
+                        total_cards = float(cards_against_stats) + float(cards_for_stats)
+                        define_bet(total_stats=total_cards)
+                        total_corners = float(corners_against_stats) + float(corners_for_stats)
+                        content = f"Championnat : {championship_convert_name(old_championship=championship, dictionary=CONVERSION_LIST)}" \
+                                  f"\nMatch : {match.replace('|', ' - ')}" \
+                                  f"\n{cards_for_stats} Cards For" \
+                                  f"\n{cards_against_stats} Cards Against" \
+                                  f"\n{corners_for_stats} Corners For" \
+                                  f"\n{corners_against_stats} Corners Against" \
+                                  f"\nTotal Cards: {total_cards}" \
+                                  f"\nTotal Corners: {total_corners}" \
+                                  f"\nBet à tenter : {define_bet(total_stats=total_cards)} Cards" \
+                                  f"\nBet à tenter : {define_bet(total_stats=total_corners)} Corners\n\n\n"
+                        self.textbox.insert(index=1.0, chars=content)
+                        write_in_excel_file(date=date, championship=championship_convert_name(old_championship=championship, dictionary=CONVERSION_LIST), home_team=home_team, away_team=away_team,
+                                            bet_cards=define_bet(total_stats=total_cards),
+                                            bet_corners=define_bet(total_stats=total_corners), row=excel_row)
 
+            excel_row = 2
     def check_before_get_datas(self):
         for path in get_data.ALL_PATHS:
             if not os.path.exists(path):

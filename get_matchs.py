@@ -9,11 +9,12 @@ import os
 
 all_matchs = {}
 
+
 def open_browser():
     try:
         service = Service(executable_path=ChromeDriverManager().install())
     except:
-        service = Service(executable_path="./chromedriver.exe")
+        service = Service(executable_path="./chromedriver/chromedriver.exe")
     finally:
         driver = webdriver.Chrome(service=service)
     return driver
@@ -46,7 +47,7 @@ def get_all_matchs(date):
                     format_match = f"{home_team_format}|{away_team_format}"
                     all_matchs[championship_format].append(format_match)
 
-    write_to_json_file(content=all_matchs, date2=date)
+    write_to_json_file(content={date: all_matchs}, date2=date)
     all_matchs.clear()
 
 
