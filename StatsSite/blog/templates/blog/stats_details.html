@@ -5,7 +5,7 @@
 {% block content %}
 <div style="width:1000px;">
     <h1 class="text-center">{{ match.championship }}</h1>
-    <p class="text-center lead fw-normal mb-0"><a href="{% url 'blog-team_detail' team=match.home_team %}">{{ match.home_team }}</a> - <a href="{% url 'blog-team_detail' team=match.away_team %}">{{ match.away_team }}</a></p>
+    <p class="text-center lead fw-normal mb-0"><a href="{% url 'blog-team_detail' match.home_team %}">{{ match.home_team }}</a> - <a href="{% url 'blog-team_detail' match.home_team %}">{{ match.away_team }}</a></p>
     <p class="text-center lead fw-normal mb-0">Bet à Tenter : + 2,5 Cartons</p>
     <p class="text-center lead fw-normal mb-0">Bet à Tenter : + 2,5 Corners</p>
 </div>

@@ -1,4 +1,5 @@
 from django.shortcuts import render, HttpResponse
+from django.shortcuts import get_object_or_404
 from pathlib import Path
 from .constant2 import LOGO_LIST
 from .models import Match
@@ -6,6 +7,7 @@ import os
 import json
 from slugify import slugify
 from datetime import datetime, timedelta, date
+from django.db.models import Q
 
 BASE_DIRECTORY = Path(__file__).resolve().parent.parent.parent
 
@@ -40,15 +42,12 @@ def add_match_into_database():
 
 def index(request):
     add_match_into_database()
-    today_matchs = Match.objects.filter(date=today)
-    context = {"matchs": today_matchs, "logo": LOGO_LIST}
+    today_j3_matchs = Match.objects.filter(Q(date=today) | Q(date=tomorrow) | Q(date=j2))
+    context = {"matchs": today_j3_matchs, "logo": LOGO_LIST}
     return render(request, "blog/index.html", context=context)
 
 
 def match_detail(request, slug):
-    match = Match.objects.get(slug=slug)
+    match = get_object_or_404(Match, slug=slug)
     return render(request, "blog/stats_details.html", context={"match": match})
 
-
-def team_detail(request, team):
-    return HttpResponse("hello")

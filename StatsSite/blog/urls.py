@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import index, match_detail, team_detail
+from .views import index, match_detail
 
 urlpatterns = [
     path('', index, name="blog-index"),
-    path('<str:slug>/', match_detail, name="blog-match_detail"),
-    path('<str:team>/', team_detail, name="blog-team_detail")
+    path('<str:slug>/', match_detail, name="blog-match_detail")
 ]

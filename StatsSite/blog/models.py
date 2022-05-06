@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Match(models.Model):
@@ -11,6 +12,9 @@ class Match(models.Model):
 
     def __str__(self):
         return self.match.replace("|", " - ")
+
+    def get_absolute_url(self):
+        return reverse("blog-match_detail", kwargs={"slug": self.slug})
 
 
 
