@@ -21,6 +21,7 @@ def open_browser():
 
 
 def get_all_matchs(date):
+    # test
     url = f"https://www.matchendirect.fr/resultat-foot-{date}/"
     driver = open_browser()
     driver.get(url)
