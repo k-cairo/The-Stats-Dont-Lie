@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from .views import index, match_detail
+from .views import index, match_detail, update_matchs_a_venir, update_matchs_termines
 
 urlpatterns = [
     path('', index, name="blog-index"),
+    path("update-matchs-a-venir/", update_matchs_a_venir, name="blog-update_matchs_a_venir"),
+    path("update-matchs-termines/", update_matchs_termines, name="blog-update_matchs_termines"),
     path('<str:slug>/', match_detail, name="blog-match_detail")
 ]
