@@ -5,7 +5,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from webdriver_manager.chrome import ChromeDriverManager
-from constant import LIST_CHAMPIONSHIP, CONVERSION_LIST
+from utils.constant import LIST_CHAMPIONSHIP, CONVERSION_LIST
 import os
 
 all_matchs = {}

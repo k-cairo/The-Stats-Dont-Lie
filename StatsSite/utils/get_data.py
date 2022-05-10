@@ -1,9 +1,7 @@
 import json
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from webdriver_manager.chrome import ChromeDriverManager
 import os
+from utils.selenium_functions import open_browser
 
 YELLOW_CARD_FOR_PATH = "./iframes/cards/iframes_cards_for.json"
 YELLOW_CARD_AGAINST_PATH = "./iframes/cards/iframes_cards_against.json"
@@ -11,16 +9,6 @@ FULL_TIME_CORNER_FOR = "./iframes/corners/iframes_corners_for.json"
 FULL_TIME_CORNER_AGAINST = "./iframes/corners/iframes_corners_against.json"
 
 ALL_PATHS = [YELLOW_CARD_AGAINST_PATH, YELLOW_CARD_FOR_PATH, FULL_TIME_CORNER_AGAINST, FULL_TIME_CORNER_FOR]
-
-
-def open_browser():
-    try:
-        service = Service(executable_path=ChromeDriverManager().install())
-    except:
-        service = Service(executable_path="./chromedriver/chromedriver.exe")
-    finally:
-        driver = webdriver.Chrome(service=service)
-    return driver
 
 
 def get_all_datas():
@@ -91,8 +79,3 @@ def write_data_in_json_file(championship, home_teams, home_stats, away_teams, aw
     json_object = json.dumps(result, indent=4)
     with open(f"./data/{championship}/{championship}_{outfile}.json", "w") as f:
         f.write(json_object)
-
-
-if __name__ == "__main__":
-
-    get_all_datas()

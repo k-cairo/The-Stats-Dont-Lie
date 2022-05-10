@@ -1,3 +1,4 @@
+from datetime import date
 from django.db import models
 from django.urls import reverse
 
@@ -36,6 +37,19 @@ class MatchsTermine(models.Model):
 
     def get_absolute_url(self):
         return reverse("blog-match_detail", kwargs={"slug": self.slug})
+
+
+class Iframe(models.Model):
+    championship = models.CharField(max_length=200)
+    iframe_url = models.URLField()
+    iframe_stats = models.CharField(max_length=200)
+    date_updated = models.DateField(default=date.today)
+
+
+class Data(models.Model):
+    championship = models.CharField(max_length=200)
+    datas = models.JSONField()
+
 
 
 
