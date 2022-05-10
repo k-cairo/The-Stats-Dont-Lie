@@ -6,12 +6,14 @@ from .models import MatchsAVenir, MatchsTermine, Iframe, Data
 class MatchAVenir(admin.ModelAdmin):
     list_display = ("date", "match", "championship")
     list_filter = ("date", "championship")
+    search_fields = ("championship", "home_team", "away_team")
 
 
 @admin.register(MatchsTermine)
 class MatchTermines(admin.ModelAdmin):
     list_display = ("date", "match", "championship", "nb_yellow_cards", "nb_red_cards", "nb_goals")
-    list_filter = ("date", "championship")
+    list_filter = ("date", "championship", "nb_goals")
+    search_fields = ("championship", "home_team", "away_team")
 
 
 @admin.register(Iframe)

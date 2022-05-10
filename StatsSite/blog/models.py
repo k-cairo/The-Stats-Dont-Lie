@@ -10,9 +10,7 @@ class MatchsAVenir(models.Model):
     slug = models.SlugField(max_length=200)
     home_team = models.CharField(max_length=100)
     away_team = models.CharField(max_length=100)
-    nb_yellow_cards = models.IntegerField(blank=True, null=True)
-    nb_red_cards = models.IntegerField(blank=True, null=True)
-    nb_goals = models.IntegerField(blank=True, null=True)
+    card_bet = models.CharField(max_length=10)
 
     def __str__(self):
         return self.match.replace("|", " - ")

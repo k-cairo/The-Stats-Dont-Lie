@@ -16,6 +16,11 @@ def open_browser():
 
 
 def accept_cookie(driver):
+    """
+    Click on the Cookie from 'https://www.matchendirect.fr/resultat-foot'
+    :param driver:
+    :return: None
+    """
     try:
         driver.implicitly_wait(1)
         frame = driver.find_element(By.XPATH, '//*[@id="appconsent"]/iframe')

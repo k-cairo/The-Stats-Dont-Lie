@@ -1,76 +1,32 @@
-import json
-from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
+from datetime import date, timedelta, datetime
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
-from webdriver_manager.chrome import ChromeDriverManager
 from utils.constant import LIST_CHAMPIONSHIP, CONVERSION_LIST
-import os
+from utils.selenium_functions import open_browser, accept_cookie
+from blog.models import MatchsAVenir, MatchsTermine
 
 all_matchs = {}
 
+today = datetime.today().strftime("%d-%m-%Y")
+tomorrow = (date.today() + timedelta(days=1)).strftime("%d-%m-%Y")
+j2 = (date.today() + timedelta(days=2)).strftime("%d-%m-%Y")
+j3 = (date.today() + timedelta(days=3)).strftime("%d-%m-%Y")
+j4 = (date.today() + timedelta(days=4)).strftime("%d-%m-%Y")
+j5 = (date.today() + timedelta(days=5)).strftime("%d-%m-%Y")
 
-def open_browser():
-    try:
-        service = Service(executable_path=ChromeDriverManager().install())
-    except:
-        service = Service(executable_path="./chromedriver/chromedriver.exe")
-    finally:
-        opt = Options()
-        opt.add_argument("Chrome/100.0.4896.127")
-        driver = webdriver.Chrome(service=service, options=opt)
-    return driver
-
-
-def get_href_results(date):
-    url = f"https://www.matchendirect.fr/resultat-foot-{date}/"
-
-    driver = open_browser()
-    driver.get(url)
-
-    driver.find_element(By.XPATH, '/html/body/div/div/div/div/div/div/div[1]/button').click()
-
-    all_div_championships = driver.find_elements(By.CSS_SELECTOR, "div div.panel.panel-info")
-
-    for div_championship in all_div_championships[:-2]:
-        try:
-            championship = div_championship.find_element(By.CSS_SELECTOR, "h3.panel-title a").text
-        except NoSuchElementException:
-            print("Problème avec un Championnat")
-        else:
-            if championship in LIST_CHAMPIONSHIP:
-                print(date)
-                print(championship)
-                championship_format = format_championships_names(championship=championship)
-                all_matchs[championship_format] = []
-                raw_matchs = div_championship.find_elements(By.CSS_SELECTOR, "tbody td.lm3")
-
-                for row_match in raw_matchs:
-                    home_team = row_match.find_element(By.CSS_SELECTOR, "span.lm3_eq1").text
-                    home_team_format = format_teams_names(team=home_team)
-                    away_team = row_match.find_element(By.CSS_SELECTOR, "span.lm3_eq2").text
-                    away_team_format = format_teams_names(team=away_team)
-                    format_match = f"{home_team_format}|{away_team_format}"
-                    link_match = row_match.find_element(By.CSS_SELECTOR, "a").get_attribute("href")
-                    get_match_results(url=link_match, match=format_match)
-
-
-def get_match_results(url, match):
-    driver = open_browser()
-    driver.get(url)
-
-    match = match
-    nb_goals = len(driver.find_elements(By.CSS_SELECTOR, "span.ico_evenement1"))
-    nb_yellow_cards = len(driver.find_elements(By.CSS_SELECTOR, "span.ico_evenement4"))
-    nb_red_cards = len(driver.find_elements(By.CSS_SELECTOR, "span.ico_evenement3"))
-    print(f"{match}: Goals - {nb_goals}, Yellow Cards: {nb_yellow_cards}, Red Cards: {nb_red_cards}")
+day_list = (today, tomorrow, j2, j3, j4, j5)
 
 
 def get_all_matchs(date):
-    url = f"https://www.matchendirect.fr/resultat-foot-{date}/"
+    """
+    Get a date as input and return all matchs of this specified day
+    :param date: str
+    :return: {str: []}
+    """
+    all_matchs.clear()
     driver = open_browser()
-    driver.get(url)
+    driver.get(f"https://www.matchendirect.fr/resultat-foot-{date}/")
+    accept_cookie(driver=driver)
 
     all_div_championships = driver.find_elements(By.CSS_SELECTOR, "div div.panel.panel-info")
 
@@ -81,8 +37,6 @@ def get_all_matchs(date):
             print("Problème avec un Championnat")
         else:
             if championship in LIST_CHAMPIONSHIP:
-                print(date)
-                print(championship)
                 championship_format = format_championships_names(championship=championship)
                 all_matchs[championship_format] = []
                 raw_matchs = div_championship.find_elements(By.CSS_SELECTOR, "tbody td.lm3")
@@ -94,20 +48,47 @@ def get_all_matchs(date):
                     format_match = f"{home_team_format}|{away_team_format}"
                     all_matchs[championship_format].append(format_match)
 
-    write_to_json_file(content={date: all_matchs}, date2=date)
-    all_matchs.clear()
+    return all_matchs
 
 
-def write_to_json_file(content, date2):
-    if not os.path.exists("./Liste de Matchs"):
-        os.mkdir("./Liste de Matchs")
+def get_matchs_cards_goals(match, date, url):
+    """
+    Get the number of yellow cards, red cards and goals of the game passed as a parameter.
+    Add this game in 'MatchsTermine' database and then delete this match from 'MatchsAVenir' database
+    :param match: str
+    :param date: str
+    :param url: str
+    :return: None
+    """
+    driver = open_browser()
+    driver.get(url)
 
-    json_object = json.dumps(content, indent=4)
-    with open(f"./liste de Matchs/{date2}.json", "w") as f:
-        f.write(json_object)
+    nb_goals = len(driver.find_elements(By.CSS_SELECTOR, "span.ico_evenement1"))
+    nb_yellow_cards = len(driver.find_elements(By.CSS_SELECTOR, "span.ico_evenement4"))
+    nb_red_cards = len(driver.find_elements(By.CSS_SELECTOR, "span.ico_evenement3"))
+
+    new_query = MatchsAVenir.objects.filter(date=date, match=match.replace("|", " - "))
+
+    if len(new_query) != 0:
+        new_query_values = new_query.values()
+        MatchsTermine.objects.create(match=new_query_values[0]['match'],
+                                     championship=new_query_values[0]['championship'],
+                                     date=new_query_values[0]['date'],
+                                     slug=new_query_values[0]['slug'],
+                                     home_team=new_query_values[0]['home_team'],
+                                     away_team=new_query_values[0]['away_team'],
+                                     nb_yellow_cards=nb_yellow_cards,
+                                     nb_red_cards=nb_red_cards,
+                                     nb_goals=nb_goals)
+        MatchsAVenir.objects.filter(date=date, match=match.replace("|", " - ")).delete()
 
 
 def format_teams_names(team):
+    """
+    Return a copy with all occurrences of substring old replaced by new
+    :param team: str
+    :return: str
+    """
     return team.replace("Paris Saint-Germain", "PSG").replace("Manchester City", "Man City") \
         .replace("Espanyol Barcelone", "Espanyol").replace("Séville", "Sevilla").replace("Cadix", "Cadiz") \
         .replace("Athletic Bilbao", 'Ath. Bilbao').replace("Barcelone", "Barcelona").replace("Värnamo", "Varnamo") \
@@ -191,6 +172,3 @@ def format_teams_names(team):
 def format_championships_names(championship):
     return CONVERSION_LIST[championship]
 
-
-if __name__ == "__main__":
-    get_href_results(date="05-05-2022")

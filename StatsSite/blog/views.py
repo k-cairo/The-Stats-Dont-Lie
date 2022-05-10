@@ -3,28 +3,15 @@ from pathlib import Path
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from utils.constant import LOGO_LIST, LIST_CHAMPIONSHIP
-from utils.get_matchs import format_championships_names, format_teams_names
+from utils.get_matchs import format_championships_names, format_teams_names, day_list, today, tomorrow, j2, \
+    get_all_matchs, get_matchs_cards_goals
 from utils.selenium_functions import open_browser, accept_cookie
-from utils.get_matchs_cards_goals import get_matchs_cards_goals
 from utils.get_cards_iframes import get_all_cards_iframes
 from .models import MatchsAVenir, Data, Iframe
-import os
-import json
-from slugify import slugify
-from datetime import datetime, timedelta, date
 from django.db.models import Q
-
+from slugify import slugify
 
 BASE_DIRECTORY = Path(__file__).resolve().parent.parent.parent
-
-today = datetime.today().strftime("%d-%m-%Y")
-tomorrow = (date.today() + timedelta(days=1)).strftime("%d-%m-%Y")
-j2 = (date.today() + timedelta(days=2)).strftime("%d-%m-%Y")
-j3 = (date.today() + timedelta(days=3)).strftime("%d-%m-%Y")
-j4 = (date.today() + timedelta(days=4)).strftime("%d-%m-%Y")
-j5 = (date.today() + timedelta(days=5)).strftime("%d-%m-%Y")
-
-day_list = (today, tomorrow, j2, j3, j4, j5)
 
 
 ################################################   INDEX   #############################################################
@@ -34,26 +21,33 @@ def index(request):
     return render(request, "blog/index.html", context=context)
 
 
-############################################   UPDATE MATCHS   #########################################################
+############################################   MATCH DETAILS   #########################################################
+def match_details(request, slug):
+    print(slug)
+    return render(request, "blog/match_details.html", context={"slug": slug})
+
+
+########################################   UPDATE MATCHS A VENIR   #####################################################
 def update_matchs_a_venir(request):
+    # Check if day already in database (Next 5 days)
     for day in day_list:
-        json_file = os.path.join(BASE_DIRECTORY, f"Liste de Matchs/{day}.json")
-        if os.path.exists(json_file):
-            with open(json_file, "r") as f:
-                match_list = json.load(f)
-        for date, date_matchs in match_list.items():
-            for championship, rencontres in date_matchs.items():
+        data_dates = MatchsAVenir.objects.filter(date=day)
+        if len(data_dates) == 0:
+            all_matchs = get_all_matchs(day)
+
+            for championship, rencontres in all_matchs.items():
                 for rencontre in rencontres:
-                    if not MatchsAVenir.objects.filter(match=rencontre.replace('|', ' - '), date=date).exists():
+                    if not MatchsAVenir.objects.filter(match=rencontre.replace('|', ' - '), date=day).exists():
                         MatchsAVenir.objects.create(match=rencontre.replace('|', ' - '),
                                                     championship=championship,
-                                                    date=date,
+                                                    date=day,
                                                     slug=slugify(rencontre),
                                                     home_team=rencontre.split("|")[0],
                                                     away_team=rencontre.split("|")[1])
     return HttpResponse("Matchs list Update")
 
 
+#########################################   UPDATE STATS MATCHS   ######################################################
 def update_matchs_termines(request):
     driver = open_browser()
     dates_to_update = []
@@ -86,17 +80,13 @@ def update_matchs_termines(request):
                         match_href = row_match.find_element(By.CSS_SELECTOR, "a").get_attribute("href")
                         format_match = f"{home_team_format}|{away_team_format}"
                         get_matchs_cards_goals(match=format_match, date=date,
-                                        url=match_href)
+                                               url=match_href)
     return HttpResponse("Matchs finish Update")
 
 
 ########################################   UPDATE CARDS IFRAMES   ######################################################
+# TODO To Finish
 def update_iframes(request):
-    """
-    Save Iframes into Database
-    :param request:
-    :return: HttpResponse
-    """
     iframes = get_all_cards_iframes()
 
     for championship, iframe in iframes[0]:
@@ -111,7 +101,6 @@ def update_iframes(request):
 
 
 ############################################   UPDATE DATAS   ##########################################################
+# TODO
 def update_datas(request):
     return HttpResponse("Datas Update")
-
-
