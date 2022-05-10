@@ -3,6 +3,7 @@ from pathlib import Path
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from utils.constant import LOGO_LIST, LIST_CHAMPIONSHIP
+from utils.get_data import get_data
 from utils.get_matchs import format_championships_names, format_teams_names, day_list, today, tomorrow, j2, \
     get_all_matchs, get_matchs_cards_goals
 from utils.selenium_functions import open_browser, accept_cookie
@@ -22,9 +23,11 @@ def index(request):
 
 
 ############################################   MATCH DETAILS   #########################################################
+# TODO
 def match_details(request, slug):
     print(slug)
-    return render(request, "blog/match_details.html", context={"slug": slug})
+    return HttpResponse(f"")
+    # return render(request, "blog/match_details.html", context={"slug": slug})
 
 
 ########################################   UPDATE MATCHS A VENIR   #####################################################
@@ -85,22 +88,32 @@ def update_matchs_termines(request):
 
 
 ########################################   UPDATE CARDS IFRAMES   ######################################################
-# TODO To Finish
 def update_iframes(request):
     iframes = get_all_cards_iframes()
 
-    for championship, iframe in iframes[0]:
+    for championship, iframe in iframes[0].items():
         Iframe.objects.create(championship=championship, iframe_url=iframe,
                               iframe_stats="cards for", date_updated=today)
 
-    for championship, iframe in iframes[1]:
+    for championship, iframe in iframes[1].items():
         Iframe.objects.create(championship=championship, iframe_url=iframe,
                               iframe_stats="cards against", date_updated=today)
 
-    return HttpResponse("Iframes Update")
+    return HttpResponse("Iframes Updated")
 
 
 ############################################   UPDATE DATAS   ##########################################################
-# TODO
 def update_datas(request):
+    driver = open_browser()
+
+    cards_against_iframes = Iframe.objects.filter(iframe_stats="cards against")
+    cards_for_iframes = Iframe.objects.filter(iframe_stats="cards for")
+
+    for card_for_iframe in cards_for_iframes:
+        get_data(url=card_for_iframe.iframe_url, championship=card_for_iframe.championship,
+                 driver=driver, data_stats="cards for")
+
+    for card_against_iframe in cards_against_iframes:
+        get_data(url=card_against_iframe.iframe_url, championship=card_against_iframe.championship,
+                 driver=driver, data_stats="cards against")
     return HttpResponse("Datas Update")

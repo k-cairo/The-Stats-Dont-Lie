@@ -2,27 +2,11 @@ import json
 from selenium.webdriver.common.by import By
 import os
 from utils.selenium_functions import open_browser
-
-YELLOW_CARD_FOR_PATH = "./iframes/cards/iframes_cards_for.json"
-YELLOW_CARD_AGAINST_PATH = "./iframes/cards/iframes_cards_against.json"
-FULL_TIME_CORNER_FOR = "./iframes/corners/iframes_corners_for.json"
-FULL_TIME_CORNER_AGAINST = "./iframes/corners/iframes_corners_against.json"
-
-ALL_PATHS = [YELLOW_CARD_AGAINST_PATH, YELLOW_CARD_FOR_PATH, FULL_TIME_CORNER_AGAINST, FULL_TIME_CORNER_FOR]
+from blog.models import Data
+from utils.get_matchs import today
 
 
-def get_all_datas():
-    driver = open_browser()
-
-    for path in ALL_PATHS:
-        if os.path.exists(path):
-            with open(path) as f:
-                data = json.load(f)
-                for championship, iframe in data.items():
-                    get_data(url=iframe, championship=championship, path_iframe=path, driver=driver)
-
-
-def get_data(url, championship, path_iframe, driver):
+def get_data(url, championship, driver, data_stats):
     other_teams = []
     home_teams = []
     driver.get(url)
@@ -47,24 +31,11 @@ def get_data(url, championship, path_iframe, driver):
         home_stats.append(home_stat)
         away_stats.append(away_stat)
 
-    write_data_in_json_file(championship=championship, home_teams=home_teams, home_stats=home_stats,
-                            away_teams=away_teams, away_stats=away_stats, path_iframe=path_iframe)
+    update_database(championship=championship, home_teams=home_teams, home_stats=home_stats,
+                            away_teams=away_teams, away_stats=away_stats, data_stats=data_stats)
 
 
-def write_data_in_json_file(championship, home_teams, home_stats, away_teams, away_stats, path_iframe):
-    outfile_list = ["cards_for", "cards_against", "corners_for", "corners_against"]
-    outfile = ""
-
-    for file in outfile_list:
-        if file in path_iframe:
-            outfile = file
-
-    if not os.path.exists("./data"):
-        os.mkdir("./data")
-
-    if not os.path.exists(f"./data/{championship}"):
-        os.mkdir(f"./data/{championship}")
-
+def update_database(championship, home_teams, home_stats, away_teams, away_stats, data_stats):
     result = {
         "Home Teams": [],
         "Away Teams": []
@@ -76,6 +47,7 @@ def write_data_in_json_file(championship, home_teams, home_stats, away_teams, aw
     for i, team in enumerate(away_teams):
         result["Away Teams"].append({team: away_stats[i]})
 
-    json_object = json.dumps(result, indent=4)
-    with open(f"./data/{championship}/{championship}_{outfile}.json", "w") as f:
-        f.write(json_object)
+    if len(Data.objects.filter(championship=championship).filter(datas_stats=data_stats)) == 0:
+        Data.objects.create(championship=championship, datas=result, datas_stats=data_stats, date_updated=today)
+    else:
+        Data.objects.filter(championship=championship).update(datas=result, date_updated=today)

@@ -41,12 +41,18 @@ class Iframe(models.Model):
     championship = models.CharField(max_length=200)
     iframe_url = models.URLField()
     iframe_stats = models.CharField(max_length=200)
-    date_updated = models.DateField(default=date.today)
+    date_updated = models.CharField(max_length=200)
 
 
 class Data(models.Model):
     championship = models.CharField(max_length=200)
     datas = models.JSONField()
+    datas_stats = models.CharField(max_length=200)
+    date_updated = models.CharField(max_length=200)
+    # team = models.CharField(max_length=200)
+    # cards_for_average = models.FloatField(default=0)
+    # cards_against_average = models.FloatField(default=0)
+
 
 
 

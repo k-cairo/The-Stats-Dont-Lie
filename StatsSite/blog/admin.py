@@ -23,4 +23,4 @@ class Iframe(admin.ModelAdmin):
 
 @admin.register(Data)
 class Data(admin.ModelAdmin):
-    list_display = ('championship', 'datas')
+    list_display = ('championship', 'datas', "datas_stats", "date_updated")
