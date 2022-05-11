@@ -43,12 +43,80 @@ def update_matchs_a_venir(request):
             for championship, rencontres in all_matchs.items():
                 for rencontre in rencontres:
                     if not MatchsAVenir.objects.filter(match=rencontre.replace('|', ' - '), date=day).exists():
+                        teams = rencontre.split("|")
+                        home_team = teams[0]
+                        away_team = teams[1]
+
+                        card_for_query = Data.objects.filter(championship=championship).filter(datas_stats="cards for")
+                        card_against_query = Data.objects.filter(championship=championship).filter(
+                            datas_stats="cards against")
+
+                        card_for_query_values = card_for_query.values()
+                        card_against_query_values = card_against_query.values()
+
+                        list_cards_for_stats_home_team = card_for_query_values[0]["datas"]["Home Teams"]
+                        list_cards_for_stats_away_team = card_for_query_values[0]["datas"]["Away Teams"]
+                        list_cards_against_stats_home_team = card_against_query_values[0]["datas"]["Home Teams"]
+                        list_cards_against_stats_away_team = card_against_query_values[0]["datas"]["Away Teams"]
+
+                        home_team_cards_for_average = 0
+                        home_team_cards_against_average = 0
+                        away_team_cards_for_average = 0
+                        away_team_cards_against_average = 0
+
+                        for data_tuple in list_cards_for_stats_home_team:
+                            for team, cards_average in data_tuple.items():
+                                if team == home_team:
+                                    home_team_cards_for_average = float(cards_average)
+
+                        for data_tuple in list_cards_against_stats_home_team:
+                            for team, cards_average in data_tuple.items():
+                                if team == home_team:
+                                    home_team_cards_against_average = float(cards_average)
+
+                        for data_tuple in list_cards_for_stats_away_team:
+                            for team, cards_average in data_tuple.items():
+                                if team == away_team:
+                                    away_team_cards_for_average = float(cards_average)
+
+                        for data_tuple in list_cards_against_stats_away_team:
+                            for team, cards_average in data_tuple.items():
+                                if team == away_team:
+                                    away_team_cards_against_average = float(cards_average)
+
+                        total_cards = min(home_team_cards_for_average, away_team_cards_for_average) + min(
+                            home_team_cards_against_average, away_team_cards_against_average)
+
+                        if total_cards >= 8.5:
+                            card_bet = "+ 7.5"
+                        elif total_cards >= 7.5:
+                            card_bet = "+ 6.5"
+                        elif total_cards >= 6.5:
+                            card_bet = "+ 5.5"
+                        elif total_cards >= 5.5:
+                            card_bet = "+ 4.5"
+                        elif total_cards >= 4.5:
+                            card_bet = "+ 3.5"
+                        elif total_cards >= 3.5:
+                            card_bet = "+ 2.5"
+                        elif total_cards >= 2.5:
+                            card_bet = "+ 1.5"
+                        elif total_cards >= 1.5:
+                            card_bet = "+ 0.5"
+                        else:
+                            card_bet = "+0"
+
                         MatchsAVenir.objects.create(match=rencontre.replace('|', ' - '),
                                                     championship=championship,
                                                     date=day,
                                                     slug=slugify(rencontre),
                                                     home_team=rencontre.split("|")[0],
-                                                    away_team=rencontre.split("|")[1])
+                                                    away_team=rencontre.split("|")[1],
+                                                    home_team_cards_for_average=home_team_cards_for_average,
+                                                    home_team_cards_against_average=home_team_cards_against_average,
+                                                    away_team_cards_for_average=away_team_cards_for_average,
+                                                    away_team_cards_against_average=away_team_cards_against_average,
+                                                    card_bet=card_bet)
     return HttpResponse("Matchs list Update")
 
 

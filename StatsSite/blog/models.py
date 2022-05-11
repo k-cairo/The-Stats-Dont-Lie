@@ -10,6 +10,10 @@ class MatchsAVenir(models.Model):
     slug = models.SlugField(max_length=200)
     home_team = models.CharField(max_length=100)
     away_team = models.CharField(max_length=100)
+    home_team_cards_for_average = models.FloatField()
+    away_team_cards_for_average = models.FloatField()
+    home_team_cards_against_average = models.FloatField()
+    away_team_cards_against_average = models.FloatField()
     card_bet = models.CharField(max_length=10)
 
     def __str__(self):
@@ -51,9 +55,6 @@ class Data(models.Model):
     datas = models.JSONField()
     datas_stats = models.CharField(max_length=200)
     date_updated = models.CharField(max_length=200)
-    # team = models.CharField(max_length=200)
-    # cards_for_average = models.FloatField(default=0)
-    # cards_against_average = models.FloatField(default=0)
 
 
 

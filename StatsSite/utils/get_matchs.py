@@ -83,7 +83,9 @@ def get_matchs_cards_goals(match, date, url):
                                      away_team=new_query_values[0]['away_team'],
                                      nb_yellow_cards=nb_yellow_cards,
                                      nb_red_cards=nb_red_cards,
-                                     nb_goals=nb_goals)
+                                     nb_goals=nb_goals,
+                                     score=f"{ht_goals} - {at_goals}",
+                                     card_bet=new_query_values[0]['card_bet'])
         MatchsAVenir.objects.filter(date=date, match=match.replace("|", " - ")).delete()
 
 
@@ -170,7 +172,10 @@ def format_teams_names(team):
         .replace("Minnesota United", "Minnesota").replace("Austin", "Austin FC") \
         .replace("New England", "New England Revolution").replace('New York RB', "New York Red Bulls") \
         .replace("Toronto", "Toronto FC").replace("Dallas", "FC Dallas").replace("Sporting KC", "Sporting Kansas City") \
-        .replace("Whitecaps", "Vancouver Whitecaps")
+        .replace("Whitecaps", "Vancouver Whitecaps").replace("Alavés", "Alaves").replace("Majorque", "Mallorca")\
+        .replace("Vejle-Kolding", "Vejle").replace("Ferreira", "Pacos Ferreira")\
+        .replace("Quevilly Rouen-Rouen", "Quevilly Rouen").replace("Ceará", "Ceara").replace("Real Bétis", "Betis")\
+        .replace("Philadelphie Union", "Philadelphia Union").replace("Valence", "Valencia")
 
 
 def format_championships_names(championship):
