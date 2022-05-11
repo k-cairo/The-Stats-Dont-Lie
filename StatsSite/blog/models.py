@@ -23,12 +23,14 @@ class MatchsTermine(models.Model):
     match = models.CharField(max_length=200)
     championship = models.CharField(max_length=200)
     date = models.CharField(max_length=20)
+    score = models.CharField(max_length=20)
     slug = models.SlugField(max_length=200)
     home_team = models.CharField(max_length=100)
     away_team = models.CharField(max_length=100)
     nb_yellow_cards = models.IntegerField()
     nb_red_cards = models.IntegerField()
     nb_goals = models.IntegerField()
+    card_bet = models.CharField(max_length=10)
 
     def __str__(self):
         return self.match.replace("|", " - ")
@@ -52,6 +54,7 @@ class Data(models.Model):
     # team = models.CharField(max_length=200)
     # cards_for_average = models.FloatField(default=0)
     # cards_against_average = models.FloatField(default=0)
+
 
 
 

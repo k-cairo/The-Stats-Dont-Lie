@@ -63,7 +63,11 @@ def get_matchs_cards_goals(match, date, url):
     driver = open_browser()
     driver.get(url)
 
-    nb_goals = len(driver.find_elements(By.CSS_SELECTOR, "span.ico_evenement1"))
+    goals = driver.find_elements(By.CSS_SELECTOR, "span.score")
+    ht_goals = goals[0].text
+    at_goals = goals[1].text
+
+    nb_goals = int(ht_goals) + int(at_goals)
     nb_yellow_cards = len(driver.find_elements(By.CSS_SELECTOR, "span.ico_evenement4"))
     nb_red_cards = len(driver.find_elements(By.CSS_SELECTOR, "span.ico_evenement3"))
 

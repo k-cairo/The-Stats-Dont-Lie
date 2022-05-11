@@ -25,9 +25,11 @@ def index(request):
 ############################################   MATCH DETAILS   #########################################################
 # TODO
 def match_details(request, slug):
-    print(slug)
-    return HttpResponse(f"")
-    # return render(request, "blog/match_details.html", context={"slug": slug})
+    today_j3_matchs = MatchsAVenir.objects.filter(Q(date=today) | Q(date=tomorrow) | Q(date=j2))
+    for match in today_j3_matchs:
+        if match.slug == slug:
+            target_match = match
+    return render(request, "blog/match_details.html", context={"match": target_match})
 
 
 ########################################   UPDATE MATCHS A VENIR   #####################################################
