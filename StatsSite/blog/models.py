@@ -15,6 +15,7 @@ class MatchsAVenir(models.Model):
     home_team_cards_against_average = models.FloatField()
     away_team_cards_against_average = models.FloatField()
     card_bet = models.CharField(max_length=10)
+    double_chance_predict = models.CharField(max_length=10)
 
     def __str__(self):
         return self.match.replace("|", " - ")
@@ -28,6 +29,7 @@ class MatchsTermine(models.Model):
     championship = models.CharField(max_length=200)
     date = models.CharField(max_length=20)
     score = models.CharField(max_length=20)
+    double_chance_predict = models.CharField(max_length=10)
     slug = models.SlugField(max_length=200)
     home_team = models.CharField(max_length=100)
     away_team = models.CharField(max_length=100)

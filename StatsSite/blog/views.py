@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from utils.constant import LOGO_LIST, LIST_CHAMPIONSHIP
 from utils.get_data import get_data
 from utils.get_matchs import format_championships_names, format_teams_names, day_list, today, tomorrow, j2, \
-    get_all_matchs, get_matchs_cards_goals
+    get_all_matchs, get_matchs_cards_goals, get_double_chance_predictions
 from utils.selenium_functions import open_browser, accept_cookie
 from utils.get_cards_iframes import get_all_cards_iframes
 from .models import MatchsAVenir, Data, Iframe
@@ -34,7 +34,7 @@ def match_details(request, slug):
 
 ########################################   UPDATE MATCHS A VENIR   #####################################################
 def update_matchs_a_venir(request):
-    # Check if day already in database (Next 5 days)
+    # Check if day already in database (Next 3 days)
     for day in day_list:
         data_dates = MatchsAVenir.objects.filter(date=day)
         if len(data_dates) == 0:
@@ -106,6 +106,8 @@ def update_matchs_a_venir(request):
                         else:
                             card_bet = "+0"
 
+                        double_chance_predict = get_double_chance_predictions(day=day, ht=home_team, at=away_team)
+
                         MatchsAVenir.objects.create(match=rencontre.replace('|', ' - '),
                                                     championship=championship,
                                                     date=day,
@@ -116,7 +118,8 @@ def update_matchs_a_venir(request):
                                                     home_team_cards_against_average=home_team_cards_against_average,
                                                     away_team_cards_for_average=away_team_cards_for_average,
                                                     away_team_cards_against_average=away_team_cards_against_average,
-                                                    card_bet=card_bet)
+                                                    card_bet=card_bet,
+                                                    double_chance_predict=double_chance_predict)
     return HttpResponse("Matchs list Update")
 
 

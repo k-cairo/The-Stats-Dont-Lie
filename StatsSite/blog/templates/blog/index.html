@@ -18,7 +18,9 @@
                 <!-- Championship name-->
                 <h5 class="fw-bolder">{{ match.championship|transformchampionship }}</h5>
                 <!-- Match name-->
-                {{ match|transformatch }}
+                <p>{{ match|transformatch }}</p>
+                <p>Bet Cartons : {{ match.card_bet }} Cartons</p>
+                <p>Bet Double Chance : {{ match.double_chance_predict }}</p>
             </div>
         </div>
         <!-- Stats Section-->

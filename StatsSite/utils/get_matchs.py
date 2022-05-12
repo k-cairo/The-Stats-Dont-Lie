@@ -10,11 +10,8 @@ all_matchs = {}
 today = datetime.today().strftime("%d-%m-%Y")
 tomorrow = (date.today() + timedelta(days=1)).strftime("%d-%m-%Y")
 j2 = (date.today() + timedelta(days=2)).strftime("%d-%m-%Y")
-j3 = (date.today() + timedelta(days=3)).strftime("%d-%m-%Y")
-j4 = (date.today() + timedelta(days=4)).strftime("%d-%m-%Y")
-j5 = (date.today() + timedelta(days=5)).strftime("%d-%m-%Y")
 
-day_list = (today, tomorrow, j2, j3, j4, j5)
+day_list = (today, tomorrow, j2)
 
 
 def get_all_matchs(date):
@@ -49,6 +46,39 @@ def get_all_matchs(date):
                     all_matchs[championship_format].append(format_match)
 
     return all_matchs
+
+
+def get_double_chance_predictions(day, ht, at):
+    ht_format = format_team_names_2(ht)
+    at_format = format_team_names_2(at)
+    if day == datetime.today().strftime("%d-%m-%Y"):
+        url = "https://www.mybets.today/soccer-predictions/double-chance-predictions/"
+    elif day ==(date.today() + timedelta(days=1)).strftime("%d-%m-%Y"):
+        url = "https://www.mybets.today/soccer-predictions/double-chance-predictions/tomorrow/"
+    else:
+        url = "https://www.mybets.today/soccer-predictions/double-chance-predictions/after-tomorrow/"
+
+    driver = open_browser()
+    driver.get(url)
+
+    divs_match = driver.find_elements(By.CSS_SELECTOR, "a.linkgames")
+
+    for div_match in divs_match:
+        home_team = div_match.find_element(By.CSS_SELECTOR, 'span.homespan').text
+        away_team = div_match.find_element(By.CSS_SELECTOR, 'span.awayspan').text
+
+        if home_team.lower() == ht_format.lower() or away_team.lower() == at_format.lower():
+            double_chance_prediction = div_match.find_element(By.CSS_SELECTOR, 'div.tipdiv').text
+
+            # For debugging
+            if home_team.lower() != ht_format.lower():
+                print(ht)
+            if away_team.lower() != at_format.lower():
+                print(at)
+
+            return double_chance_prediction
+    double_chance_prediction = ""
+    return double_chance_prediction
 
 
 def get_matchs_cards_goals(match, date, url):
@@ -176,6 +206,26 @@ def format_teams_names(team):
         .replace("Vejle-Kolding", "Vejle").replace("Ferreira", "Pacos Ferreira")\
         .replace("Quevilly Rouen-Rouen", "Quevilly Rouen").replace("Ceará", "Ceara").replace("Real Bétis", "Betis")\
         .replace("Philadelphie Union", "Philadelphia Union").replace("Valence", "Valencia")
+
+
+def format_team_names_2(team):
+    return team.replace('Jagiellonia', 'Jagiellonia Bialystok').replace("Legia", "Legia Warsaw")\
+        .replace("Dragovoljac", "NK Hrvatski Dragovoljac").replace("Gorica", "HNK Gorica")\
+        .replace("Atletico-MG", "Atletico Mineiro").replace("Aarhus", "AGF Aarhus").replace("Odense", "Odense BK")\
+        .replace("Cracovia", "Cracovia Krakow").replace("St. Etienne", "St Etienne")\
+        .replace("Clermont", "Clermont Foot").replace("AS Roma", "Roma").replace("Bayern", "Bayern Munich")\
+        .replace("Frankfurt", "Eintracht Frankfurt").replace("Furth", "Greuther Furth")\
+        .replace("Bielefeld", "Arminia Bielefeld").replace("Arouca", "FC Arouca")\
+        .replace("Orlando City", "Orlando City SC").replace("Western United", "Western United FC")\
+        .replace("Tirol", "WSG Swarovski Tirol").replace("Rijeka", "HNK Rijeka").replace("Lechia", "Lechia Gdansk")\
+        .replace("Dortmund", "Borussia Dortmund").replace("Hertha", "Hertha Berlin")\
+        .replace("Leverkusen", "Bayer Leverkusen").replace("Freiburg", "SC Freiburg")\
+        .replace("Monchengladbach", "Borussia M'gladbach").replace("Hoffenheim", "TSG Hoffenheim")\
+        .replace("Stuttgart", "VfB Stuttgart").replace("FC Koln", "Cologne").replace("Ried", "SV Ried")\
+        .replace("LASK", "LASK Linz").replace("Admira", "FC Flyeralarm Admira").replace("Altach", "SCR Altach")\
+        .replace("Termalica B-B.", "Termalica BB Nieciecza").replace("Piast", "Piast Gliwice")\
+        .replace("Warta", "Warta Poznan").replace("Lech", "Lech Poznan").replace("Zaglebie", "Zaglebie Lubin")\
+        .replace("Rakow", "Rakow Czestochowa").replace("Mjallby", "Mjällby AIF").replace("Varnamo", "IFK Varnamo")
 
 
 def format_championships_names(championship):

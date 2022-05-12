@@ -11,9 +11,7 @@ LEAGUES_URLS = {
     "Denmark": "https://www.thestatsdontlie.com/football/europe/denmark/superliga",
     "England1": "https://www.thestatsdontlie.com/football/uk-ireland/england/premier-league",
     "England2": "https://www.thestatsdontlie.com/football/uk-ireland/england/championship",
-    "Finland": "https://www.thestatsdontlie.com/football/europe/finland/veikkausliiga",
     "France1": "https://www.thestatsdontlie.com/football/europe/france/ligue-1",
-    "France2": "https://www.thestatsdontlie.com/football/europe/france/ligue-2",
     "Germany1": "https://www.thestatsdontlie.com/football/europe/germany/bundesliga",
     "Germany2": "https://www.thestatsdontlie.com/football/europe/germany/2-bundesliga",
     "Holland1": "https://www.thestatsdontlie.com/football/europe/holland/eredivisie",
@@ -23,7 +21,6 @@ LEAGUES_URLS = {
     "Portugal": "https://www.thestatsdontlie.com/football/europe/portugal/primeira-liga",
     "Scotland": "https://www.thestatsdontlie.com/football/uk-ireland/scotland/premiership",
     "Spain1": "https://www.thestatsdontlie.com/football/europe/spain/la-liga",
-    "Spain2": "https://www.thestatsdontlie.com/football/europe/spain/segunda-division",
     "Sweden": "https://www.thestatsdontlie.com/football/europe/sweden/allsvenskan",
     "Turkey": "https://www.thestatsdontlie.com/football/europe/turkey/super-lig",
     "USA": "https://www.thestatsdontlie.com/football/n-s-america/usa/mls"
@@ -31,19 +28,19 @@ LEAGUES_URLS = {
 
 TEAMS_IN_CHAMPIONSHIP = {
     "Australia": 12, "Austria": 12, "Belgium": 18, "Brazil": 20, "China": 16, "Croatia": 10, "Czech_Republic": 16,
-    "Denmark": 12, "England1": 20, "England2": 24, "Finland": 12, "France1": 20, "France2": 20, "Germany1": 18,
+    "Denmark": 12, "England1": 20, "England2": 24, "France1": 20, "Germany1": 18,
     "Germany2": 18, "Holland1": 18, "Holland2": 20, "Italy": 20, "Poland": 18, "Portugal": 18, "Scotland": 12,
-    "Spain1": 20, "Spain2": 22, "Sweden": 16, "Turkey": 20, "USA": 27
+    "Spain1": 20, "Sweden": 16, "Turkey": 20, "USA": 27
 }
 
 ##### FOR GET ALL MATCHS #####
 LIST_CHAMPIONSHIP = [
     "Australie : A-League", "Autriche : Bundesliga", "Belgique : Pro League", "Brésil : Série A",
     "Chine : Super League", "Croatie : 1. HNL", "République Tchèque : Ligue Tchèque", "Danemark : Superligaen",
-    "Angleterre : Premier League", "Angleterre : League Championship", "Finlande : Veikkausliiga", "France : Ligue 1",
-    "France : Ligue 2", "Allemagne : Bundesliga", "Allemagne : 2. Bundesliga", "Pays-Bas : Eredivisie",
+    "Angleterre : Premier League", "Angleterre : League Championship", "France : Ligue 1",
+    "Allemagne : Bundesliga", "Allemagne : 2. Bundesliga", "Pays-Bas : Eredivisie",
     "Pays-Bas : Eerste Divisie", "Italie : Serie A", "Pologne : Ekstraklasa", "Portugal : Liga Sagres",
-    "Écosse : Premier League", "Espagne : Liga BBVA", "Espagne : Liga Adelante", "Suède : Allsvenskan",
+    "Écosse : Premier League", "Espagne : Liga BBVA", "Suède : Allsvenskan",
     "Turquie : Süper Lig", "Etats-Unis : Major League Soccer"]
 
 #### CONVERSION #####
@@ -58,9 +55,7 @@ CONVERSION_LIST = {
     "Danemark : Superligaen": "Denmark",
     "Angleterre : Premier League": "England1",
     "Angleterre : League Championship": "England2",
-    "Finlande : Veikkausliiga": "Finland",
     "France : Ligue 1": "France1",
-    "France : Ligue 2": "France2",
     "Allemagne : Bundesliga": "Germany1",
     "Allemagne : 2. Bundesliga": "Germany2",
     "Pays-Bas : Eredivisie": "Holland1",
@@ -70,7 +65,6 @@ CONVERSION_LIST = {
     "Portugal : Liga Sagres": "Portugal",
     "Écosse : Premier League": "Scotland",
     "Espagne : Liga BBVA": "Spain1",
-    "Espagne : Liga Adelante": "Spain2",
     "Suède : Allsvenskan": "Sweden",
     "Turquie : Süper Lig": "Turkey",
     "Etats-Unis : Major League Soccer": "USA"
@@ -87,9 +81,7 @@ NEW_CONVERSION_LIST = {
     "Danemark : Superligaen": "Danemark - Superligaen",
     "Angleterre : Premier League": "Angleterre - Premier League",
     "Angleterre : League Championship": "Angleterre - League Championship",
-    "Finlande : Veikkausliiga": "Finlande - Veikkausliiga",
     "France : Ligue 1": "France - Ligue 1",
-    "France : Ligue 2": "France - Ligue 2",
     "Allemagne : Bundesliga": "Allemagne - Bundesliga",
     "Allemagne : 2. Bundesliga": "Allemagne - 2. Bundesliga",
     "Pays-Bas : Eredivisie": "Pays-Bas - Eredivisie",
@@ -99,32 +91,29 @@ NEW_CONVERSION_LIST = {
     "Portugal : Liga Sagres": "Portugal - Liga Sagres",
     "Écosse : Premier League": "Écosse - Premier League",
     "Espagne : Liga BBVA": "Espagne - Liga BBVA",
-    "Espagne : Liga Adelante": "Espagne - Liga Adelante",
     "Suède : Allsvenskan": "Suède - Allsvenskan",
     "Turquie : Süper Lig": "Turquie - Süper Lig",
     "Etats-Unis : Major League Soccer": "Etats-Unis - Major League Soccer"
 }
 
 LOGO_LIST = {
-    "Australia": "https://upload.wikimedia.org/wikipedia/fr/7/79/Logo_de_la_Hyundai_A-League_%282017%E2%80%93%29.svg",
+    "Australia": "data:image/jpeg;base64,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",
     "Austria": "https://upload.wikimedia.org/wikipedia/fr/a/a7/Austrian_Football_Bundesliga.png",
-    "Belgium": "https://upload.wikimedia.org/wikipedia/fr/0/06/Logo_Jupiler_Pro_League_2017-2020.jpg",
+    "Belgium": "https://www.tac-tyk.fr/wp-content/uploads/2020/05/Jupiler-1.png",
     "Brazil": "https://b.fssta.com/uploads/application/soccer/competition-logos/BrazilSerieA.png",
     "China": "https://www.thesportsdb.com/images/media/league/badge/c7evs21534799383.png",
-    "Croatia": "https://upload.wikimedia.org/wikipedia/fr/c/c2/Championnat_de_Croatie_de_football_-_Logo.png",
-    "Czech_Republic": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d1/HET_Liga_Logo.png/1200px-HET_Liga_Logo.png",
-    "Denmark": "https://logosvector.net/wp-content/uploads/2021/08/danish-superliga-logo.png",
+    "Croatia": "https://bi.im-g.pl/ldpic/league/logo/league_252.png",
+    "Czech_Republic": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnGonoLVQuk5X3ak90mI3oNoyfqLjlUTVAqH-adJS3D7yR8v-mNvpZ9nUgmneRhc5PX14&usqp=CAU",
+    "Denmark": "https://1.bp.blogspot.com/-WrLIOHaKz5I/YLJZLrCSuxI/AAAAAAAAoS0/8Z7trPKZf5cha_Ufu8gRfpqOahoK_qIqACLcBGAsYHQ/s225/download%2B%25281%2529.png",
     "England1": "https://www.xalimasn.com/wp-content/uploads/2018/01/premi.png",
     "England2": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyCaV9vPzMzUaSTmWLcETkXFm-ABzHB3kB9UMxn01n1fgV_Hx-GdJ1e3rcmIACjxJvmm0&usqp=CAU",
-    "Finland": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b9/Veikkausliigan_logo.svg/1200px-Veikkausliigan_logo.svg.png",
-    "France1": "https://upload.wikimedia.org/wikipedia/fr/thumb/9/9b/Logo_de_la_Ligue_1_%282008%29.svg/1200px-Logo_de_la_Ligue_1_%282008%29.svg.png",
-    "France2": "https://www.francetvinfo.fr/pictures/4xqoKrToyiJNzhTdEgdMeWVJqJc/1200x1200/2016/04/14/phpkYtwEo_1.jpg",
+    "France1": "https://leblogdenins.com/wp-content/uploads/2016/07/ligue1.png",
     "Germany1": "https://upload.wikimedia.org/wikipedia/fr/thumb/0/0a/Bundesliga-logo.svg/1200px-Bundesliga-logo.svg.png",
     "Germany2": "https://upload.wikimedia.org/wikipedia/fr/thumb/1/14/2-Bundesliga-logo.svg/1200px-2-Bundesliga-logo.svg.png",
     "Holland1": "https://upload.wikimedia.org/wikipedia/fr/thumb/3/3e/Eredivisie-Logo.svg/1280px-Eredivisie-Logo.svg.png",
     "Holland2": "https://upload.wikimedia.org/wikipedia/fr/2/27/Keuken_Kampioen_Divisie.jpeg",
-    "Italy": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Serie_A.png",
-    "Poland": "https://upload.wikimedia.org/wikipedia/fr/5/54/T-Mobile_Ekstraklasa%282%29.png",
+    "Italy": "https://store-images.s-microsoft.com/image/apps.57276.13510798886630236.9f5bb184-caf7-40cc-a30c-2d212352958e.2caae805-d616-4564-a457-595caff0a0e2?mode=scale&q=90&h=300&w=300",
+    "Poland": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5MYerBm3YWdOgQV1AwguPJxwT82MbjgrKvyqk9Pb3QNv9EIGCQ-9TcJPsI-6Jc_Aukp8&usqp=CAU",
     "Portugal": "https://www.kindpng.com/picc/m/243-2435409_fifa-football-gaming-wiki-liga-nos-logo-2019.png",
     "Scotland": "https://upload.wikimedia.org/wikipedia/fr/c/cf/Scottish_Premiership.png",
     "Spain1": "https://www.thesportsdb.com/images/media/league/badge/7onmyv1534768460.png",
