@@ -22,6 +22,25 @@ def index(request):
     return render(request, "blog/index.html", context=context)
 
 
+##################################   TODAY, TOMORROW, J2 MATCHS PAGES   ################################################
+def today_matchs(request):
+    today_matchs = MatchsAVenir.objects.filter(date=today)
+    context = {"matchs": today_matchs, "logo": LOGO_LIST}
+    return render(request, "blog/index.html", context=context)
+
+
+def tomorrow_matchs(request):
+    tomorrow_matchs = MatchsAVenir.objects.filter(date=tomorrow)
+    context = {"matchs": tomorrow_matchs, "logo": LOGO_LIST}
+    return render(request, "blog/index.html", context=context)
+
+
+def j2_matchs(request):
+    j2_matchs = MatchsAVenir.objects.filter(date=j2)
+    context = {"matchs": j2_matchs, "logo": LOGO_LIST}
+    return render(request, "blog/index.html", context=context)
+
+
 ############################################   MATCH DETAILS   #########################################################
 # TODO
 def match_details(request, slug):
