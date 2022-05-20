@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import MatchsAVenir, MatchsTermine, Iframe, Data
+from .models import MatchsAVenir, MatchsTermine, Iframe, Data, TeamIframe
 
 
 @admin.register(MatchsAVenir)
@@ -24,3 +24,8 @@ class Iframe(admin.ModelAdmin):
 @admin.register(Data)
 class Data(admin.ModelAdmin):
     list_display = ('championship', 'datas', "datas_stats", "date_updated")
+
+
+@admin.register(TeamIframe)
+class Data(admin.ModelAdmin):
+    list_display = ("team", "iframe_url", "iframe_stats", "date_updated")

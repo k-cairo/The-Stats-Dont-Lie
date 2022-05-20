@@ -3,7 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.common.exceptions import NoSuchElementException
 from utils.constant import LIST_CHAMPIONSHIP, CONVERSION_LIST
 from utils.selenium_functions import open_browser, accept_cookie
-from blog.models import MatchsAVenir, MatchsTermine
+from blog.models import MatchsAVenir, MatchsTermine, Data, Iframe
 
 all_matchs = {}
 
@@ -15,11 +15,6 @@ day_list = (today, tomorrow, j2)
 
 
 def get_all_matchs(date):
-    """
-    Get a date as input and return all matchs of this specified day
-    :param date: str
-    :return: {str: []}
-    """
     all_matchs.clear()
     driver = open_browser()
     driver.get(f"https://www.matchendirect.fr/resultat-foot-{date}/")
@@ -31,7 +26,7 @@ def get_all_matchs(date):
         try:
             championship = div_championship.find_element(By.CSS_SELECTOR, "h3.panel-title a").text
         except NoSuchElementException:
-            print("Problème avec un Championnat")
+            print(f"Problème avec un Championnat: {championship}")
         else:
             if championship in LIST_CHAMPIONSHIP:
                 championship_format = format_championships_names(championship=championship)
@@ -53,7 +48,7 @@ def get_double_chance_predictions(day, ht, at):
     at_format = format_team_names_2(at)
     if day == datetime.today().strftime("%d-%m-%Y"):
         url = "https://www.mybets.today/soccer-predictions/double-chance-predictions/"
-    elif day ==(date.today() + timedelta(days=1)).strftime("%d-%m-%Y"):
+    elif day == (date.today() + timedelta(days=1)).strftime("%d-%m-%Y"):
         url = "https://www.mybets.today/soccer-predictions/double-chance-predictions/tomorrow/"
     else:
         url = "https://www.mybets.today/soccer-predictions/double-chance-predictions/after-tomorrow/"
@@ -81,17 +76,77 @@ def get_double_chance_predictions(day, ht, at):
     return double_chance_prediction
 
 
+def define_card_bet(total_cards):
+    if total_cards >= 8.5:
+        return "+ 7.5"
+    elif total_cards >= 7.5:
+        return "+ 6.5"
+    elif total_cards >= 6.5:
+        return "+ 5.5"
+    elif total_cards >= 5.5:
+        return "+ 4.5"
+    elif total_cards >= 4.5:
+        return "+ 3.5"
+    elif total_cards >= 3.5:
+        return "+ 2.5"
+    elif total_cards >= 2.5:
+        return "+ 1.5"
+    elif total_cards >= 1.5:
+        return "+ 0.5"
+    else:
+        return "+0"
+
+
+def get_cards_queryset(championship):
+    card_for_query = Data.objects.filter(championship=championship).filter(datas_stats="cards for")
+    card_against_query = Data.objects.filter(championship=championship).filter(datas_stats="cards against")
+
+    card_for_query_values = card_for_query.values()
+    card_against_query_values = card_against_query.values()
+
+    return card_for_query_values, card_against_query_values
+
+
+def get_home_away_team_cards_stats(cards_querysets, home_team, away_team):
+    home_team_cards_for_average = 0
+    home_team_cards_against_average = 0
+    away_team_cards_for_average = 0
+    away_team_cards_against_average = 0
+
+    for data_tuple in cards_querysets[0][0]["datas"]["Home Teams"]:
+        for team, cards_average in data_tuple.items():
+            if team == home_team:
+                home_team_cards_for_average = float(cards_average)
+
+    for data_tuple in cards_querysets[1][0]["datas"]["Home Teams"]:
+        for team, cards_average in data_tuple.items():
+            if team == home_team:
+                home_team_cards_against_average = float(cards_average)
+
+    for data_tuple in cards_querysets[0][0]["datas"]["Away Teams"]:
+        for team, cards_average in data_tuple.items():
+            if team == away_team:
+                away_team_cards_for_average = float(cards_average)
+
+    for data_tuple in cards_querysets[1][0]["datas"]["Away Teams"]:
+        for team, cards_average in data_tuple.items():
+            if team == away_team:
+                away_team_cards_against_average = float(cards_average)
+
+    return home_team_cards_for_average, home_team_cards_against_average, away_team_cards_for_average, away_team_cards_against_average
+
+
+def calculate_total_cards(home_team_cards_for_average, away_team_cards_for_average, home_team_cards_against_average,
+                          away_team_cards_against_average):
+    return min(home_team_cards_for_average, away_team_cards_for_average) + min(
+        home_team_cards_against_average, away_team_cards_against_average)
+
+
 def get_matchs_cards_goals(match, date, url):
-    """
-    Get the number of yellow cards, red cards and goals of the game passed as a parameter.
-    Add this game in 'MatchsTermine' database and then delete this match from 'MatchsAVenir' database
-    :param match: str
-    :param date: str
-    :param url: str
-    :return: None
-    """
     driver = open_browser()
     driver.get(url)
+
+    accept_cookie(driver=driver)
 
     goals = driver.find_elements(By.CSS_SELECTOR, "span.score")
     ht_goals = goals[0].text
@@ -115,16 +170,16 @@ def get_matchs_cards_goals(match, date, url):
                                      nb_red_cards=nb_red_cards,
                                      nb_goals=nb_goals,
                                      score=f"{ht_goals} - {at_goals}",
-                                     card_bet=new_query_values[0]['card_bet'])
+                                     card_bet=new_query_values[0]['card_bet'],
+                                     double_chance_predict=new_query_values[0]['double_chance_predict'])
         MatchsAVenir.objects.filter(date=date, match=match.replace("|", " - ")).delete()
 
 
+def format_championships_names(championship):
+    return CONVERSION_LIST[championship]
+
+
 def format_teams_names(team):
-    """
-    Return a copy with all occurrences of substring old replaced by new
-    :param team: str
-    :return: str
-    """
     return team.replace("Paris Saint-Germain", "PSG").replace("Manchester City", "Man City") \
         .replace("Espanyol Barcelone", "Espanyol").replace("Séville", "Sevilla").replace("Cadix", "Cadiz") \
         .replace("Athletic Bilbao", 'Ath. Bilbao').replace("Barcelone", "Barcelona").replace("Värnamo", "Varnamo") \
@@ -202,32 +257,59 @@ def format_teams_names(team):
         .replace("Minnesota United", "Minnesota").replace("Austin", "Austin FC") \
         .replace("New England", "New England Revolution").replace('New York RB', "New York Red Bulls") \
         .replace("Toronto", "Toronto FC").replace("Dallas", "FC Dallas").replace("Sporting KC", "Sporting Kansas City") \
-        .replace("Whitecaps", "Vancouver Whitecaps").replace("Alavés", "Alaves").replace("Majorque", "Mallorca")\
-        .replace("Vejle-Kolding", "Vejle").replace("Ferreira", "Pacos Ferreira")\
-        .replace("Quevilly Rouen-Rouen", "Quevilly Rouen").replace("Ceará", "Ceara").replace("Real Bétis", "Betis")\
-        .replace("Philadelphie Union", "Philadelphia Union").replace("Valence", "Valencia")
+        .replace("Whitecaps", "Vancouver Whitecaps").replace("Alavés", "Alaves").replace("Majorque", "Mallorca") \
+        .replace("Vejle-Kolding", "Vejle").replace("Ferreira", "Pacos Ferreira") \
+        .replace("Quevilly Rouen-Rouen", "Quevilly Rouen").replace("Ceará", "Ceara").replace("Real Bétis", "Betis") \
+        .replace("Philadelphie Union", "Philadelphia Union").replace("Valence", "Valencia")\
+        .replace("Melbourne Heart", "Melbourne City")
+
 
 
 def format_team_names_2(team):
-    return team.replace('Jagiellonia', 'Jagiellonia Bialystok').replace("Legia", "Legia Warsaw")\
-        .replace("Dragovoljac", "NK Hrvatski Dragovoljac").replace("Gorica", "HNK Gorica")\
-        .replace("Atletico-MG", "Atletico Mineiro").replace("Aarhus", "AGF Aarhus").replace("Odense", "Odense BK")\
-        .replace("Cracovia", "Cracovia Krakow").replace("St. Etienne", "St Etienne")\
-        .replace("Clermont", "Clermont Foot").replace("AS Roma", "Roma").replace("Bayern", "Bayern Munich")\
-        .replace("Frankfurt", "Eintracht Frankfurt").replace("Furth", "Greuther Furth")\
-        .replace("Bielefeld", "Arminia Bielefeld").replace("Arouca", "FC Arouca")\
-        .replace("Orlando City", "Orlando City SC").replace("Western United", "Western United FC")\
-        .replace("Tirol", "WSG Swarovski Tirol").replace("Rijeka", "HNK Rijeka").replace("Lechia", "Lechia Gdansk")\
-        .replace("Dortmund", "Borussia Dortmund").replace("Hertha", "Hertha Berlin")\
-        .replace("Leverkusen", "Bayer Leverkusen").replace("Freiburg", "SC Freiburg")\
-        .replace("Monchengladbach", "Borussia M'gladbach").replace("Hoffenheim", "TSG Hoffenheim")\
-        .replace("Stuttgart", "VfB Stuttgart").replace("FC Koln", "Cologne").replace("Ried", "SV Ried")\
-        .replace("LASK", "LASK Linz").replace("Admira", "FC Flyeralarm Admira").replace("Altach", "SCR Altach")\
-        .replace("Termalica B-B.", "Termalica BB Nieciecza").replace("Piast", "Piast Gliwice")\
-        .replace("Warta", "Warta Poznan").replace("Lech", "Lech Poznan").replace("Zaglebie", "Zaglebie Lubin")\
-        .replace("Rakow", "Rakow Czestochowa").replace("Mjallby", "Mjällby AIF").replace("Varnamo", "IFK Varnamo")
-
-
-def format_championships_names(championship):
-    return CONVERSION_LIST[championship]
-
+    return team.replace('Jagiellonia', 'Jagiellonia Bialystok').replace("Legia", "Legia Warsaw") \
+        .replace("Dragovoljac", "NK Hrvatski Dragovoljac").replace("Gorica", "HNK Gorica") \
+        .replace("Atletico-MG", "Atletico Mineiro").replace("Aarhus", "AGF Aarhus").replace("Odense", "Odense BK") \
+        .replace("Cracovia", "Cracovia Krakow").replace("St. Etienne", "St Etienne") \
+        .replace("Clermont", "Clermont Foot").replace("AS Roma", "Roma").replace("Bayern", "Bayern Munich") \
+        .replace("Frankfurt", "Eintracht Frankfurt").replace("Furth", "Greuther Furth") \
+        .replace("Bielefeld", "Arminia Bielefeld").replace("Arouca", "FC Arouca") \
+        .replace("Orlando City", "Orlando City SC").replace("Western United", "Western United FC") \
+        .replace("Tirol", "WSG Swarovski Tirol").replace("Rijeka", "HNK Rijeka").replace("Lechia", "Lechia Gdansk") \
+        .replace("Dortmund", "Borussia Dortmund").replace("Hertha", "Hertha Berlin") \
+        .replace("Leverkusen", "Bayer Leverkusen").replace("Freiburg", "SC Freiburg") \
+        .replace("Monchengladbach", "Borussia M'gladbach").replace("Hoffenheim", "TSG Hoffenheim") \
+        .replace("Stuttgart", "VfB Stuttgart").replace("FC Koln", "Cologne").replace("Ried", "SV Ried") \
+        .replace("LASK", "LASK Linz").replace("Admira", "FC Flyeralarm Admira").replace("Altach", "SCR Altach") \
+        .replace("Termalica B-B.", "Termalica BB Nieciecza").replace("Piast", "Piast Gliwice") \
+        .replace("Warta", "Warta Poznan").replace("Lech", "Lech Poznan").replace("Zaglebie", "Zaglebie Lubin") \
+        .replace("Rakow", "Rakow Czestochowa").replace("Mjallby", "Mjällby AIF").replace("Varnamo", "IFK Varnamo") \
+        .replace("Wolves", "Wolverhampton").replace("Ath. Bilbao", "Athletic Bilbao") \
+        .replace("Atl. Madrid", "Atletico Madrid").replace("Betis", "Real Betis").replace("Alaves", "CD Alaves") \
+        .replace("Inter", "Inter Milan").replace("Royal Union SG", "Union Saint Gilloise") \
+        .replace("Bremen", "Werder Bremen").replace("Regensburg", "Jahn Regensburg") \
+        .replace("Karlsruher", "Karlsruher SC").replace("St. Pauli", "St Pauli") \
+        .replace("Dusseldorf", "Fortuna Dusseldorf").replace("Hannover", "Hannover 96") \
+        .replace("Ingolstadt", "FC Ingolstadt").replace("Kiel", "Holstein Kiel").replace("Dresden", "Dynamo Dresden") \
+        .replace("Aue", "Erzgebirge Aue").replace("Rostock", "Hansa Rostock").replace("Hamburger SV", "Hamburg") \
+        .replace("St. Mirren", "St Mirren").replace("St. Johnstone", "St Johnstone").replace("Dundee FC", "Dundee") \
+        .replace("Gaziantep", "Gaziantep FK").replace("Karagumruk", "Fatih Karagumruk") \
+        .replace("Basaksehir", "Istanbul Basaksehir").replace("Charlotte", "Charlotte FC") \
+        .replace("New York City", "New York City FC").replace("Cincinnati", "FC Cincinnati") \
+        .replace("Inter Miami", "Inter Miami CF").replace("Los Angeles Galaxy", "LA Galaxy") \
+        .replace("Seattle Sounders", "Seattle Sounders FC").replace("Minnesota", "Minnesota United") \
+        .replace("Athletico-PR", "Athletico Paranaense").replace("Botafogo RJ", "Botafogo") \
+        .replace("Juventude", "EC Juventude").replace("Alkmaar", "AZ").replace("Waalwijk", "RKC") \
+        .replace("Twente", "FC Twente").replace("Groningen", "FC Groningen").replace("Cambuur", "Cambuur Leeuwarden") \
+        .replace("G.A. Eagles", "Go Ahead Eagles").replace("Nijmegen", "NEC").replace("Sittard", "Fortuna Sittard") \
+        .replace("Zwolle", "PEC Zwolle").replace("Utrecht", "FC Utrecht").replace("Sturm Graz", "SK Sturm Graz") \
+        .replace("Wolfsberger", 'Wolfsberger AC').replace("A. Klagenfurt", "Austria Klagenfurt") \
+        .replace("Austria Vienna", "FK Austria Vienna").replace("Salzburg", "FC Salzburg") \
+        .replace("Osijek", "NK Osijek").replace("Lok. Zagreb", "NK Lokomotiva Zagreb") \
+        .replace("Sibenik", "HNK Sibenik").replace("Din. Zagreb", "Dinamo Zagreb") \
+        .replace("Nordsjaelland", "FC Nordsjaelland").replace("Randers", "Randers FC").replace("Aalborg", "AaB") \
+        .replace("Slask", "Slask Wroclaw").replace("Gornik Z.", "Gornik Zabrze").replace("Leczna", "Gornik Leczna") \
+        .replace("Wisla", "Wisla Krakow").replace("Plzen", "Viktoria Plzen").replace("Ostrava", "Banik Ostrava") \
+        .replace("Hacken", "BK Hacken").replace("Kalmar", "Kalmar FF").replace("AIK Stockholm", "AIK") \
+        .replace("Goteborg", "IFK Goteborg").replace("Varbergs", "Varbergs BoIS FC") \
+        .replace("Norrkoping", "IFK Norrkoping").replace("Sundsvall", "GIF Sundsvall") \
+        .replace("Silkeborg", "Silkeborg IF").replace("Rizespor", "Caykur Rizespor")

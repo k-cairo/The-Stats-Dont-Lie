@@ -1,16 +1,20 @@
+import time
+from selenium.webdriver.common.keys import Keys
 from django.shortcuts import render, HttpResponse
 from pathlib import Path
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, WebDriverException
 from selenium.webdriver.common.by import By
 from utils.constant import LOGO_LIST, LIST_CHAMPIONSHIP
 from utils.get_data import get_data
 from utils.get_matchs import format_championships_names, format_teams_names, day_list, today, tomorrow, j2, \
-    get_all_matchs, get_matchs_cards_goals, get_double_chance_predictions
+    get_all_matchs, get_matchs_cards_goals, get_double_chance_predictions, define_card_bet, get_cards_queryset, \
+    get_home_away_team_cards_stats, calculate_total_cards
 from utils.selenium_functions import open_browser, accept_cookie
 from utils.get_cards_iframes import get_all_cards_iframes
-from .models import MatchsAVenir, Data, Iframe
+from .models import MatchsAVenir, Data, Iframe, MatchsTermine, TeamIframe
 from django.db.models import Q
 from slugify import slugify
+from utils.constant import CARDS, CORNERS, LEAGUES_URLS, TEAMS_IN_CHAMPIONSHIP
 
 BASE_DIRECTORY = Path(__file__).resolve().parent.parent.parent
 
@@ -48,11 +52,38 @@ def match_details(request, slug):
     for match in today_j3_matchs:
         if match.slug == slug:
             target_match = match
-    return render(request, "blog/match_details.html", context={"match": target_match})
+            print(f"Home Team : {match.home_team}")
+            print(f"Away Team : {match.away_team}")
+
+    home_team_queryset = TeamIframe.objects.filter(team=match.home_team)
+    away_team_queryset = TeamIframe.objects.filter(team=match.away_team)
+
+    home_team_iframe = home_team_queryset.values()[0]["iframe_url"]
+    away_team_iframe = away_team_queryset.values()[0]["iframe_url"]
+
+    
+    return render(request, "blog/match_details.html")
 
 
 ########################################   UPDATE MATCHS A VENIR   #####################################################
 def update_matchs_a_venir(request):
+    # Update Iframes
+    get_all_cards_iframes()
+
+    # Update Datas
+    driver = open_browser()
+
+    cards_against_iframes = Iframe.objects.filter(iframe_stats="cards against")
+    cards_for_iframes = Iframe.objects.filter(iframe_stats="cards for")
+
+    for card_for_iframe in cards_for_iframes:
+        get_data(url=card_for_iframe.iframe_url, championship=card_for_iframe.championship,
+                 driver=driver, data_stats="cards for")
+
+    for card_against_iframe in cards_against_iframes:
+        get_data(url=card_against_iframe.iframe_url, championship=card_against_iframe.championship,
+                 driver=driver, data_stats="cards against")
+
     # Check if day already in database (Next 3 days)
     for day in day_list:
         data_dates = MatchsAVenir.objects.filter(date=day)
@@ -66,64 +97,16 @@ def update_matchs_a_venir(request):
                         home_team = teams[0]
                         away_team = teams[1]
 
-                        card_for_query = Data.objects.filter(championship=championship).filter(datas_stats="cards for")
-                        card_against_query = Data.objects.filter(championship=championship).filter(
-                            datas_stats="cards against")
+                        cards_querysets = get_cards_queryset(championship=championship)
 
-                        card_for_query_values = card_for_query.values()
-                        card_against_query_values = card_against_query.values()
+                        all_teams_cards_stats = get_home_away_team_cards_stats(cards_querysets, home_team, away_team)
 
-                        list_cards_for_stats_home_team = card_for_query_values[0]["datas"]["Home Teams"]
-                        list_cards_for_stats_away_team = card_for_query_values[0]["datas"]["Away Teams"]
-                        list_cards_against_stats_home_team = card_against_query_values[0]["datas"]["Home Teams"]
-                        list_cards_against_stats_away_team = card_against_query_values[0]["datas"]["Away Teams"]
+                        total_cards = calculate_total_cards(home_team_cards_for_average=all_teams_cards_stats[0],
+                                                            away_team_cards_for_average=all_teams_cards_stats[2],
+                                                            home_team_cards_against_average=all_teams_cards_stats[1],
+                                                            away_team_cards_against_average=all_teams_cards_stats[3])
 
-                        home_team_cards_for_average = 0
-                        home_team_cards_against_average = 0
-                        away_team_cards_for_average = 0
-                        away_team_cards_against_average = 0
-
-                        for data_tuple in list_cards_for_stats_home_team:
-                            for team, cards_average in data_tuple.items():
-                                if team == home_team:
-                                    home_team_cards_for_average = float(cards_average)
-
-                        for data_tuple in list_cards_against_stats_home_team:
-                            for team, cards_average in data_tuple.items():
-                                if team == home_team:
-                                    home_team_cards_against_average = float(cards_average)
-
-                        for data_tuple in list_cards_for_stats_away_team:
-                            for team, cards_average in data_tuple.items():
-                                if team == away_team:
-                                    away_team_cards_for_average = float(cards_average)
-
-                        for data_tuple in list_cards_against_stats_away_team:
-                            for team, cards_average in data_tuple.items():
-                                if team == away_team:
-                                    away_team_cards_against_average = float(cards_average)
-
-                        total_cards = min(home_team_cards_for_average, away_team_cards_for_average) + min(
-                            home_team_cards_against_average, away_team_cards_against_average)
-
-                        if total_cards >= 8.5:
-                            card_bet = "+ 7.5"
-                        elif total_cards >= 7.5:
-                            card_bet = "+ 6.5"
-                        elif total_cards >= 6.5:
-                            card_bet = "+ 5.5"
-                        elif total_cards >= 5.5:
-                            card_bet = "+ 4.5"
-                        elif total_cards >= 4.5:
-                            card_bet = "+ 3.5"
-                        elif total_cards >= 3.5:
-                            card_bet = "+ 2.5"
-                        elif total_cards >= 2.5:
-                            card_bet = "+ 1.5"
-                        elif total_cards >= 1.5:
-                            card_bet = "+ 0.5"
-                        else:
-                            card_bet = "+0"
+                        card_bet = define_card_bet(total_cards=total_cards)
 
                         double_chance_predict = get_double_chance_predictions(day=day, ht=home_team, at=away_team)
 
@@ -133,16 +116,16 @@ def update_matchs_a_venir(request):
                                                     slug=slugify(rencontre),
                                                     home_team=rencontre.split("|")[0],
                                                     away_team=rencontre.split("|")[1],
-                                                    home_team_cards_for_average=home_team_cards_for_average,
-                                                    home_team_cards_against_average=home_team_cards_against_average,
-                                                    away_team_cards_for_average=away_team_cards_for_average,
-                                                    away_team_cards_against_average=away_team_cards_against_average,
+                                                    home_team_cards_for_average=all_teams_cards_stats[0],
+                                                    home_team_cards_against_average=all_teams_cards_stats[1],
+                                                    away_team_cards_for_average=all_teams_cards_stats[2],
+                                                    away_team_cards_against_average=all_teams_cards_stats[3],
                                                     card_bet=card_bet,
                                                     double_chance_predict=double_chance_predict)
-    return HttpResponse("Matchs list Update")
+    return HttpResponse("Matchs A Venir list Updated")
 
 
-#########################################   UPDATE STATS MATCHS   ######################################################
+########################################   UPDATE MATCHS TERMINES   ####################################################
 def update_matchs_termines(request):
     driver = open_browser()
     dates_to_update = []
@@ -162,7 +145,7 @@ def update_matchs_termines(request):
             try:
                 championship = div_championship.find_element(By.CSS_SELECTOR, "h3.panel-title a").text
             except NoSuchElementException:
-                print("Problème avec un Championnat")
+                print(f"Problème avec un Championnat: {championship}")
             else:
                 if championship in LIST_CHAMPIONSHIP:
                     championship_format = format_championships_names(championship=championship)
@@ -181,15 +164,44 @@ def update_matchs_termines(request):
 
 ########################################   UPDATE CARDS IFRAMES   ######################################################
 def update_iframes(request):
-    iframes = get_all_cards_iframes()
+    all_links = {}
+    driver = open_browser()
+    querysets = Iframe.objects.filter(iframe_stats="cards against")
 
-    for championship, iframe in iframes[0].items():
-        Iframe.objects.create(championship=championship, iframe_url=iframe,
-                              iframe_stats="cards for", date_updated=today)
+    for queryset in querysets:
+        driver.get(url=queryset.iframe_url)
 
-    for championship, iframe in iframes[1].items():
-        Iframe.objects.create(championship=championship, iframe_url=iframe,
-                              iframe_stats="cards against", date_updated=today)
+        div_tbody = driver.find_element(By.CSS_SELECTOR, "tbody")
+        all_tr = div_tbody.find_elements(By.CSS_SELECTOR, "tr")
+
+        for tr in all_tr[2:-1]:
+            try:
+                team = tr.find_element(By.CSS_SELECTOR, "td a").text
+            except NoSuchElementException:
+                print("Problem")
+            else:
+                team_link = tr.find_element(By.CSS_SELECTOR, "td a").get_attribute("href")
+                all_links[team] = team_link
+
+    for team, link in all_links.items():
+        driver.get(link)
+        try:
+            driver.find_element(By.XPATH,
+                                    '/html/body/div[1]/div[2]/main/div/section/div/div/div[5]/div/div[1]/div/div[4]/div[2]/div[2]/div[2]/div/form/div[1]/input').send_keys("cairo.kevin72@gmail.com")
+            driver.find_element(By.XPATH, '//*[@id="user_pass"]').send_keys("31Mars1988" + Keys.ENTER)
+        except NoSuchElementException:
+            pass
+        finally:
+            divs_content = driver.find_elements(By.CSS_SELECTOR, "div.tab-content")
+            iframe = divs_content[1].find_element(By.CSS_SELECTOR, "iframe").get_attribute("src")
+
+            if len(TeamIframe.objects.filter(team=team)) == 0:
+                TeamIframe.objects.create(team=team,
+                                          iframe_url=iframe,
+                                          iframe_stats="histo_overall",
+                                          date_updated=today)
+            else:
+                TeamIframe.objects.filter(team=team).update(iframe_url=iframe, date_updated=today)
 
     return HttpResponse("Iframes Updated")
 

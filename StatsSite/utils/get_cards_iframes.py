@@ -1,31 +1,24 @@
 from selenium.webdriver.common.by import By
 from utils.constant import CARDS, CORNERS, LEAGUES_URLS, TEAMS_IN_CHAMPIONSHIP
 from utils.selenium_functions import open_browser
+from utils.get_matchs import today
+from blog.models import Iframe
 
 iframes_yc_for = {}
 iframes_yc_against = {}
 
 
 def get_all_cards_iframes():
-    """
-    Return a tuple who contain two dictionary of cards iframes
-    :return: (dict, dict)
-    """
     driver = open_browser()
     for key, value in LEAGUES_URLS.items():
         card_link = value + CARDS
         get_card_iframe(link=card_link, championship=key, driver=driver)
-    return iframes_yc_for, iframes_yc_against
+    update_cards_iframes()
+    iframes_yc_for.clear()
+    iframes_yc_against.clear()
 
 
 def get_card_iframe(link, championship, driver):
-    """
-    Get a single iframe and save it in a local variable
-    :param link: str
-    :param championship: str
-    :param driver: WebDriver
-    :return: None
-    """
     driver.get(link)
     nb_team = TEAMS_IN_CHAMPIONSHIP[championship]
     try:
@@ -37,3 +30,21 @@ def get_card_iframe(link, championship, driver):
     else:
         iframes_yc_for[championship] = iframe_yc_for
         iframes_yc_against[championship] = iframe_yc_against
+
+
+def update_cards_iframes():
+    for championship, iframe in iframes_yc_for.items():
+        if Iframe.objects.filter(championship=championship).filter(iframe_stats="cards for") == 0:
+            Iframe.objects.create(championship=championship, iframe_url=iframe,
+                                  iframe_stats="cards for", date_updated=today)
+        else:
+            Iframe.objects.filter(championship=championship).filter(iframe_stats="cards for").update(iframe_url=iframe,
+                                                                                                     date_updated=today)
+
+    for championship, iframe in iframes_yc_against.items():
+        if Iframe.objects.filter(championship=championship).filter(iframe_stats="cards against") == 0:
+            Iframe.objects.create(championship=championship, iframe_url=iframe,
+                                  iframe_stats="cards against", date_updated=today)
+        else:
+            Iframe.objects.filter(championship=championship).filter(iframe_stats="cards against").update(
+                iframe_url=iframe, date_updated=today)

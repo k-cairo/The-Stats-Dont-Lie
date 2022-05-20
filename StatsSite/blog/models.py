@@ -52,6 +52,13 @@ class Iframe(models.Model):
     date_updated = models.CharField(max_length=200)
 
 
+class TeamIframe(models.Model):
+    team = models.CharField(max_length=200)
+    iframe_url = models.URLField()
+    iframe_stats = models.CharField(max_length=200)
+    date_updated = models.CharField(max_length=200)
+
+
 class Data(models.Model):
     championship = models.CharField(max_length=200)
     datas = models.JSONField()

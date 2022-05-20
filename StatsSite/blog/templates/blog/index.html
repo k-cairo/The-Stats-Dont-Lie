@@ -4,37 +4,47 @@
 
 {% block content %}
 
-{% for match in matchs %}
-{% for key, value in logo.items %}
-{% if key == match.championship %}
+<!-- Section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 mt-5">
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-<div class="col mb-5">
-    <div class="card h-100">
-        <!-- Image Logo-->
-        <img class="card-img-top" src="{{ value }}" alt="..."/>
-        <div class="card-body p-4">
-            <div class="text-center">
-                <h6>{{ match.date }}</h6>
-                <!-- Championship name-->
-                <h5 class="fw-bolder">{{ match.championship|transformchampionship }}</h5>
-                <!-- Match name-->
-                <p>{{ match|transformatch }}</p>
-                <p>Bet Cartons : {{ match.card_bet }} Cartons</p>
-                <p>Bet Double Chance : {{ match.double_chance_predict }}</p>
+            {% for match in matchs %}
+            {% for key, value in logo.items %}
+            {% if key == match.championship %}
+
+            <div class="col mb-5">
+                <div class="card h-100">
+                    <!-- Image Logo-->
+                    <img class="card-img-top" src="{{ value }}" alt="..."/>
+                    <div class="card-body p-4">
+                        <div class="text-center">
+                            <h6>{{ match.date }}</h6>
+                            <!-- Championship name-->
+                            <h5 class="fw-bolder">{{ match.championship|transformchampionship }}</h5>
+                            <!-- Match name-->
+                            <p>{{ match|transformatch }}</p>
+                            <p>Bet Cartons : {{ match.card_bet }} Cartons</p>
+                            <p>Bet Double Chance : {{ match.double_chance_predict }}</p>
+                        </div>
+                    </div>
+                    <!-- Stats Section-->
+                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                        <div class="text-center">
+                            <a class="btn btn-outline-dark mt-auto"
+                               href="{% url 'blog-match_details' slug=match.slug %}">Stats du match</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <!-- Stats Section-->
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div class="text-center">
-                <a class="btn btn-outline-dark mt-auto"
-                   href="{% url 'blog-match_details' slug=match.slug %}">Stats du match</a>
-            </div>
+
+            {% endif %}
+            {% endfor %}
+            {% endfor %}
+
         </div>
     </div>
-</div>
-
-{% endif %}
-{% endfor %}
-{% endfor %}
+</section>
 
 {% endblock %}
+
