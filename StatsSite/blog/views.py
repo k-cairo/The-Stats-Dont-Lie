@@ -68,7 +68,7 @@ def match_details(request, slug):
 ########################################   UPDATE MATCHS A VENIR   #####################################################
 def update_matchs_a_venir(request):
     # Update Iframes
-    get_all_cards_iframes()
+    # get_all_cards_iframes()
 
     # Update Datas
     driver = open_browser()
