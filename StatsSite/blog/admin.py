@@ -11,9 +11,7 @@ class MatchAVenir(admin.ModelAdmin):
 
 @admin.register(MatchsTermine)
 class MatchTermines(admin.ModelAdmin):
-    list_display = ("date", "championship", "match", "double_chance_predict", "score", "card_bet", "nb_yellow_cards", "nb_red_cards")
-    list_filter = ("date", "championship", "nb_goals")
-    search_fields = ("championship", "home_team", "away_team")
+    list_display = ("target_team", )
 
 
 @admin.register(Iframe)

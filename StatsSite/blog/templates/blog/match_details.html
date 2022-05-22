@@ -5,34 +5,34 @@
 
 {% block content %}
 <!--MATCH INFORMATION'S-->
-<h1 style="text-align: center;">{{ match.championship|transformchampionship }}</h1>
-<h1 style="text-align: center;">{{ match.date }}</h1>
-<h1 style="text-align: center;">{{ match }}</h1>
+<h1 style="text-align: center;">{{ target_match.championship|transformchampionship }}</h1>
+<h1 style="text-align: center;">{{ target_match.date }}</h1>
+<h1 style="text-align: center;">{{ target_match }}</h1>
 
 <hr style="width: 50%; margin: 30 auto; border: 1.5px solid;">
 
 <!--DATA CARDS TABLE-->
 <div style="display: table; margin: auto">
-    <h1 style="text-align: center;">STATS CARTONS</h1>
+    <h1 style="text-align: center;">Cards Stats </h1>
 
     <table class="table w-auto text-center">
         <thead>
         <tr>
             <th></th>
-            <th scope="col">{{ match.home_team }}</th>
-            <th scope="col">{{ match.away_team }}</th>
+            <th scope="col">{{ target_match.home_team }}</th>
+            <th scope="col">{{ target_match.away_team }}</th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td>Average Cards For</td>
-            <td>{{ match.home_team_cards_for_average }}</td>
-            <td>{{ match.away_team_cards_for_average }}</td>
+            <td>{{ home_team_cards_for_average }}</td>
+            <td>{{ away_team_cards_for_average }}</td>
         </tr>
         <tr>
             <td>Average Cards Against</td>
-            <td>{{ match.home_team_cards_against_average }}</td>
-            <td>{{ match.away_team_cards_against_average }}</td>
+            <td>{{ home_team_cards_against_average }}</td>
+            <td>{{ away_team_cards_against_average }}</td>
         </tr>
         </tbody>
     </table>
@@ -40,38 +40,38 @@
 
 <hr style="width: 50%; margin: 30 auto; border: 1.5px solid;">
 
-<!--HOME TEAM HISTORIQUE DATAS CARDS, GOALS, RESULTS-->
+<!--HOME TEAM HISTORIQUE -->
 <div style="display: table; margin: auto">
-    <h1 style="text-align: center;">HOME TEAM HISTORIQUE</h1>
+    <h1 style="text-align: center;">{{ home_team }} Historique</h1>
 
     <table class="table w-auto text-center">
         <thead>
         <tr>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th style="text-align: center" scope="col">{{ match.home_team }}</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-        </tr>
-        <tr>
             <th scope="col">Date</th>
-            <th scope="col">Match</th>
-            <th scope="col">Bet Double Chance</th>
+            <th scope="col">HT</th>
             <th scope="col">Score</th>
-            <th scope="col">Bet Carton</th>
-            <th scope="col">Cartons réel</th>
+            <th scope="col">AT</th>
+            <th scope="col">Corner F</th>
+            <th scope="col">Corner A</th>
+            <th scope="col">YC F</th>
+            <th scope="col">YC A</th>
+            <th scope="col">RC F</th>
+            <th scope="col">RC A</th>
         </tr>
         </thead>
         <tbody>
-        {% for home_team_historique_matchs, home_team_total_cards in home_zipped %}
+        {% for match in home_team_histo %}
         <tr>
-            <td>{{ home_team_historique_matchs.date }}</td>
-            <td>{{ home_team_historique_matchs }}</td>
-            <td>{{ home_team_historique_matchs.double_chance_predict }}</td>
-            <td>{{ home_team_historique_matchs.score }}</td>
-            <td>{{ home_team_historique_matchs.card_bet }}</td>
-            <td>{{ home_team_total_cards }}</td>
+            <td>{{ match.date }}</td>
+            <td>{{ match.home_team }}</td>
+            <td>{{ match.score }}</td>
+            <td>{{ match.away_team }}</td>
+            <td>{{ match.corner_for }}</td>
+            <td>{{ match.corner_against }}</td>
+            <td>{{ match.yellow_card_for }}</td>
+            <td>{{ match.yellow_card_against }}</td>
+            <td>{{ match.red_card_for }}</td>
+            <td>{{ match.red_card_against }}</td>
         </tr>
         {% endfor %}
         </tbody>
@@ -79,38 +79,38 @@
 </div>
 
 
-<!--AWAY TEAM HISTORIQUE DATAS CARDS, GOALS, RESULTS-->
+<!--AWAY TEAM HISTORIQUE-->
 <div style="display: table; margin: auto">
-    <h1 style="text-align: center;">AWAY TEAM HISTORIQUE</h1>
+    <h1 style="text-align: center;">{{ away_team }} Historique</h1>
 
     <table class="table w-auto text-center">
         <thead>
         <tr>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col">{{ match.away_team }}</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-        </tr>
-        <tr>
             <th scope="col">Date</th>
-            <th scope="col">Match</th>
-            <th scope="col">Bet Double Chance</th>
+            <th scope="col">HT</th>
             <th scope="col">Score</th>
-            <th scope="col">Bet Carton</th>
-            <th scope="col">Cartons réel</th>
+            <th scope="col">AT</th>
+            <th scope="col">Corner F</th>
+            <th scope="col">Corner A</th>
+            <th scope="col">YC F</th>
+            <th scope="col">YC A</th>
+            <th scope="col">RC F</th>
+            <th scope="col">RC A</th>
         </tr>
         </thead>
         <tbody>
-        {% for away_team_historique_matchs, away_team_total_cards in away_zipped %}
+        {% for match in away_team_histo %}
         <tr>
-            <td>{{ away_team_historique_matchs.date }}</td>
-            <td>{{ away_team_historique_matchs }}</td>
-            <td>{{ away_team_historique_matchs.double_chance_predict }}</td>
-            <td>{{ away_team_historique_matchs.score }}</td>
-            <td>{{ away_team_historique_matchs.card_bet }}</td>
-            <td>{{ away_team_total_cards }}</td>
+            <td>{{ match.date }}</td>
+            <td>{{ match.home_team }}</td>
+            <td>{{ match.score }}</td>
+            <td>{{ match.away_team }}</td>
+            <td>{{ match.corner_for }}</td>
+            <td>{{ match.corner_against }}</td>
+            <td>{{ match.yellow_card_for }}</td>
+            <td>{{ match.yellow_card_against }}</td>
+            <td>{{ match.red_card_for }}</td>
+            <td>{{ match.red_card_against }}</td>
         </tr>
         {% endfor %}
         </tbody>

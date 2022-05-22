@@ -25,24 +25,21 @@ class MatchsAVenir(models.Model):
 
 
 class MatchsTermine(models.Model):
-    match = models.CharField(max_length=200)
-    championship = models.CharField(max_length=200)
+    target_team = models.CharField(max_length=100)
     date = models.CharField(max_length=20)
-    score = models.CharField(max_length=20)
-    double_chance_predict = models.CharField(max_length=10)
-    slug = models.SlugField(max_length=200)
     home_team = models.CharField(max_length=100)
+    score = models.CharField(max_length=20)
     away_team = models.CharField(max_length=100)
-    nb_yellow_cards = models.IntegerField()
-    nb_red_cards = models.IntegerField()
-    nb_goals = models.IntegerField()
-    card_bet = models.CharField(max_length=10)
+    corner_for = models.IntegerField()
+    corner_against = models.IntegerField()
+    yellow_card_for = models.IntegerField()
+    yellow_card_against = models.IntegerField()
+    red_card_for = models.IntegerField()
+    red_card_against = models.IntegerField()
 
     def __str__(self):
-        return self.match.replace("|", " - ")
+        return f"{self.home_team} - {self.away_team}"
 
-    def get_absolute_url(self):
-        return reverse("blog-match_detail", kwargs={"slug": self.slug})
 
 
 class Iframe(models.Model):

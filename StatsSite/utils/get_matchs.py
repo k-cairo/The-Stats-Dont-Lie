@@ -29,6 +29,7 @@ def get_all_matchs(date):
             print(f"Problème avec un Championnat: {championship}")
         else:
             if championship in LIST_CHAMPIONSHIP:
+                print(championship)
                 championship_format = format_championships_names(championship=championship)
                 all_matchs[championship_format] = []
                 raw_matchs = div_championship.find_elements(By.CSS_SELECTOR, "tbody td.lm3")
