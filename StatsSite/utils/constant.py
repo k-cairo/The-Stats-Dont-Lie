@@ -1,3 +1,10 @@
+from datetime import date, timedelta, datetime
+
+today = datetime.today().strftime("%d-%m-%Y")
+tomorrow = (date.today() + timedelta(days=1)).strftime("%d-%m-%Y")
+j2 = (date.today() + timedelta(days=2)).strftime("%d-%m-%Y")
+day_list = (today, tomorrow, j2)
+
 CARDS = "/cards"
 CORNERS = "/corners"
 LEAGUES_URLS = {

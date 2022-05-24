@@ -1,4 +1,3 @@
-from datetime import date
 from django.db import models
 from django.urls import reverse
 
@@ -14,8 +13,12 @@ class MatchsAVenir(models.Model):
     away_team_cards_for_average = models.FloatField()
     home_team_cards_against_average = models.FloatField()
     away_team_cards_against_average = models.FloatField()
+    home_team_corners_for_average = models.FloatField()
+    away_team_corners_for_average = models.FloatField()
+    home_team_corners_against_average = models.FloatField()
+    away_team_corners_against_average = models.FloatField()
     card_bet = models.CharField(max_length=10)
-    double_chance_predict = models.CharField(max_length=10)
+    corner_bet = models.CharField(max_length=10)
 
     def __str__(self):
         return self.match.replace("|", " - ")
@@ -39,7 +42,6 @@ class MatchsTermine(models.Model):
 
     def __str__(self):
         return f"{self.home_team} - {self.away_team}"
-
 
 
 class Iframe(models.Model):
