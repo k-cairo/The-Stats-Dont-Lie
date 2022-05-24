@@ -29,8 +29,8 @@ def get_corner_iframe(link, championship, driver):
     nb_team = TEAMS_IN_CHAMPIONSHIP[championship]
     try:
         iframes = driver.find_elements(By.CSS_SELECTOR, f"div.embed-container{nb_team} iframe")
-        iframe_corner_for = iframes[0].get_attribute('src')
-        iframe_corner_against = iframes[1].get_attribute('src')
+        iframe_corner_for = iframes[5].get_attribute('src')
+        iframe_corner_against = iframes[6].get_attribute('src')
     except IndexError:
         print(f"Erreur avec le championnat : {championship} - CORNERS")
     else:
@@ -40,7 +40,7 @@ def get_corner_iframe(link, championship, driver):
 
 def update_cards_iframes():
     for championship, iframe in iframes_yc_for.items():
-        if Iframe.objects.filter(championship=championship).filter(iframe_stats="cards for") == 0:
+        if len(Iframe.objects.filter(championship=championship).filter(iframe_stats="cards for")) == 0:
             Iframe.objects.create(championship=championship, iframe_url=iframe,
                                   iframe_stats="cards for", date_updated=today)
         else:
@@ -48,7 +48,7 @@ def update_cards_iframes():
                                                                                                      date_updated=today)
 
     for championship, iframe in iframes_yc_against.items():
-        if Iframe.objects.filter(championship=championship).filter(iframe_stats="cards against") == 0:
+        if len(Iframe.objects.filter(championship=championship).filter(iframe_stats="cards against")) == 0:
             Iframe.objects.create(championship=championship, iframe_url=iframe,
                                   iframe_stats="cards against", date_updated=today)
         else:
@@ -58,15 +58,14 @@ def update_cards_iframes():
 
 def update_corners_iframes():
     for championship, iframe in iframes_corner_for.items():
-        if Iframe.objects.filter(championship=championship).filter(iframe_stats="corners for") == 0:
-            Iframe.objects.create(championship=championship, iframe_url=iframe,
-                                  iframe_stats="corners for", date_updated=today)
+        if len(Iframe.objects.filter(championship=championship).filter(iframe_stats="corners for")) == 0:
+            Iframe.objects.create(championship=championship, iframe_url=iframe, iframe_stats="corners for", date_updated=today)
         else:
             Iframe.objects.filter(championship=championship).filter(iframe_stats="corners for").update(
                 iframe_url=iframe, date_updated=today)
 
     for championship, iframe in iframes_corner_against.items():
-        if Iframe.objects.filter(championship=championship).filter(iframe_stats="corners against") == 0:
+        if len(Iframe.objects.filter(championship=championship).filter(iframe_stats="corners against")) == 0:
             Iframe.objects.create(championship=championship, iframe_url=iframe,
                                   iframe_stats="corners against", date_updated=today)
         else:
