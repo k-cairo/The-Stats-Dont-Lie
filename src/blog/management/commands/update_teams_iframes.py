@@ -4,6 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from utils.constant import today
 from utils.selenium_functions import open_browser
+from utils.confidential import IDENTIFIANT, PASSWORD
 from blog.models import Iframe, TeamIframe
 
 
@@ -35,8 +36,8 @@ def get_all_teams_href(driver, link):
     try:
         driver.find_element(By.XPATH,
                             '/html/body/div[1]/div[2]/main/div/section/div/div/div[5]/div/div[1]/div/div[4]/div['
-                            '2]/div[2]/div[2]/div/form/div[1]/input').send_keys("cairo.kevin72@gmail.com")
-        driver.find_element(By.XPATH, '//*[@id="user_pass"]').send_keys("31Mars1988" + Keys.ENTER)
+                            '2]/div[2]/div[2]/div/form/div[1]/input').send_keys(IDENTIFIANT)
+        driver.find_element(By.XPATH, '//*[@id="user_pass"]').send_keys(PASSWORD + Keys.ENTER)
     except NoSuchElementException:
         pass
     finally:
